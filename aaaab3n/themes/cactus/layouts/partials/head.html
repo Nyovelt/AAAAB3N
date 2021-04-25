@@ -15,6 +15,9 @@
   {{ $colortheme := .Scratch.Get "colortheme" }}
   <link rel="stylesheet" href="{{ $colortheme | printf "css/style-%s.css" | absURL }}">
   <!-- Custom CSS -->
+
+  <link href='http://fonts.loli.net/css?family=Roboto' rel='stylesheet' type='text/css'>
+
   {{ range .Site.Params.css }} <link rel="stylesheet" href="{{ . | absURL }}"> {{ end }}
   {{ `
     <!--[if lt IE 9]>
