@@ -4,7 +4,77 @@
   
   <url>
     <loc>http://test.aaaab3n.moe/</loc>
-    <lastmod>2018-11-06T15:38:33+08:00</lastmod>
+    <lastmod>2020-12-17T10:01:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/hackathon/</loc>
+    <lastmod>2020-12-17T10:01:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-12-17-intel-hackthon/</loc>
+    <lastmod>2020-12-17T10:01:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/</loc>
+    <lastmod>2020-12-17T10:01:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/</loc>
+    <lastmod>2020-12-17T10:01:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/cloudflare-blog-website/</loc>
+    <lastmod>2020-11-28T10:01:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-11-28-github-and-cloudflare/</loc>
+    <lastmod>2020-11-28T10:01:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/living/</loc>
+    <lastmod>2019-12-31T12:59:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2019-12-31-2020-say-hello/</loc>
+    <lastmod>2019-12-31T12:59:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/c-cpp-%E9%BB%91%E9%AD%94%E6%B3%95/</loc>
+    <lastmod>2019-11-29T12:55:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2019-11-29-c-cpp-black-magic/</loc>
+    <lastmod>2019-11-29T12:55:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2019-2-18-the-wandering-earth/</loc>
+    <lastmod>2019-02-08T00:54:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/%E5%BD%B1%E8%AF%84/</loc>
+    <lastmod>2019-02-08T00:54:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/iot-linux-gfw/</loc>
+    <lastmod>2019-01-30T13:59:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2019-1-30-raspberrypi-clash-tutor/</loc>
+    <lastmod>2019-01-30T13:59:33+08:00</lastmod>
   </url>
   
   <url>
@@ -14,16 +84,6 @@
   
   <url>
     <loc>http://test.aaaab3n.moe/categories/literature/</loc>
-    <lastmod>2018-11-06T15:38:33+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://test.aaaab3n.moe/posts/</loc>
-    <lastmod>2018-11-06T15:38:33+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://test.aaaab3n.moe/tags/</loc>
     <lastmod>2018-11-06T15:38:33+08:00</lastmod>
   </url>
   
@@ -38,21 +98,154 @@
   </url>
   
   <url>
-    <loc>http://test.aaaab3n.moe/categories/life/</loc>
-    <lastmod>2016-10-22T16:56:54+00:00</lastmod>
+    <loc>http://test.aaaab3n.moe/networks/</loc>
+    <lastmod>2016-08-24T17:51:42+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://test.aaaab3n.moe/posts/2016-10-22-z/</loc>
-    <lastmod>2016-10-22T16:56:54+00:00</lastmod>
+    <loc>http://test.aaaab3n.moe/notes/</loc>
+    <lastmod>2016-08-24T17:51:42+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://test.aaaab3n.moe/posts/2021-4-1-computer-architecture-mid/</loc>
+    <loc>http://test.aaaab3n.moe/friends/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2021-1-15-2020-summary/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-7-7-618-workstation-setup-guide/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/camera/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2021-1-18-centos8-slurm/</loc>
   </url>
   
   <url>
     <loc>http://test.aaaab3n.moe/tags/edu/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/essay/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-9-13-fresh/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/gfw-%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/life/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/linux/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/linux-docker/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/linux-hpc-centos-slurm/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/linux-kvm/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/monthly-report/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-7-7-pigeon-oj-config/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-3-24-remote-ssh-on-vscode/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/risc-v/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2021-3-15-risc-v/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-4-15-rsa/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/technology/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-4-19-an-reply/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-8-31-leviathan/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-1-31-monthly-report/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-4-12-aplinelatest_error_with_multidict/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-1-14-server-move/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2021-2-21-sd-card/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-3-1-free-internet/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-8-21-fstab/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-7-22-run-away-from-shanghaitech/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-10-8-lunwen/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-5-31-birthday2020/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-4-17-computer-science/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/posts/2020-12-8-modern/</loc>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/%E9%BB%91%E9%AD%94%E6%B3%95/</loc>
   </url>
   
 </urlset>

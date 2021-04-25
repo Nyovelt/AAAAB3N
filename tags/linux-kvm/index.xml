@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux KVM on Canarypwn</title>
+    <link>http://test.aaaab3n.moe/tags/linux-kvm/</link>
+    <description>Recent content in Linux KVM on Canarypwn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://test.aaaab3n.moe/tags/linux-kvm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>618电脑指北</title>
+      <link>http://test.aaaab3n.moe/posts/2020-7-7-618-workstation-setup-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://test.aaaab3n.moe/posts/2020-7-7-618-workstation-setup-guide/</guid>
+      <description>618 由于笔者的笔记本（六代标压i5 + gtx965m）已经跟不上笔者剪辑4K视频和机器学习的需求了。所以在618的时候拿到了预算，有能力购入一台新电脑。
+新电脑旨在追求长期性价比，并且尽量追求边际效应最小化。笔者是计算机科学的学生，因此未来可能会写CUDA，大型编译以及多系统的需求。适逢AMD的Zen2架构和英伟达图灵显卡大降价，因此618可以算是购入电脑的一个好时机。
+配置 AMD 锐龙9 3900X 处理器 JD 3286.33
+华硕（ASUS）PRO WS X570-ACE 主板 JD 2890.00
+32G ECC UDIMM DDR4 3200内存 TAOBAO 1100.00
+[Intel/英特尔P4500 1T SSD U.2](Intel/英特尔P4500 1T SSD U.2) TAOBAO 787.50
+利民（Thermalright） FS140 霜灵 双塔散热器 JD 228.00
+美商海盗船 (USCORSAIR) 额定850W RM850x 全模组电脑电源 JD 818.17
+索泰(ZOTAC)RTX2060super霹雳版OC HA JD 2491.00
+先马（SAMA）黑洞 黑色 中塔式机箱 JD 247.00
+外加一根 U.2连接线
+外加问同学暂时借了块970， 以后会收一块RX580 给 Linux 用
+**ALL 11848 **
+购买理由   3900X 一共拥有 2 个CCD，总共十二核心，二十四线程。 每个CCD分表包含着6个核心和十二个线程 (id: 0-5, 12-17)(i: 6-11, 18-23) ，一共 64M 的三级缓存（虽然跨CCD时延迟会很大）。三级缓存对编译的提升是很大的，同时多核心更利于虚拟机运行。</description>
+    </item>
+    
+  </channel>
+</rss>

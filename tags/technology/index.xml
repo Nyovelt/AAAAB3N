@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technology on Canarypwn</title>
+    <link>http://test.aaaab3n.moe/tags/technology/</link>
+    <description>Recent content in Technology on Canarypwn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://test.aaaab3n.moe/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PIGEON OJ 配置指南（评卷机）</title>
+      <link>http://test.aaaab3n.moe/posts/2020-7-7-pigeon-oj-config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://test.aaaab3n.moe/posts/2020-7-7-pigeon-oj-config/</guid>
+      <description>Pigeon OJ Pigeon OJ 是由上海科技大学 GeekPie 社团开发的一个基于 Docker 和 Gitlab 的多文件在线评测系统。
+在上学期的 CS100 后，该 OJ 已经尘封了一个学期了。 在下个学期的 SI100B 中，该 OJ 也会给新来的 20 届同学使用。在暑学期中， 该 OJ 还要为 专硕 的项目服务。
+OJ 的评卷系统是通过一个 scheduler 通过 TLS 连接 Docker API 调用 Docker 进行评卷。之前的评卷机在 CS100 课程结束后就被学校收回了。 所以现在我需要为其添加一个新的评卷机 ( Judger )
+Docker Remote API TLS 认证 参考链接: https://www.jianshu.com/p/a1bdc96b4163
+这里是我的配置:
+openssl genrsa -aes256 -out ca-key.pem 4096 openssl req -new -x509 -days 365 -key ca-key.pem -sha256 -out ca.pem openssl genrsa -out server-key.</description>
+    </item>
+    
+  </channel>
+</rss>

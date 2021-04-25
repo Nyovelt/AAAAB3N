@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>黑魔法 on Canarypwn</title>
+    <link>http://test.aaaab3n.moe/tags/%E9%BB%91%E9%AD%94%E6%B3%95/</link>
+    <description>Recent content in 黑魔法 on Canarypwn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://test.aaaab3n.moe/tags/%E9%BB%91%E9%AD%94%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RSA 与 算法</title>
+      <link>http://test.aaaab3n.moe/posts/2020-4-15-rsa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://test.aaaab3n.moe/posts/2020-4-15-rsa/</guid>
+      <description>What is RSA  RSA 包含了 密钥（公钥，私钥）生成， 加密， 和解密。  How is RSA RSA 的计算过程:
+  首先取两个互素的整数: m, N。
+ m即要加密的信息 其中 m &amp;lt; N 也可以理解为先找到一个正整数N, 让任意的m&amp;lt;N使m,N互素。  其中，互素指最大公约数为1，即gcd(m,N) = 1。   这也是RSA算法的真正过程    N的取法: N = pq, (p,q are prime numbers)
+ N 是凑出来的，为两个素数的积    这时引入欧拉函数: $$ \phi (n) = \mid \mathbb{Z}_n^* \mid $$
+ 构造函数$\phi(n)$表示小于等于 和 互质的数的个数 当 $n=pq$ 时， $\phi(n) = (p-1)(q-1)$  举例：</description>
+    </item>
+    
+  </channel>
+</rss>
