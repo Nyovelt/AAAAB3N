@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux KVM on Canarypwn</title>
-    <link>http://test.aaaab3n.moe/tags/linux-kvm/</link>
+    <link>https://aaaab3n.moe/tags/linux-kvm/</link>
     <description>Recent content in Linux KVM on Canarypwn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://test.aaaab3n.moe/tags/linux-kvm/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://aaaab3n.moe/tags/linux-kvm/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>618电脑指北</title>
-      <link>http://test.aaaab3n.moe/posts/2020-7-7-618-workstation-setup-guide/</link>
+      <link>https://aaaab3n.moe/posts/2020-7-7-618-workstation-setup-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-7-7-618-workstation-setup-guide/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-7-7-618-workstation-setup-guide/</guid>
       <description>618 由于笔者的笔记本（六代标压i5 + gtx965m）已经跟不上笔者剪辑4K视频和机器学习的需求了。所以在618的时候拿到了预算，有能力购入一台新电脑。
 新电脑旨在追求长期性价比，并且尽量追求边际效应最小化。笔者是计算机科学的学生，因此未来可能会写CUDA，大型编译以及多系统的需求。适逢AMD的Zen2架构和英伟达图灵显卡大降价，因此618可以算是购入电脑的一个好时机。
 配置 AMD 锐龙9 3900X 处理器 JD 3286.33

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cloudflare Blog Website on Canarypwn</title>
-    <link>http://test.aaaab3n.moe/tags/cloudflare-blog-website/</link>
+    <link>https://aaaab3n.moe/tags/cloudflare-blog-website/</link>
     <description>Recent content in Cloudflare Blog Website on Canarypwn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Nov 2020 10:01:59 +0800</lastBuildDate>
     
-	<atom:link href="http://test.aaaab3n.moe/tags/cloudflare-blog-website/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://aaaab3n.moe/tags/cloudflare-blog-website/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>使用 GitHub Actions 与 Cloudflare 重构博客体验</title>
-      <link>http://test.aaaab3n.moe/posts/2020-11-28-github-and-cloudflare/</link>
+      <link>https://aaaab3n.moe/posts/2020-11-28-github-and-cloudflare/</link>
       <pubDate>Sat, 28 Nov 2020 10:01:59 +0800</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-11-28-github-and-cloudflare/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-11-28-github-and-cloudflare/</guid>
       <description>Caution Due to rendering problem, some characters can&amp;rsquo;t be displayed correctly by markdown ( such as $ ). Read source code instead.
 为什么不自己 Host 服务 正如 苏卡卡 在 谈谈云服务和 SLA  中说的，在线云服务的 SLA 相比自己 Host 一个服务，可用性有很明显的提升。而且 GitHub Pages, GitHub Actions 和 Cloudflare 都是有免费额度的，对于个人用户完全够用。相信很多人之前买了 VPS，之后因为各种原因没有做好备份导致写了很久的博客文章丢失的事情，GitHub 的存储服务也能解决这个问题。
 为什么不用之前的 Netlify 之前笔者是使用 Netlify 来构建博客的， Netlify 可以 Hook 住某个 GitHub repo， 在有 commit 的时候自动拉下来。它有一个 ubuntu 的虚拟环境，根据写的指令自动构建完后 Host 网页。 Netlify 还有自带的 CDN 和 DNS解析服务，在刚开始搭建博客的时候， Netlify 用的是 Digital Ocean 的 CDN，它的日本节点对于大陆网络的友好程度是要高于 Cloudflare 的。</description>

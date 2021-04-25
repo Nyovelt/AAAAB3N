@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>camera on Canarypwn</title>
-    <link>http://test.aaaab3n.moe/tags/camera/</link>
+    <link>https://aaaab3n.moe/tags/camera/</link>
     <description>Recent content in camera on Canarypwn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://test.aaaab3n.moe/tags/camera/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://aaaab3n.moe/tags/camera/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>两款SD卡的对比测试</title>
-      <link>http://test.aaaab3n.moe/posts/2021-2-21-sd-card/</link>
+      <link>https://aaaab3n.moe/posts/2021-2-21-sd-card/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2021-2-21-sd-card/</guid>
+      <guid>https://aaaab3n.moe/posts/2021-2-21-sd-card/</guid>
       <description>最近由于准备买 Sony a6100，遇到了选购 sd 卡的环节。秉持着鸡蛋不能放在同一个篮子里的理念，以及考虑了UHS-I 最大速度大约在100 m/s 上下封顶，因此购买了市面上两家大厂的不同产品，分别是
  闪迪至尊极速 SDXC UHS-I 存储卡 64G （附赠闪迪数据修复软件） SAMSUNG PRO PLUS 128G  两者购买价格接近，三星的容量是闪迪的一倍，闪迪的读取速度宣传的更快。
 而且三星的颜值个人感觉更更高一些

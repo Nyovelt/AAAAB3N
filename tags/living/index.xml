@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Living on Canarypwn</title>
-    <link>http://test.aaaab3n.moe/tags/living/</link>
+    <link>https://aaaab3n.moe/tags/living/</link>
     <description>Recent content in Living on Canarypwn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 31 Dec 2019 12:59:59 +0800</lastBuildDate>
     
-	<atom:link href="http://test.aaaab3n.moe/tags/living/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://aaaab3n.moe/tags/living/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>新年快乐</title>
-      <link>http://test.aaaab3n.moe/posts/2019-12-31-2020-say-hello/</link>
+      <link>https://aaaab3n.moe/posts/2019-12-31-2020-say-hello/</link>
       <pubDate>Tue, 31 Dec 2019 12:59:59 +0800</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2019-12-31-2020-say-hello/</guid>
+      <guid>https://aaaab3n.moe/posts/2019-12-31-2020-say-hello/</guid>
       <description>0x00 ​ 原本准备元旦期间发的blog硬是拖到了除夕。
 ​	2019年我告别了高中来到了一个自己想去的大学。高三正式再见了，老师们去了新的班级，同学们也各奔东西。铁三角中的两个去了武汉，和其中一位的联系也渐渐淡了。在寒假前几天我回了一次母校，看着林立的摄像头，看到了翻新过的社团，了解了与我们那一届不同的故事，听着学弟学妹吐槽那时候我们所吐槽的，又回想起在大学做的一次次回到高三的噩梦，我却在庆幸，这一切终于过去了。
 ​ 我的高考成绩对于我妈妈来说是失败的，似乎她因此失去了一个可以吹嘘的资本。高考的分数让我很对不起除了数学老师以外的老师。我的成绩确实很不稳定，但这次却出乎我的意料。好在高二的时候拿了一个水赛的奖，靠着加分进了ShanghaiTech。这是一个不错的学校。
@@ -31,10 +31,10 @@
     
     <item>
       <title>生日</title>
-      <link>http://test.aaaab3n.moe/posts/2020-5-31-birthday2020/</link>
+      <link>https://aaaab3n.moe/posts/2020-5-31-birthday2020/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-5-31-birthday2020/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-5-31-birthday2020/</guid>
       <description>今年的生日或许是我过的最不像生日的一个生日了，没有生日蛋糕，没有长寿面。原本请室友们去吃西餐厅的意大利面的想法也因为赶电路作业而延后了。作为考试周结束的后一天，也许什么都不做才是一种短暂的享受（但我没有做到）。说起来我还未曾有一次在考试之前就知道考试结果不会好的，但这次遇到了。
 凌晨我是在ztr寝室度过的，大家都刚考完了最后一门，yzy请了大家每人一瓶RIO，一起看完了刚刚更新的《辉夜》，看到一半zsy也加入了进来，谈笑风生了一个多小时。在这个时候，我才感觉两周来的压力被缓解了一些。
 各科的DDL依旧会来，暑学期和社会实践也是，锅和自己要做的小项目也是。就像之前决定要拍思修课微电影作为期末作业的时候，更多的是希望创作欲能被表达，而分数反而变得不是那么重要。
@@ -44,10 +44,10 @@
     
     <item>
       <title>计算机科学与大白日梦</title>
-      <link>http://test.aaaab3n.moe/posts/2020-4-17-computer-science/</link>
+      <link>https://aaaab3n.moe/posts/2020-4-17-computer-science/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-4-17-computer-science/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-4-17-computer-science/</guid>
       <description>梦想or内卷 随着留学申请季的结束，学校获得大丰收的同时也开始了面向新生的留学工作坊。当然，我参加了，而且参加之后更是一团雾水。因为GPA，英语标化测试，Connection，这些东西我没有一样是拿的出手的。不过我自认为还有三年时间，随着完备的战略和计划，外加努力和一点点小聪明和捷径，这些最终都会被解决的。
 于是我就去问 Vizna , 没想到被几个问题反问住了。她问，“你出国是为了什么呢？你职业努力的目标又是什么呢？” 作为一个成天摸鱼并混迹于 V2EX，知乎的人，这个当然是不难答出。我立刻回复，&amp;ldquo;我要成为下一个轮子哥，去微软。&amp;rdquo; (与轮子哥并无强关联)
 是的，如果你去V2EX或者知乎这样标榜着”知识分享平台“，”创意工作者的社区“，这样的地方看看职场相关的话题，首先注意到的就是对现行教学的批判和对工作制的批判。他们一方面劝退着生化环材电子信息（无冒犯），一方面抵制着996 。微软这样的公司在这里就是企业家的典范。网友们打着先进生产力的口号，讨伐着“落后”与”愚昧“。在这里，现实压过了理想。于我，微软意味着高工资，高自由，是一种站着赚钱的地方。而 Master 除了让我了解当前最新的计算机进展外，还意味着找工作时的议价能力。一切都变得功利了起来。

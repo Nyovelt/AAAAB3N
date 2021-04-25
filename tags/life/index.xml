@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Life on Canarypwn</title>
-    <link>http://test.aaaab3n.moe/tags/life/</link>
+    <link>https://aaaab3n.moe/tags/life/</link>
     <description>Recent content in Life on Canarypwn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://test.aaaab3n.moe/tags/life/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://aaaab3n.moe/tags/life/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2020总结</title>
-      <link>http://test.aaaab3n.moe/posts/2021-1-15-2020-summary/</link>
+      <link>https://aaaab3n.moe/posts/2021-1-15-2020-summary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2021-1-15-2020-summary/</guid>
+      <guid>https://aaaab3n.moe/posts/2021-1-15-2020-summary/</guid>
       <description>如果我相信生活并且热爱生活，我会强烈赞同自由主义，又强烈的推崇权威和专制。我相信每个人都有自我，之后成为少数的几种意识形态的傀儡，然后再反意识形态。个人呢？我会强烈的依照精神分析以去除自己内心的每一处黑暗与龌龊，又必须成为一个非全能的要犯错( Must Make Mistakes )的人。我会成为孩子，又变成骆驼，既在洞穴( Plato&amp;rsquo;s Cave )中，又在花斑母牛镇。是立即要死的，又是不朽的，狂热于逃避现实去追求生活中的理想，醉心于贪心每一个选择做出最优解。不过总之，我会语无伦次，并且精神分裂。
 —— Sir Canarypwn Appleby
 前言 在我着手写这篇总结的时候，已经是寒假开始一周了。因为去年没有暑假的关系，或许我能有幸度过上科大有史以来最长的一次寒假。交完了 ASC20-21 的proposal，倒时差，以及做了一些零碎的活，觉得现在是时候写年度总结了。
@@ -32,10 +32,10 @@ vizna 听完这么告诉我，她希望有一个 lifetime goal。lifetime goal�
     
     <item>
       <title>vizna对《计算机科学与大白日梦》的回复</title>
-      <link>http://test.aaaab3n.moe/posts/2020-4-19-an-reply/</link>
+      <link>https://aaaab3n.moe/posts/2020-4-19-an-reply/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-4-19-an-reply/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-4-19-an-reply/</guid>
       <description>关于《计算机科学与大白日梦》的胡言乱语 To Canarypwn：
 “于我，微软意味着高工资，高自由，是一种站着赚钱的地方”
 微软不是。。。微软工资不算高，跟国内大厂比起来，微软苏州竞争力一般，北京还算可以。自由度还可以吧。躺着赚钱还是google。可能因为我去过google，实话说，有一点点看不上微软。但是，须知高工资是要有productivity的，业绩不好你在哪里都混不好，外企能给你高工资高自由度还不是因为它的员工能创造更多价值。资本是逐利的。况且，如果你不甘心做底层员工想往上爬，在哪里都还是一样要outstanding，而且到了一定级别你在什么公司都基本是把生活献给工作了——除非你是效率特别高的人。
@@ -54,10 +54,10 @@ p.p.s. vizna的首字母是小写的，不过ingress不区分，所以没关系�
     
     <item>
       <title>我为什么对新生说&#39;&#39;快逃(&#39;&#39;</title>
-      <link>http://test.aaaab3n.moe/posts/2020-7-22-run-away-from-shanghaitech/</link>
+      <link>https://aaaab3n.moe/posts/2020-7-22-run-away-from-shanghaitech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-7-22-run-away-from-shanghaitech/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-7-22-run-away-from-shanghaitech/</guid>
       <description>写于上海高考出分周
 对于一个已经度过大学一年的人来说，填志愿和高考的过程依旧给我留下了很大的创伤，以至于到今年高考出分的时候，我还在梦中交了一次高考白卷。作为一个经历过填志愿，也听说过很多故事的人，我觉得还是有一些经验可以分享的。
 或许从大学之后多次梦见高考的创伤来看，高考和填志愿的过程已经于我是一种象征的，摆脱不了的时光了。我也希望通过此文，能够对我过去的经历进行一次重新建构。

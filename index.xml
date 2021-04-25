@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Canarypwn</title>
-    <link>http://test.aaaab3n.moe/</link>
+    <link>https://aaaab3n.moe/</link>
     <description>Recent content on Canarypwn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Dec 2020 10:01:59 +0800</lastBuildDate>
     
-	<atom:link href="http://test.aaaab3n.moe/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://aaaab3n.moe/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Intel Hackathon 2020 记录</title>
-      <link>http://test.aaaab3n.moe/posts/2020-12-17-intel-hackthon/</link>
+      <link>https://aaaab3n.moe/posts/2020-12-17-intel-hackthon/</link>
       <pubDate>Thu, 17 Dec 2020 10:01:59 +0800</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-12-17-intel-hackthon/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-12-17-intel-hackthon/</guid>
       <description>D-14 大约在两周前收到了来自社长的推送，正好最近想恰点钱，之前的外包也没写完，于是准备去参加。正好 DEEMOS 实验室在做 CV 相关，所以我们自然选了赛道二。
 一开始的时候 intel 没有释放任何消息，不过我们猜测他们会给一个 SDK， 可能是超分辨率或者怎样的。但两周后就要参赛了，所以我们只能先找一个不错的创意。我们想到了将 UGC 用于匿名聊天，因为 DEEMOS 最近在做人脸风格化，而匿名聊天如果能让用户定义自己的形象，而这个形象和本人又有关联，不仅有趣还能规避一些问题。
 社长这时候说，他们以前去 Hackathon 通常都是在之前做掉 75% 后再去现场的，所以让我们提前做好充足的准备。
@@ -32,10 +32,10 @@ D-7 在 D-7 日的时候，intel 公布了他们的 SDK，是一个将视频中�
     
     <item>
       <title>使用 GitHub Actions 与 Cloudflare 重构博客体验</title>
-      <link>http://test.aaaab3n.moe/posts/2020-11-28-github-and-cloudflare/</link>
+      <link>https://aaaab3n.moe/posts/2020-11-28-github-and-cloudflare/</link>
       <pubDate>Sat, 28 Nov 2020 10:01:59 +0800</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-11-28-github-and-cloudflare/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-11-28-github-and-cloudflare/</guid>
       <description>Caution Due to rendering problem, some characters can&amp;rsquo;t be displayed correctly by markdown ( such as $ ). Read source code instead.
 为什么不自己 Host 服务 正如 苏卡卡 在 谈谈云服务和 SLA  中说的，在线云服务的 SLA 相比自己 Host 一个服务，可用性有很明显的提升。而且 GitHub Pages, GitHub Actions 和 Cloudflare 都是有免费额度的，对于个人用户完全够用。相信很多人之前买了 VPS，之后因为各种原因没有做好备份导致写了很久的博客文章丢失的事情，GitHub 的存储服务也能解决这个问题。
 为什么不用之前的 Netlify 之前笔者是使用 Netlify 来构建博客的， Netlify 可以 Hook 住某个 GitHub repo， 在有 commit 的时候自动拉下来。它有一个 ubuntu 的虚拟环境，根据写的指令自动构建完后 Host 网页。 Netlify 还有自带的 CDN 和 DNS解析服务，在刚开始搭建博客的时候， Netlify 用的是 Digital Ocean 的 CDN，它的日本节点对于大陆网络的友好程度是要高于 Cloudflare 的。</description>
@@ -43,10 +43,10 @@ D-7 在 D-7 日的时候，intel 公布了他们的 SDK，是一个将视频中�
     
     <item>
       <title>新年快乐</title>
-      <link>http://test.aaaab3n.moe/posts/2019-12-31-2020-say-hello/</link>
+      <link>https://aaaab3n.moe/posts/2019-12-31-2020-say-hello/</link>
       <pubDate>Tue, 31 Dec 2019 12:59:59 +0800</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2019-12-31-2020-say-hello/</guid>
+      <guid>https://aaaab3n.moe/posts/2019-12-31-2020-say-hello/</guid>
       <description>0x00 ​ 原本准备元旦期间发的blog硬是拖到了除夕。
 ​	2019年我告别了高中来到了一个自己想去的大学。高三正式再见了，老师们去了新的班级，同学们也各奔东西。铁三角中的两个去了武汉，和其中一位的联系也渐渐淡了。在寒假前几天我回了一次母校，看着林立的摄像头，看到了翻新过的社团，了解了与我们那一届不同的故事，听着学弟学妹吐槽那时候我们所吐槽的，又回想起在大学做的一次次回到高三的噩梦，我却在庆幸，这一切终于过去了。
 ​ 我的高考成绩对于我妈妈来说是失败的，似乎她因此失去了一个可以吹嘘的资本。高考的分数让我很对不起除了数学老师以外的老师。我的成绩确实很不稳定，但这次却出乎我的意料。好在高二的时候拿了一个水赛的奖，靠着加分进了ShanghaiTech。这是一个不错的学校。
@@ -61,10 +61,10 @@ D-7 在 D-7 日的时候，intel 公布了他们的 SDK，是一个将视频中�
     
     <item>
       <title>编译时你在做什么？有没有空？可以来拯救吗？</title>
-      <link>http://test.aaaab3n.moe/posts/2019-11-29-c-cpp-black-magic/</link>
+      <link>https://aaaab3n.moe/posts/2019-11-29-c-cpp-black-magic/</link>
       <pubDate>Fri, 29 Nov 2019 12:55:35 +0800</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2019-11-29-c-cpp-black-magic/</guid>
+      <guid>https://aaaab3n.moe/posts/2019-11-29-c-cpp-black-magic/</guid>
       <description>太陽の傾いたこの世界で 通常写程序的时候，我们会更关注于程序的代码(main.c)和最终形成的可执行文件(main)。对于程序员来说，这两个部分的确是最重要的，甚至说90%的情况下都不用去管其它部分。现代的编译器非常智能，它们会帮你处理好很多东西（表扬 clang [klæŋ] ) 。但是，在编译的过程中，除了你的源代码和最终的可执行程序，其它部分，也就是编译器做的那部分，也应该得到关注。所以，这次的workshop将会关注程序运行背后的故事。事实上，有很多bug是因为忽视了编译器的运作原理而导致的。
 现在我们学的大部分语言都是高级语言，而CPU认的却是二进制的机器码。当我们在编译程序的时候，编译器会将我们的高级语言翻译成低级的汇编语言。而在程序运行的时候，会将汇编语言翻译成机器码。这是程序的运作原理。
 この戦いが終わったら C作为一门不会对内存检查的语言，因此很多的操作会超出一个变量的边界去影响下一个变量，举一个例子：
@@ -88,10 +88,10 @@ $ gcc -S helloworld.c -Og -masm=intel   gcc 代表使用的编译器， gcc编�
     
     <item>
       <title>《流浪地球》影评</title>
-      <link>http://test.aaaab3n.moe/posts/2019-2-18-the-wandering-earth/</link>
+      <link>https://aaaab3n.moe/posts/2019-2-18-the-wandering-earth/</link>
       <pubDate>Fri, 08 Feb 2019 00:54:34 +0800</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2019-2-18-the-wandering-earth/</guid>
+      <guid>https://aaaab3n.moe/posts/2019-2-18-the-wandering-earth/</guid>
       <description>在2018年的12月19号，就是那个一模考后发烧叛逃回家的日子里，我一边看完了《流浪地球》一边擦着鼻涕享受难得的不用去学校面对高三学习的日子。
 刘慈欣的作品我一直在追，”我喜欢大刘的科幻，除了文笔“这句话非常在理，在三体吧还常常有”大刘拍断大腿“的话语来吐槽，但是总觉得大刘的文本有一种后结构的味道（虽然很多人指出这实际上是因为娘子关电厂的裁员危机2333）。人类的理性与非理性，人类社会的建构，以及宇宙中动辄光年计的尺度与人性在尺度规训下的崇高。大刘对于这些的写作可是从不缩水。而由客观的物理世界的变动对于渺小又伟大，无知又傲慢的这一群人类来说，推演他们所作所为，甚至变得荒谬又值得辩论。在这一方面，大刘是艺术家与哲学家，他重新唤起了我们在工业化时代所失去的对于宇宙原始的敬畏。有人说刘慈欣要构建一个电影宇宙，我倒觉得UTOPIOSPHERE（乌托邦星球）更合适一些。
 一个月后，我在V2上看到一个帖子，说《流浪地球》要拍成电影，我想了想游族影业跳票到现在的三体电影版，又觉得这个没有像样故事线索的短篇小说能改成电影？又点进去看了看预告片，”被民族主义与大众文化所挟持的作品“是我对他的唯一评价。（这也从侧面说明了预告片不能代表电影）但我又不想做以前那个拿理想主义与反叛精神去批评一切的变态，毕竟我还要把自己装饰成一个有梦可追的人，去假装为自己而活着。
@@ -107,10 +107,10 @@ $ gcc -S helloworld.c -Og -masm=intel   gcc 代表使用的编译器， gcc编�
     
     <item>
       <title>在树莓派上配置Clash-linux</title>
-      <link>http://test.aaaab3n.moe/posts/2019-1-30-raspberrypi-clash-tutor/</link>
+      <link>https://aaaab3n.moe/posts/2019-1-30-raspberrypi-clash-tutor/</link>
       <pubDate>Wed, 30 Jan 2019 13:59:33 +0800</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2019-1-30-raspberrypi-clash-tutor/</guid>
+      <guid>https://aaaab3n.moe/posts/2019-1-30-raspberrypi-clash-tutor/</guid>
       <description>前言 一直在折腾家里的路由器和相关网络设备，想提供一个较为完美的网络环境。之前在Phicomm K2P上通过Openwrt安装luci-ssr-plus来进行国外ip的代理，但受限于简单的规则和MT7261令人捉鸡的性能，体验不佳。因此萌生了使用树莓派搭建透明网关的想法。在查阅了为数不多的教程并踩了很多坑以后基本搭建完成，并且到目前还未出现问题，所以说说如何使用。
 准备工作  树莓派 正常的网络连接 一定的动手和解决问题的能力  Clash  Clash is a rule-based tunnel in Go.
  Clash 类似 IOS/Mac OS上的Surge，可以在提供SS/V2RAY代理的同时资瓷自定义的代理规则。
@@ -124,10 +124,10 @@ INFO[0000] Can&amp;#39;t find config, create a empty file INFO[0000] Can&amp;#39
     
     <item>
       <title>爱，深渊与自由</title>
-      <link>http://test.aaaab3n.moe/posts/2018-11-06-love-abyss-freedom/</link>
+      <link>https://aaaab3n.moe/posts/2018-11-06-love-abyss-freedom/</link>
       <pubDate>Tue, 06 Nov 2018 15:38:33 +0800</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2018-11-06-love-abyss-freedom/</guid>
+      <guid>https://aaaab3n.moe/posts/2018-11-06-love-abyss-freedom/</guid>
       <description>0
 贯彻爱与真实的邪恶，可爱又迷人的反派角色
 作者：武藏 小次郎 喵喵
@@ -149,38 +149,38 @@ INFO[0000] Can&amp;#39;t find config, create a empty file INFO[0000] Can&amp;#39
     
     <item>
       <title>Networks</title>
-      <link>http://test.aaaab3n.moe/networks/</link>
+      <link>https://aaaab3n.moe/networks/</link>
       <pubDate>Wed, 24 Aug 2016 17:51:42 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/networks/</guid>
+      <guid>https://aaaab3n.moe/networks/</guid>
       <description>CANARYPWN INTERNET SERVICE ASN DNS MAINTAINANCE INFRASTRUCTURE </description>
     </item>
     
     <item>
       <title>Networks</title>
-      <link>http://test.aaaab3n.moe/notes/</link>
+      <link>https://aaaab3n.moe/notes/</link>
       <pubDate>Wed, 24 Aug 2016 17:51:42 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/notes/</guid>
+      <guid>https://aaaab3n.moe/notes/</guid>
       <description>Notes Here lie all of my lecture notes. I am used to taking structured notes on things I learned about. Reference only and no guarantees.
 Computer Science  Computer Architecture I: ST-CS110  Others  Signals and Systems: ST-EE150  </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://test.aaaab3n.moe/friends/</link>
+      <link>https://aaaab3n.moe/friends/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/friends/</guid>
+      <guid>https://aaaab3n.moe/friends/</guid>
       <description>123</description>
     </item>
     
     <item>
       <title>2020总结</title>
-      <link>http://test.aaaab3n.moe/posts/2021-1-15-2020-summary/</link>
+      <link>https://aaaab3n.moe/posts/2021-1-15-2020-summary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2021-1-15-2020-summary/</guid>
+      <guid>https://aaaab3n.moe/posts/2021-1-15-2020-summary/</guid>
       <description>如果我相信生活并且热爱生活，我会强烈赞同自由主义，又强烈的推崇权威和专制。我相信每个人都有自我，之后成为少数的几种意识形态的傀儡，然后再反意识形态。个人呢？我会强烈的依照精神分析以去除自己内心的每一处黑暗与龌龊，又必须成为一个非全能的要犯错( Must Make Mistakes )的人。我会成为孩子，又变成骆驼，既在洞穴( Plato&amp;rsquo;s Cave )中，又在花斑母牛镇。是立即要死的，又是不朽的，狂热于逃避现实去追求生活中的理想，醉心于贪心每一个选择做出最优解。不过总之，我会语无伦次，并且精神分裂。
 —— Sir Canarypwn Appleby
 前言 在我着手写这篇总结的时候，已经是寒假开始一周了。因为去年没有暑假的关系，或许我能有幸度过上科大有史以来最长的一次寒假。交完了 ASC20-21 的proposal，倒时差，以及做了一些零碎的活，觉得现在是时候写年度总结了。
@@ -197,10 +197,10 @@ vizna 听完这么告诉我，她希望有一个 lifetime goal。lifetime goal�
     
     <item>
       <title>618电脑指北</title>
-      <link>http://test.aaaab3n.moe/posts/2020-7-7-618-workstation-setup-guide/</link>
+      <link>https://aaaab3n.moe/posts/2020-7-7-618-workstation-setup-guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-7-7-618-workstation-setup-guide/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-7-7-618-workstation-setup-guide/</guid>
       <description>618 由于笔者的笔记本（六代标压i5 + gtx965m）已经跟不上笔者剪辑4K视频和机器学习的需求了。所以在618的时候拿到了预算，有能力购入一台新电脑。
 新电脑旨在追求长期性价比，并且尽量追求边际效应最小化。笔者是计算机科学的学生，因此未来可能会写CUDA，大型编译以及多系统的需求。适逢AMD的Zen2架构和英伟达图灵显卡大降价，因此618可以算是购入电脑的一个好时机。
 配置 AMD 锐龙9 3900X 处理器 JD 3286.33
@@ -219,10 +219,10 @@ vizna 听完这么告诉我，她希望有一个 lifetime goal。lifetime goal�
     
     <item>
       <title>CentOS8 下 slurm 的安装配置</title>
-      <link>http://test.aaaab3n.moe/posts/2021-1-18-centos8-slurm/</link>
+      <link>https://aaaab3n.moe/posts/2021-1-18-centos8-slurm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2021-1-18-centos8-slurm/</guid>
+      <guid>https://aaaab3n.moe/posts/2021-1-18-centos8-slurm/</guid>
       <description>Slurm 任务调度工具（前身为极简Linux资源管理工具，英文：Simple Linux Utility for Resource Management，取首字母，简写为SLURM），或 Slurm，是一个用于 Linux 和 Unix 内核系统的免费、开源的任务调度工具，被世界范围内的超级计算机和计算机群广泛采用。它提供了三个关键功能。第一，为用户分配一定时间的专享或非专享的资源(计算机节点)，以供用户执行工作。第二，它提供了一个框架，用于启动、执行、监测在节点上运行着的任务(通常是并行的任务，例如 MPI)，第三，为任务队列合理地分配资源。
 安装步骤 系统为 CentOS 8, 一共有两个 node 。其中 node1 作为主节点， node2 作为计算节点。
 设置slurm账户 # 新建用户。-m 为用户创建家目录；-G wheel 将用户添加到 wheel 用户组 useradd -m -G wheel slurm # 设置密码 passwd slurm # 查看账户相关性喜 id slurm # 所有节点的 slurm 组 id 必须一致。否则无法启动成功 安装munge yum -y install epel-release yum -y install gtk2 yum -y install gtk-devel yum -y install munge yum -y install munge-devel yum -y install hdf5-devel 手动创建目录,这些目录在munge安装时不会自动创建，分别用于munge的配置、运行、日志等需求。</description>
@@ -230,10 +230,10 @@ vizna 听完这么告诉我，她希望有一个 lifetime goal。lifetime goal�
     
     <item>
       <title>GeekPie DevOps 招新宣讲</title>
-      <link>http://test.aaaab3n.moe/posts/2020-9-13-fresh/</link>
+      <link>https://aaaab3n.moe/posts/2020-9-13-fresh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-9-13-fresh/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-9-13-fresh/</guid>
       <description>引言 作为一个存在了多年的，人数最多的计算机社团，我们同时运行着很多的服务。那么我们是如何确保这些服务是可用的，我们社团开发的工作流又是怎样的。
 服务器 作为一个经费充裕的社团，我们在不同的地方有着不同的服务器。如何管理这些服务器，如何方便开发者简单的部署服务是Ops的工作。就目前来说，我们在上海有三台阿里云服务器，两台香港的服务器，一台青云的服务器，还有两台在校内。其中在校内的两台中的一台还没有公网ip。把这些服务器方便稳定的链接起来是运维工作的基础。我们目前使用的是Tinc VPN，它是一种mesh，当每一个新节点加入的时候，它会自动连上其他所有的服务器，这样我们的每台服务器都能与其他服务器互相连通。
 工作流 开发者需要的是一个快速稳定的部署环境。运维需要一个安全便捷的管理环境。所以我们所有的服务都是基于docker的。简单的来说，docker是为了克服不同的系统环境存在的，比如同样的代码在你的电脑上跑不一定能在我的电脑上跑，docker的思想就是将你的环境和代码打包在一起，在你分享代码的时候同时包含的你跑代码的环境。Github是代码分享与管理平台，方便每个人贡献自己的代码，也方便团队进行协作。社团在Github上有一个自己的Orgnization，开发者要做的就是将docker上传到github上。剩下的全都会较为自动化完成部署。
@@ -245,10 +245,10 @@ https://blog.murez.site/devops-2020geekpie/</description>
     
     <item>
       <title>PIGEON OJ 配置指南（评卷机）</title>
-      <link>http://test.aaaab3n.moe/posts/2020-7-7-pigeon-oj-config/</link>
+      <link>https://aaaab3n.moe/posts/2020-7-7-pigeon-oj-config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-7-7-pigeon-oj-config/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-7-7-pigeon-oj-config/</guid>
       <description>Pigeon OJ Pigeon OJ 是由上海科技大学 GeekPie 社团开发的一个基于 Docker 和 Gitlab 的多文件在线评测系统。
 在上学期的 CS100 后，该 OJ 已经尘封了一个学期了。 在下个学期的 SI100B 中，该 OJ 也会给新来的 20 届同学使用。在暑学期中， 该 OJ 还要为 专硕 的项目服务。
 OJ 的评卷系统是通过一个 scheduler 通过 TLS 连接 Docker API 调用 Docker 进行评卷。之前的评卷机在 CS100 课程结束后就被学校收回了。 所以现在我需要为其添加一个新的评卷机 ( Judger )
@@ -259,10 +259,10 @@ openssl genrsa -aes256 -out ca-key.pem 4096 openssl req -new -x509 -days 365 -ke
     
     <item>
       <title>Remote-SSH:我的开发环境</title>
-      <link>http://test.aaaab3n.moe/posts/2020-3-24-remote-ssh-on-vscode/</link>
+      <link>https://aaaab3n.moe/posts/2020-3-24-remote-ssh-on-vscode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-3-24-remote-ssh-on-vscode/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-3-24-remote-ssh-on-vscode/</guid>
       <description>Remote-SSH: 我的开发环境 Visual Studio Code 在之前发布了插件 remote-ssh 和 remote-wsl 作为vsc的远程开发套件。这两款插件对于 Linux 的支持非常的好，甚至有人认为这是Windows下最好的ssh工具。我目前的主力设备是HP-OMEN 2 (i5-6300HQ) 和 Surface Pro 6 (i5) 。为了用上好用的包管理器，我都是装了Arch的Windows Subsystem Linux 作为日常开发。
 在最近，随着天气转暖，以及经手了几个稍微复杂的项目部署，wsl相对于cpu的占用率经常达到了50%左右，明显感受到了性能瓶颈，外加hyper的内存泄漏，，让我周一的 python 在线 quiz雪上加霜。更不用说surface贫弱的性能和移动性，不适合在本地跑大项目。
 在半年前我刚上大学的时候，xa学长就向我推荐了remote-ssh 。可以充分利用阿里云学生机 9.9 块的羊毛，外加原生的 linux 在编译速度上玄学的快于 windows ( 在编译TeX时，有明显的感觉 )的特性。所以在最近我将开发环境转移到了阿里云。经过了一周的试用，我认为这是目前最适合我的使用场景的开发环境。首先，它解决了代码多设备同步的问题；其次，它分担了 surface 的压力 ；最后， surface 因此成为了我的便携式个人电脑。
@@ -277,19 +277,19 @@ sh -c &amp;#34;$(wget https://raw.</description>
     
     <item>
       <title>RISC-V 指令集</title>
-      <link>http://test.aaaab3n.moe/posts/2021-3-15-risc-v/</link>
+      <link>https://aaaab3n.moe/posts/2021-3-15-risc-v/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2021-3-15-risc-v/</guid>
+      <guid>https://aaaab3n.moe/posts/2021-3-15-risc-v/</guid>
       <description>CALCULATE ADD  e.g. ADD x1 x0 x0 means x1 = x0 + x0  ADDI  e.g. ADDI x1 x0 0x11 means x1 = x0 + 3 (DEC) The difference is that ADDI is used for numerical, while ADD is used for registers (or variable we can say) Normally, we can discover ADDI sp sp -32  at the beginning of the program. It&amp;rsquo;s used for allocate memory for the main program.</description>
     </item>
     
     <item>
       <title>RSA 与 算法</title>
-      <link>http://test.aaaab3n.moe/posts/2020-4-15-rsa/</link>
+      <link>https://aaaab3n.moe/posts/2020-4-15-rsa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-4-15-rsa/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-4-15-rsa/</guid>
       <description>What is RSA  RSA 包含了 密钥（公钥，私钥）生成， 加密， 和解密。  How is RSA RSA 的计算过程:
   首先取两个互素的整数: m, N。
  m即要加密的信息 其中 m &amp;lt; N 也可以理解为先找到一个正整数N, 让任意的m&amp;lt;N使m,N互素。  其中，互素指最大公约数为1，即gcd(m,N) = 1。   这也是RSA算法的真正过程    N的取法: N = pq, (p,q are prime numbers)
@@ -299,10 +299,10 @@ sh -c &amp;#34;$(wget https://raw.</description>
     
     <item>
       <title>vizna对《计算机科学与大白日梦》的回复</title>
-      <link>http://test.aaaab3n.moe/posts/2020-4-19-an-reply/</link>
+      <link>https://aaaab3n.moe/posts/2020-4-19-an-reply/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-4-19-an-reply/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-4-19-an-reply/</guid>
       <description>关于《计算机科学与大白日梦》的胡言乱语 To Canarypwn：
 “于我，微软意味着高工资，高自由，是一种站着赚钱的地方”
 微软不是。。。微软工资不算高，跟国内大厂比起来，微软苏州竞争力一般，北京还算可以。自由度还可以吧。躺着赚钱还是google。可能因为我去过google，实话说，有一点点看不上微软。但是，须知高工资是要有productivity的，业绩不好你在哪里都混不好，外企能给你高工资高自由度还不是因为它的员工能创造更多价值。资本是逐利的。况且，如果你不甘心做底层员工想往上爬，在哪里都还是一样要outstanding，而且到了一定级别你在什么公司都基本是把生活献给工作了——除非你是效率特别高的人。
@@ -321,10 +321,10 @@ p.p.s. vizna的首字母是小写的，不过ingress不区分，所以没关系�
     
     <item>
       <title>“万民管理万民”——国家的必然与终极</title>
-      <link>http://test.aaaab3n.moe/posts/2020-8-31-leviathan/</link>
+      <link>https://aaaab3n.moe/posts/2020-8-31-leviathan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-8-31-leviathan/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-8-31-leviathan/</guid>
       <description>“万民管理万民”——国家的必然与终极 引言 作者通过唯物的观点，在第二部分“论国家“，描述了自然状态中人们不幸的生活与渴望和平和安定生活的共同要求，于是出于人的理性，人们相互间同意订立契约，放弃各人的自然权利，把它托付给某一个人或一个由多人组成的集体，这个人或集体能把大家的意志化为一个意志，能把大家的人格统一为一个人格；大家则服从他的意志，服从他的判断。
 如同”罗马人民管理罗马民众“一样，S.P.Q.R 作为一个由罗马人民赋予权利的共和国，它管理着罗马民众，发动战争，进行建设。而罗马人民和罗马民众是同一批人，他们既是 S.P.Q.R. 的建立者又是一部分维护者又是被统治者。历史上，罗马共和国与罗马帝国在这个基础上进行解构，在古代和今天，都成为了一种文化，认同和意识形态。
 本文主要就“万民管理万民”为核心，论述霍布斯如何论述人们放弃个人的自然权利，来组成一个集体；这个集体如何通过契约与自然法的形式，使得人们服从；人们又是出于何种特性需要组成一个集体；这个集体为什么会存在，它为什么是最终形式。
@@ -342,10 +342,10 @@ p.p.s. vizna的首字母是小写的，不过ingress不区分，所以没关系�
     
     <item>
       <title>【Monthly Report】202001</title>
-      <link>http://test.aaaab3n.moe/posts/2020-1-31-monthly-report/</link>
+      <link>https://aaaab3n.moe/posts/2020-1-31-monthly-report/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-1-31-monthly-report/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-1-31-monthly-report/</guid>
       <description>0x00 最重要的是，放寒假了。虽然寒假之前指定了很多计划，但无一例外都咕了&amp;hellip;&amp;hellip; （传统艺能）
 不能再这么颓废下去了（再一次传统艺能）
 0x01 在寒假期间完成了服务器迁移的大部分工作，详见这里。
@@ -365,10 +365,10 @@ p.p.s. vizna的首字母是小写的，不过ingress不区分，所以没关系�
     
     <item>
       <title>一次关于alphine和pip的docker build失败解决</title>
-      <link>http://test.aaaab3n.moe/posts/2020-4-12-aplinelatest_error_with_multidict/</link>
+      <link>https://aaaab3n.moe/posts/2020-4-12-aplinelatest_error_with_multidict/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-4-12-aplinelatest_error_with_multidict/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-4-12-aplinelatest_error_with_multidict/</guid>
       <description>起因 时隔五个月之后，接手镜像站维护的我准备开始为学校的镜像站(外网访问 通用访问)增加新的镜像时遇到了问题。我们的镜像同步脚本是放在Docker里的，而做了改动之后过不了Docker Build这关。
 问题一 错误 起初的 dockerfile :
 FROMalpine:latestMAINTAINERzxt @ Geek Pie AssociationRUN apk update &amp;amp;&amp;amp; apk add --no-cache git python3 rsync zsh findutils wget util-linux grep &amp;amp;&amp;amp; pip3 install apscheduler bandersnatchRUN mkdir /Mirrors-AutoSyncCOPY Mirrors-AutoSync.conf Mirrors-AutoSync.py bandersnatch.conf /Mirrors-AutoSync/COPY script /Mirrors-AutoSync/scriptCOPY quick-fedora-mirror.conf /Mirrors-AutoSync/script/RUN find /Mirrors-AutoSync/script/ -regex &amp;#39;[^\.]*[^/]&amp;#39; | xargs chmod +xRUN find /Mirrors-AutoSync/script/ -regex &amp;#39;[^\.]*\.sh&amp;#39; | xargs chmod +xCMD python3 /Mirrors-AutoSync/Mirrors-AutoSync.py在build过程中遇到了:
@@ -377,10 +377,10 @@ FROMalpine:latestMAINTAINERzxt @ Geek Pie AssociationRUN apk update &amp;amp;&am
     
     <item>
       <title>一次服务器迁移的尝试</title>
-      <link>http://test.aaaab3n.moe/posts/2020-1-14-server-move/</link>
+      <link>https://aaaab3n.moe/posts/2020-1-14-server-move/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-1-14-server-move/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-1-14-server-move/</guid>
       <description>0x00 缘起 在2019年的某天深夜，所有信院的同学的突然惊恐的发现，交作业的OJ上不去了。然后欣喜的在第二天接到了ddl延期的通知罪魁祸首是&amp;hellip;Azure欠费了。
 好在作为叠境附属学院，金主爸爸重新赞助了一批阿里云服务器，这批新的服务器将会在2019年双十二期间划归社团。
 在没有迁移到阿里云之前，社团暂时由社团经费新开了两台Azure HK，并通过快照的方式及时恢复了服务。费用为11欧/天。
@@ -397,10 +397,10 @@ FROMalpine:latestMAINTAINERzxt @ Geek Pie AssociationRUN apk update &amp;amp;&am
     
     <item>
       <title>两款SD卡的对比测试</title>
-      <link>http://test.aaaab3n.moe/posts/2021-2-21-sd-card/</link>
+      <link>https://aaaab3n.moe/posts/2021-2-21-sd-card/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2021-2-21-sd-card/</guid>
+      <guid>https://aaaab3n.moe/posts/2021-2-21-sd-card/</guid>
       <description>最近由于准备买 Sony a6100，遇到了选购 sd 卡的环节。秉持着鸡蛋不能放在同一个篮子里的理念，以及考虑了UHS-I 最大速度大约在100 m/s 上下封顶，因此购买了市面上两家大厂的不同产品，分别是
  闪迪至尊极速 SDXC UHS-I 存储卡 64G （附赠闪迪数据修复软件） SAMSUNG PRO PLUS 128G  两者购买价格接近，三星的容量是闪迪的一倍，闪迪的读取速度宣传的更快。
 而且三星的颜值个人感觉更更高一些
@@ -413,10 +413,10 @@ FROMalpine:latestMAINTAINERzxt @ Geek Pie AssociationRUN apk update &amp;amp;&am
     
     <item>
       <title>什么叫自由互联网啊（战术后仰）</title>
-      <link>http://test.aaaab3n.moe/posts/2020-3-1-free-internet/</link>
+      <link>https://aaaab3n.moe/posts/2020-3-1-free-internet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-3-1-free-internet/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-3-1-free-internet/</guid>
       <description>什么叫自由互联网啊（战术后仰） 当我们在谈论自由互联网的时候我们在谈论什么 国际互联网是一个宏大的概念，就其运作原理简单的说，我们将网线接入自己的房间，房间里的网线再经过家庭的网络中心，家里的网线再通过光纤接入ISP（互联网服务提供商 Internet Service Provider 一个例子就是中国电信）。ISP会接入自己建的或者公用的光纤海缆，把你传出的信息发送到它该去的地方。ISP和ISP之间会做peer（互联），这样你发出的信息可以被你的朋友收到。这样的模式看上去是自由的，它打破了空间和时间的尺度，“把人和人前所未有的紧紧联系在一起”。
 但我们却在互联网前加上的定语，似乎先天的定义了互联网是“不自由”的。相对的来说，互联网并不像看上去的那么美好。《1984》中写道，所谓自由就是能说出1+1=2的自由。但似乎在互联网上这种自由受到了一定威胁。在聊天的时候，我曾对朋友说，自由互联网应该是能畅所欲言的自由，是发送一个文件能跑满宽带的自由，是上网冲浪时DNS（Domain Name System，负责寻找你输入的网址）不会被劫持的自由（你也在上网冲浪？），是论坛发帖不会被降权的自由。
 而我们今天看到的是各大ISP开始对流量劫持，某即时通讯工具看似只能在本地保存聊天记录但实际上在云端早有备份，一丘之貉的类似通讯工具更是决定了用户应该看到什么不应该看到什么，某公司标榜不作恶但却作恶多端。
@@ -444,10 +444,10 @@ Firefox 启用 DNS over HTTPS 的方法
     
     <item>
       <title>修复由误操作导致的分区表重建问题</title>
-      <link>http://test.aaaab3n.moe/posts/2020-8-21-fstab/</link>
+      <link>https://aaaab3n.moe/posts/2020-8-21-fstab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-8-21-fstab/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-8-21-fstab/</guid>
       <description>起因 在8月初的时候，我接下了学校信息学院某实验室集群助管的工作，上任第一天的工作就是配置管理环境。集群的架构大致是这样，一共是约30台服务器，在上面跑 docker , 映射 ssh 端口，分派给不同的用户使用。除此以外还有两台大容量NFS服务器用于用户存储数据。
 我使用了 Portainer.io 进行多机器的 docker 管理。同时用了一个 shell 来完成其它机器运行 portainer.io - agent 以及挂载 nfs 磁盘的操作。
 脚本
@@ -463,10 +463,10 @@ mount -o remount,rw /dev/sda3 / 对于其它机器以及这两台服务器，更
     
     <item>
       <title>我为什么对新生说&#39;&#39;快逃(&#39;&#39;</title>
-      <link>http://test.aaaab3n.moe/posts/2020-7-22-run-away-from-shanghaitech/</link>
+      <link>https://aaaab3n.moe/posts/2020-7-22-run-away-from-shanghaitech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-7-22-run-away-from-shanghaitech/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-7-22-run-away-from-shanghaitech/</guid>
       <description>写于上海高考出分周
 对于一个已经度过大学一年的人来说，填志愿和高考的过程依旧给我留下了很大的创伤，以至于到今年高考出分的时候，我还在梦中交了一次高考白卷。作为一个经历过填志愿，也听说过很多故事的人，我觉得还是有一些经验可以分享的。
 或许从大学之后多次梦见高考的创伤来看，高考和填志愿的过程已经于我是一种象征的，摆脱不了的时光了。我也希望通过此文，能够对我过去的经历进行一次重新建构。
@@ -494,10 +494,10 @@ mount -o remount,rw /dev/sda3 / 对于其它机器以及这两台服务器，更
     
     <item>
       <title>明清历史中的国家自信与国家自觉</title>
-      <link>http://test.aaaab3n.moe/posts/2020-10-8-lunwen/</link>
+      <link>https://aaaab3n.moe/posts/2020-10-8-lunwen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-10-8-lunwen/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-10-8-lunwen/</guid>
       <description>明清历史中的国家自信与国家自觉 近代史的分划与明清历史 人们传统地将历史分为三个阶段，分别是古代，中代和近代。在中国，公认的近代史是从1840年第一次鸦片战争到1949年中华人民共和国成立。笔者认为，近代史与近代史之前——也就是明清史有着不可分割的联系。明清是是中国历史上最后一个由汉族建立的封建王朝，在这两代王朝期间，中外都发生了不同于以往的进步与改革，这些进步与改革如何，又怎样的对近代史产生了影响是本论文探讨的重点。要探讨什么是近代史，了解近代与古代的不同是必要的事。笔者准备以外交与文化来发现明清历史中现代性的一部分。明清作为历史的转折点，一方面将中古代王朝中存在的部分发挥到了极致，另一方面完成了对于传统概念的重新解释，使得明清具有了现代性。在明清中，本文将重点放在了清朝历史，因为清朝更接近现代，同时清朝作为一个非汉人统治的王朝，也更具代表性与研究型。同时，在明清朝，国民对于国家的认同有了多次不同的诠释，这些诠释将成为线索，引出近代历史。
 文艺复兴 “文艺复兴”是西方创造的词汇，是一种反应社会进步的文化，所以从这样的性质说，中国也发生过多次文艺复兴。在文艺一词中，包含着哲学、文学等精神文化，也包含着其背后社会组织的进步。
 清代的文化 清代作为一个由满人统治的，从女真发源的王朝，但是从康熙即位后，之后诸帝皆修习汉族学术。这一点不但与元朝君主轻视汉文化大不相同，与历代汉王朝相比都毫不逊色。此外，清代的文化更多的受到了欧洲文化的影响。17世纪是欧洲文艺复兴的时代，传教士们将欧洲的成熟的文化带来了中国，给中国社会带来了剧烈的影响。从中国的学术可见，自明清交替，违心的新学衰落，而实证的考据学兴起。
@@ -517,10 +517,10 @@ mount -o remount,rw /dev/sda3 / 对于其它机器以及这两台服务器，更
     
     <item>
       <title>生日</title>
-      <link>http://test.aaaab3n.moe/posts/2020-5-31-birthday2020/</link>
+      <link>https://aaaab3n.moe/posts/2020-5-31-birthday2020/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-5-31-birthday2020/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-5-31-birthday2020/</guid>
       <description>今年的生日或许是我过的最不像生日的一个生日了，没有生日蛋糕，没有长寿面。原本请室友们去吃西餐厅的意大利面的想法也因为赶电路作业而延后了。作为考试周结束的后一天，也许什么都不做才是一种短暂的享受（但我没有做到）。说起来我还未曾有一次在考试之前就知道考试结果不会好的，但这次遇到了。
 凌晨我是在ztr寝室度过的，大家都刚考完了最后一门，yzy请了大家每人一瓶RIO，一起看完了刚刚更新的《辉夜》，看到一半zsy也加入了进来，谈笑风生了一个多小时。在这个时候，我才感觉两周来的压力被缓解了一些。
 各科的DDL依旧会来，暑学期和社会实践也是，锅和自己要做的小项目也是。就像之前决定要拍思修课微电影作为期末作业的时候，更多的是希望创作欲能被表达，而分数反而变得不是那么重要。
@@ -530,10 +530,10 @@ mount -o remount,rw /dev/sda3 / 对于其它机器以及这两台服务器，更
     
     <item>
       <title>计算机科学与大白日梦</title>
-      <link>http://test.aaaab3n.moe/posts/2020-4-17-computer-science/</link>
+      <link>https://aaaab3n.moe/posts/2020-4-17-computer-science/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-4-17-computer-science/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-4-17-computer-science/</guid>
       <description>梦想or内卷 随着留学申请季的结束，学校获得大丰收的同时也开始了面向新生的留学工作坊。当然，我参加了，而且参加之后更是一团雾水。因为GPA，英语标化测试，Connection，这些东西我没有一样是拿的出手的。不过我自认为还有三年时间，随着完备的战略和计划，外加努力和一点点小聪明和捷径，这些最终都会被解决的。
 于是我就去问 Vizna , 没想到被几个问题反问住了。她问，“你出国是为了什么呢？你职业努力的目标又是什么呢？” 作为一个成天摸鱼并混迹于 V2EX，知乎的人，这个当然是不难答出。我立刻回复，&amp;ldquo;我要成为下一个轮子哥，去微软。&amp;rdquo; (与轮子哥并无强关联)
 是的，如果你去V2EX或者知乎这样标榜着”知识分享平台“，”创意工作者的社区“，这样的地方看看职场相关的话题，首先注意到的就是对现行教学的批判和对工作制的批判。他们一方面劝退着生化环材电子信息（无冒犯），一方面抵制着996 。微软这样的公司在这里就是企业家的典范。网友们打着先进生产力的口号，讨伐着“落后”与”愚昧“。在这里，现实压过了理想。于我，微软意味着高工资，高自由，是一种站着赚钱的地方。而 Master 除了让我了解当前最新的计算机进展外，还意味着找工作时的议价能力。一切都变得功利了起来。
@@ -564,10 +564,10 @@ HKU的卓尔这么回答我，&amp;quot;过程本身就是一种目的&amp;rdquo
     
     <item>
       <title>近代史纲要期末论文</title>
-      <link>http://test.aaaab3n.moe/posts/2020-12-8-modern/</link>
+      <link>https://aaaab3n.moe/posts/2020-12-8-modern/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-12-8-modern/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-12-8-modern/</guid>
       <description>封建帝国末期的救亡图存与封建思潮的覆灭 摘要： 第一次鸦片战争揭示了近代史的开端，作为集前朝之大成的清王朝在面对内有外患时尽可能的延续自身。但种种改变最终因各种原因而失败。作者认为，旧体制下相比西方已经相对成熟的近代化世界，由于各种体系的缺乏产生了行政效率低下的问题。行政效率低下使得改革的成本上升，很多资源陷入了诸如政治内耗和贪污腐败，因而改革无法彻底，并且对于国力的损伤巨大。本文主要探讨了清王朝以及清朝中的各种势力采用的四种救亡图存的方法。第一个是太平天国，一个具有封建落后性的政权在面对因为封建主义而产生的改良新政权时，清王朝借助了外来的力量克服了难关，西方因变革而有的器物给了落后的封建王朝额外的力量，同时预示着封建思潮无法通过以迭代的消灭自身的方式得到进步。第二个是洋务运动，在清朝尝到对太平天国的胜果时希望进一步的借助西方的力量，尽管这为清王朝争取到了纸面上的力量，但是封建主义固有的行政效率低下问题导致了甲午海战的失败与洋务运动的破产。百日维新是来自民间的知识分子们尝试的由下而上的一次变革，也是新旧制度的正面冲突，虽然旧制度取得了上风，但是新思潮展现出了其力量。辛亥革命最终终结了形式上的封建帝国，完成了由旧到新的使命。
 旧式农民起义：太平天国 太平天国的起因：第一次鸦片战争 在第一次鸦片战争后，由清王朝向列强赔款2800万元。这造成了巨大的亏空和逆差。据统计，道光二十七年至二十八年平均每年流出白银1000万元。这些钱最终被摊牌成了税收上的增加。当时的清王朝以农业为主，过重的税收最终造成了一般农民的破产和地主阶级对农民的土地兼并。手工业者阶级也因为鸦片战争所签订的南京条约，被更加廉价精良的外国工业品击败，最终破产。失去了土地和生活来源的农民和手工业者聚集在一起，为了生存而选择了起义。鸦片战争后十年间，各族人民自发的反清起义达100多次。
 在这一背景下，洪秀全借拜上帝教的名义，绘制了人人平等的远景，在传教过程中不断吸引教民，最终起义。与以往不同的是洪秀全结合了很多西方的宗教元素。这样一种接近西方的表象一方面为太平天国争取到了前期的来自西方的支持，另一方面让因为西方关系而破产或剥削的人民因此而感到自己拥有了特权。这种斯德哥尔摩式的反映表现了当时的人们对于初来乍到的西方话语厌恶但又不得不诚服的处境。

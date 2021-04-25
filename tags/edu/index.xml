@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>EDU on Canarypwn</title>
-    <link>http://test.aaaab3n.moe/tags/edu/</link>
+    <link>https://aaaab3n.moe/tags/edu/</link>
     <description>Recent content in EDU on Canarypwn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://test.aaaab3n.moe/tags/edu/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://aaaab3n.moe/tags/edu/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>GeekPie DevOps 招新宣讲</title>
-      <link>http://test.aaaab3n.moe/posts/2020-9-13-fresh/</link>
+      <link>https://aaaab3n.moe/posts/2020-9-13-fresh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-9-13-fresh/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-9-13-fresh/</guid>
       <description>引言 作为一个存在了多年的，人数最多的计算机社团，我们同时运行着很多的服务。那么我们是如何确保这些服务是可用的，我们社团开发的工作流又是怎样的。
 服务器 作为一个经费充裕的社团，我们在不同的地方有着不同的服务器。如何管理这些服务器，如何方便开发者简单的部署服务是Ops的工作。就目前来说，我们在上海有三台阿里云服务器，两台香港的服务器，一台青云的服务器，还有两台在校内。其中在校内的两台中的一台还没有公网ip。把这些服务器方便稳定的链接起来是运维工作的基础。我们目前使用的是Tinc VPN，它是一种mesh，当每一个新节点加入的时候，它会自动连上其他所有的服务器，这样我们的每台服务器都能与其他服务器互相连通。
 工作流 开发者需要的是一个快速稳定的部署环境。运维需要一个安全便捷的管理环境。所以我们所有的服务都是基于docker的。简单的来说，docker是为了克服不同的系统环境存在的，比如同样的代码在你的电脑上跑不一定能在我的电脑上跑，docker的思想就是将你的环境和代码打包在一起，在你分享代码的时候同时包含的你跑代码的环境。Github是代码分享与管理平台，方便每个人贡献自己的代码，也方便团队进行协作。社团在Github上有一个自己的Orgnization，开发者要做的就是将docker上传到github上。剩下的全都会较为自动化完成部署。
@@ -27,10 +27,10 @@ https://blog.murez.site/devops-2020geekpie/</description>
     
     <item>
       <title>“万民管理万民”——国家的必然与终极</title>
-      <link>http://test.aaaab3n.moe/posts/2020-8-31-leviathan/</link>
+      <link>https://aaaab3n.moe/posts/2020-8-31-leviathan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-8-31-leviathan/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-8-31-leviathan/</guid>
       <description>“万民管理万民”——国家的必然与终极 引言 作者通过唯物的观点，在第二部分“论国家“，描述了自然状态中人们不幸的生活与渴望和平和安定生活的共同要求，于是出于人的理性，人们相互间同意订立契约，放弃各人的自然权利，把它托付给某一个人或一个由多人组成的集体，这个人或集体能把大家的意志化为一个意志，能把大家的人格统一为一个人格；大家则服从他的意志，服从他的判断。
 如同”罗马人民管理罗马民众“一样，S.P.Q.R 作为一个由罗马人民赋予权利的共和国，它管理着罗马民众，发动战争，进行建设。而罗马人民和罗马民众是同一批人，他们既是 S.P.Q.R. 的建立者又是一部分维护者又是被统治者。历史上，罗马共和国与罗马帝国在这个基础上进行解构，在古代和今天，都成为了一种文化，认同和意识形态。
 本文主要就“万民管理万民”为核心，论述霍布斯如何论述人们放弃个人的自然权利，来组成一个集体；这个集体如何通过契约与自然法的形式，使得人们服从；人们又是出于何种特性需要组成一个集体；这个集体为什么会存在，它为什么是最终形式。
@@ -48,10 +48,10 @@ https://blog.murez.site/devops-2020geekpie/</description>
     
     <item>
       <title>明清历史中的国家自信与国家自觉</title>
-      <link>http://test.aaaab3n.moe/posts/2020-10-8-lunwen/</link>
+      <link>https://aaaab3n.moe/posts/2020-10-8-lunwen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-10-8-lunwen/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-10-8-lunwen/</guid>
       <description>明清历史中的国家自信与国家自觉 近代史的分划与明清历史 人们传统地将历史分为三个阶段，分别是古代，中代和近代。在中国，公认的近代史是从1840年第一次鸦片战争到1949年中华人民共和国成立。笔者认为，近代史与近代史之前——也就是明清史有着不可分割的联系。明清是是中国历史上最后一个由汉族建立的封建王朝，在这两代王朝期间，中外都发生了不同于以往的进步与改革，这些进步与改革如何，又怎样的对近代史产生了影响是本论文探讨的重点。要探讨什么是近代史，了解近代与古代的不同是必要的事。笔者准备以外交与文化来发现明清历史中现代性的一部分。明清作为历史的转折点，一方面将中古代王朝中存在的部分发挥到了极致，另一方面完成了对于传统概念的重新解释，使得明清具有了现代性。在明清中，本文将重点放在了清朝历史，因为清朝更接近现代，同时清朝作为一个非汉人统治的王朝，也更具代表性与研究型。同时，在明清朝，国民对于国家的认同有了多次不同的诠释，这些诠释将成为线索，引出近代历史。
 文艺复兴 “文艺复兴”是西方创造的词汇，是一种反应社会进步的文化，所以从这样的性质说，中国也发生过多次文艺复兴。在文艺一词中，包含着哲学、文学等精神文化，也包含着其背后社会组织的进步。
 清代的文化 清代作为一个由满人统治的，从女真发源的王朝，但是从康熙即位后，之后诸帝皆修习汉族学术。这一点不但与元朝君主轻视汉文化大不相同，与历代汉王朝相比都毫不逊色。此外，清代的文化更多的受到了欧洲文化的影响。17世纪是欧洲文艺复兴的时代，传教士们将欧洲的成熟的文化带来了中国，给中国社会带来了剧烈的影响。从中国的学术可见，自明清交替，违心的新学衰落，而实证的考据学兴起。

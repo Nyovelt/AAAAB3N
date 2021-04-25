@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hackathon on Canarypwn</title>
-    <link>http://test.aaaab3n.moe/tags/hackathon/</link>
+    <link>https://aaaab3n.moe/tags/hackathon/</link>
     <description>Recent content in Hackathon on Canarypwn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Dec 2020 10:01:59 +0800</lastBuildDate>
     
-	<atom:link href="http://test.aaaab3n.moe/tags/hackathon/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://aaaab3n.moe/tags/hackathon/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Intel Hackathon 2020 记录</title>
-      <link>http://test.aaaab3n.moe/posts/2020-12-17-intel-hackthon/</link>
+      <link>https://aaaab3n.moe/posts/2020-12-17-intel-hackthon/</link>
       <pubDate>Thu, 17 Dec 2020 10:01:59 +0800</pubDate>
       
-      <guid>http://test.aaaab3n.moe/posts/2020-12-17-intel-hackthon/</guid>
+      <guid>https://aaaab3n.moe/posts/2020-12-17-intel-hackthon/</guid>
       <description>D-14 大约在两周前收到了来自社长的推送，正好最近想恰点钱，之前的外包也没写完，于是准备去参加。正好 DEEMOS 实验室在做 CV 相关，所以我们自然选了赛道二。
 一开始的时候 intel 没有释放任何消息，不过我们猜测他们会给一个 SDK， 可能是超分辨率或者怎样的。但两周后就要参赛了，所以我们只能先找一个不错的创意。我们想到了将 UGC 用于匿名聊天，因为 DEEMOS 最近在做人脸风格化，而匿名聊天如果能让用户定义自己的形象，而这个形象和本人又有关联，不仅有趣还能规避一些问题。
 社长这时候说，他们以前去 Hackathon 通常都是在之前做掉 75% 后再去现场的，所以让我们提前做好充足的准备。
