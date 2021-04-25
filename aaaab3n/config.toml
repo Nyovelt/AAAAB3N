@@ -1,4 +1,4 @@
-baseURL = "http://test.aaaab3n.moe/"
+baseURL = "https://aaaab3n.moe/"
 languageCode = "en-us"
 title = "Canarypwn"
 theme = "cactus"
