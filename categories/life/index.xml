@@ -2,17 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>life on Canarypwn</title>
-    <link>http://example.org/categories/life/</link>
+    <link>http://test.aaaab3n.moe/categories/life/</link>
     <description>Recent content in life on Canarypwn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Oct 2016 16:56:54 +0000</lastBuildDate><atom:link href="http://example.org/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Oct 2016 16:56:54 +0000</lastBuildDate>
+    
+	<atom:link href="http://test.aaaab3n.moe/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>幸せ</title>
-      <link>http://example.org/posts/2016-10-22-z/</link>
+      <link>http://test.aaaab3n.moe/posts/2016-10-22-z/</link>
       <pubDate>Sat, 22 Oct 2016 16:56:54 +0000</pubDate>
       
-      <guid>http://example.org/posts/2016-10-22-z/</guid>
+      <guid>http://test.aaaab3n.moe/posts/2016-10-22-z/</guid>
       <description>:-)
 Look at the stars
 抬头仰望满天繁星
@@ -20,7 +24,7 @@ Look how they shine for you
 看它们为你绽放着 闪烁不息
 And everything you do
 而你的一颦一举
-Yeah&#39; they were all Yellow
+Yeah&amp;rsquo; they were all Yellow
 却满含胆怯和羞意
 I came along
 我追随着你的气息

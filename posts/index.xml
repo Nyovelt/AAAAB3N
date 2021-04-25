@@ -2,17 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Canarypwn</title>
-    <link>http://example.org/posts/</link>
+    <link>http://test.aaaab3n.moe/posts/</link>
     <description>Recent content in Posts on Canarypwn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Nov 2018 15:38:33 +0800</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Nov 2018 15:38:33 +0800</lastBuildDate>
+    
+	<atom:link href="http://test.aaaab3n.moe/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>爱，深渊与自由</title>
-      <link>http://example.org/posts/2018-11-06-love-abyss-freedom/</link>
+      <link>http://test.aaaab3n.moe/posts/2018-11-06-love-abyss-freedom/</link>
       <pubDate>Tue, 06 Nov 2018 15:38:33 +0800</pubDate>
       
-      <guid>http://example.org/posts/2018-11-06-love-abyss-freedom/</guid>
+      <guid>http://test.aaaab3n.moe/posts/2018-11-06-love-abyss-freedom/</guid>
       <description>0
 贯彻爱与真实的邪恶，可爱又迷人的反派角色
 作者：武藏 小次郎 喵喵
@@ -34,10 +38,10 @@
     
     <item>
       <title>幸せ</title>
-      <link>http://example.org/posts/2016-10-22-z/</link>
+      <link>http://test.aaaab3n.moe/posts/2016-10-22-z/</link>
       <pubDate>Sat, 22 Oct 2016 16:56:54 +0000</pubDate>
       
-      <guid>http://example.org/posts/2016-10-22-z/</guid>
+      <guid>http://test.aaaab3n.moe/posts/2016-10-22-z/</guid>
       <description>:-)
 Look at the stars
 抬头仰望满天繁星
@@ -45,7 +49,7 @@ Look how they shine for you
 看它们为你绽放着 闪烁不息
 And everything you do
 而你的一颦一举
-Yeah&#39; they were all Yellow
+Yeah&amp;rsquo; they were all Yellow
 却满含胆怯和羞意
 I came along
 我追随着你的气息
@@ -62,6 +66,24 @@ Oh what a thing to have done
 And it was all Yellow
 噢这过程充满不安羞怯和点滴暖意
 Your skin</description>
+    </item>
+    
+    <item>
+      <title>CA1-MidTerm 梳理</title>
+      <link>http://test.aaaab3n.moe/posts/2021-4-1-computer-architecture-mid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://test.aaaab3n.moe/posts/2021-4-1-computer-architecture-mid/</guid>
+      <description>Intro CA 六大思想 1.Abstraction(Layers of Representation/Interpretation)
+2.Moore’s Law (Designing through trends)
+3.Principle of Locality (Memory Hierarchy)
+4.Parallelism
+5.Performance Measurement &amp;amp; Improvement
+6.Dependability via Redundancy
+ 其实原版的 CS61C在 21 spring 改成了五大思想(逃)  Numbers 整数   Everything in a computer is a number, in fact only 0 and 1.
+  Integers are interpreted by adhering to fixed length
+  Negative numbers are represented with Two’s complement
+ Overflows can be detected utilizing the carry bit    整数分为 unsigned 和 signed, 对应原码和补码</description>
     </item>
     
   </channel>
