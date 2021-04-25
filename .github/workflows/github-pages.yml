@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd ~
-          wget https://github.com/gohugoio/hugo/releases/download/v0.78.2/hugo_0.78.2_Linux-64bit.deb
+          wget https://github.com/gohugoio/hugo/releases/download/v0.74.2/hugo_0.74.2_Linux-64bit.deb
           sudo dpkg -i hugo*.deb
           hugo version
            
@@ -24,6 +24,7 @@ jobs:
         run: |
           cd ${{ github.workspace }}
           cd aaaab3n
+          rm -rf public
           hugo
           
       
