@@ -3,7 +3,10 @@ layout: post
 title: "在树莓派上配置Clash-linux"
 date:  2019-01-30 13:59:33 +0800
 category: Technology
-tags: IoT Linux GFW 
+tags: 
+    - IoT
+    - Linux
+    - GFW 
 img: https://pic2.zhimg.com/v2-decd28d5fe7ebf988dc79e22d080ed09_1440w.jpg?source=172ae18b
 describe: 树莓派把家里的灰都吸走啦！
 ---
