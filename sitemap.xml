@@ -68,7 +68,17 @@
   </url>
   
   <url>
-    <loc>http://test.aaaab3n.moe/tags/iot-linux-gfw/</loc>
+    <loc>http://test.aaaab3n.moe/tags/gfw/</loc>
+    <lastmod>2019-01-30T13:59:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/iot/</loc>
+    <lastmod>2019-01-30T13:59:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://test.aaaab3n.moe/tags/linux/</loc>
     <lastmod>2019-01-30T13:59:33+08:00</lastmod>
   </url>
   
@@ -146,10 +156,6 @@
   
   <url>
     <loc>http://test.aaaab3n.moe/tags/life/</loc>
-  </url>
-  
-  <url>
-    <loc>http://test.aaaab3n.moe/tags/linux/</loc>
   </url>
   
   <url>

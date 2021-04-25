@@ -57,11 +57,29 @@
     </item>
     
     <item>
-      <title>IoT Linux GFW</title>
-      <link>http://test.aaaab3n.moe/tags/iot-linux-gfw/</link>
+      <title>GFW</title>
+      <link>http://test.aaaab3n.moe/tags/gfw/</link>
       <pubDate>Wed, 30 Jan 2019 13:59:33 +0800</pubDate>
       
-      <guid>http://test.aaaab3n.moe/tags/iot-linux-gfw/</guid>
+      <guid>http://test.aaaab3n.moe/tags/gfw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IoT</title>
+      <link>http://test.aaaab3n.moe/tags/iot/</link>
+      <pubDate>Wed, 30 Jan 2019 13:59:33 +0800</pubDate>
+      
+      <guid>http://test.aaaab3n.moe/tags/iot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>http://test.aaaab3n.moe/tags/linux/</link>
+      <pubDate>Wed, 30 Jan 2019 13:59:33 +0800</pubDate>
+      
+      <guid>http://test.aaaab3n.moe/tags/linux/</guid>
       <description></description>
     </item>
     
@@ -116,15 +134,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://test.aaaab3n.moe/tags/life/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>http://test.aaaab3n.moe/tags/linux/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://test.aaaab3n.moe/tags/linux/</guid>
       <description></description>
     </item>
     
