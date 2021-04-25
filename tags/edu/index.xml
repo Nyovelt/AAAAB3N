@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EDU on Canarypwn</title>
+    <link>http://example.org/tags/edu/</link>
+    <description>Recent content in EDU on Canarypwn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/tags/edu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CA1-MidTerm 梳理</title>
+      <link>http://example.org/posts/2021-4-1-computer-architecture-mid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2021-4-1-computer-architecture-mid/</guid>
+      <description>Intro CA 六大思想 1.Abstraction(Layers of Representation/Interpretation)
+2.Moore’s Law (Designing through trends)
+3.Principle of Locality (Memory Hierarchy)
+4.Parallelism
+5.Performance Measurement &amp;amp; Improvement
+6.Dependability via Redundancy
+ 其实原版的 CS61C在 21 spring 改成了五大思想(逃)  Numbers 整数   Everything in a computer is a number, in fact only 0 and 1.
+  Integers are interpreted by adhering to fixed length
+  Negative numbers are represented with Two’s complement
+ Overflows can be detected utilizing the carry bit    整数分为 unsigned 和 signed, 对应原码和补码</description>
+    </item>
+    
+  </channel>
+</rss>
