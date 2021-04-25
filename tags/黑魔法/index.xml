@@ -6,6 +6,7 @@
     <description>Recent content in 黑魔法 on Canarypwn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 15 Apr 2020 09:00:59 +0800</lastBuildDate>
     
 	<atom:link href="https://aaaab3n.moe/tags/%E9%BB%91%E9%AD%94%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +14,7 @@
     <item>
       <title>RSA 与 算法</title>
       <link>https://aaaab3n.moe/posts/2020-4-15-rsa/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 15 Apr 2020 09:00:59 +0800</pubDate>
       
       <guid>https://aaaab3n.moe/posts/2020-4-15-rsa/</guid>
       <description>What is RSA  RSA 包含了 密钥（公钥，私钥）生成， 加密， 和解密。  How is RSA RSA 的计算过程:
@@ -21,6 +22,33 @@
  m即要加密的信息 其中 m &amp;lt; N 也可以理解为先找到一个正整数N, 让任意的m&amp;lt;N使m,N互素。  其中，互素指最大公约数为1，即gcd(m,N) = 1。   这也是RSA算法的真正过程    N的取法: N = pq, (p,q are prime numbers)
  N 是凑出来的，为两个素数的积    这时引入欧拉函数: $$ \phi (n) = \mid \mathbb{Z}_n^* \mid $$
  构造函数$\phi(n)$表示小于等于 和 互质的数的个数 当 $n=pq$ 时， $\phi(n) = (p-1)(q-1)$  举例：</description>
+    </item>
+    
+    <item>
+      <title>编译时你在做什么？有没有空？可以来拯救吗？</title>
+      <link>https://aaaab3n.moe/posts/2019-11-29-c-cpp-black-magic/</link>
+      <pubDate>Fri, 29 Nov 2019 12:55:35 +0800</pubDate>
+      
+      <guid>https://aaaab3n.moe/posts/2019-11-29-c-cpp-black-magic/</guid>
+      <description>太陽の傾いたこの世界で 通常写程序的时候，我们会更关注于程序的代码(main.c)和最终形成的可执行文件(main)。对于程序员来说，这两个部分的确是最重要的，甚至说90%的情况下都不用去管其它部分。现代的编译器非常智能，它们会帮你处理好很多东西（表扬 clang [klæŋ] ) 。但是，在编译的过程中，除了你的源代码和最终的可执行程序，其它部分，也就是编译器做的那部分，也应该得到关注。所以，这次的workshop将会关注程序运行背后的故事。事实上，有很多bug是因为忽视了编译器的运作原理而导致的。
+现在我们学的大部分语言都是高级语言，而CPU认的却是二进制的机器码。当我们在编译程序的时候，编译器会将我们的高级语言翻译成低级的汇编语言。而在程序运行的时候，会将汇编语言翻译成机器码。这是程序的运作原理。
+この戦いが終わったら C作为一门不会对内存检查的语言，因此很多的操作会超出一个变量的边界去影响下一个变量，举一个例子：
+有没有什么办法来改变变量modified的值呢？
+可以同时输入10个A 和11个A 来康康结果：
+可以看到，在输入了超过10个字符后，modified的值被改变了。原因在于数据的存储方式。计算机中有一个叫内存空间的东西，它存放着所有的变量。一般情况下，一个变量将会分字节存在内存空间中，如左图所示。而buffer[10] 开辟了10个字节的内存空间，modified在buffer[10]上面开辟了4个字节的空间（通常指x86，数据是这么排列在计算机中的）。当我们输入了10个A以后，buffer[10]的内存空间被用完了，而gets()函数并不会对空间的边界进行检查，所以当第11个A输入了以后，A被挤到了(int)modified的内存空间，所以原本是0的modified不再是0（实际上modified的值 是 A的askll值 65 ）所以gets非常不安全当然这是非常特殊的情况，因为我们一般用的是cin或者scanf甚至在VS中用的是更加安全的scanf_s。
+同样的，cin的运作原理也可以这么解释：在输入回车之前，所有的输入都会存在一个缓冲区中，程序会根据分隔符或者变量类型来选择读入合适的数据。ifstream 同理。
+这个程序是一个很简单的堆栈溢出的例子，我觉得它对理解 内存空间有一定帮助。
+说到这里，Stackoverflow 直译过来就是堆栈溢出 XD。
+​	而在这个具体的例子中：内存空间（栈）是这样的：
+可以看出，内存的排列顺序是自下而上的，或者说叫做小端序。将会有一个叫做栈指针的指针指向当前的内存并对内存进行操作。
+有诗云：手持两把锟斤拷 口中疾呼烫烫烫 脚踏千朵屯屯屯 笑看万物锘锘锘
+我们非常熟悉的“烫烫烫”只有在Microsodt VC 在的debug 模式下才会出现。 VC会把未使用的内存空间全部填入 0xCC ，比如在声明变量却没有赋值而且还调用的情况下。在中文的环境下，与askll码对于一个字节不同，中文字符对于两个字节。 而在GBK内码下（类似askll码 ， 将二进制数 转化为中文字符 ）， 0xCCCC 对应的中文字符就是 烫
+空の上の森の中の 所以编译器到底在干什么？
+很多人都听说了C是一种高级语言，编译器把高级语言翻译成低级语言，操作系统把低级语言翻译成机器码。
+那么我们可以看一看编译器翻译后的代码，来关注一下程序到底是什么运作的。
+一般情况下，我们可以直接调用编译器来输出汇编代码，以helloworld.c为例。
+打开终端，输入命令
+$ gcc -S helloworld.c -Og -masm=intel   gcc 代表使用的编译器， gcc编译C files, g++编译 Cpp files， 类似的还有clang 和 clang++)</description>
     </item>
     
   </channel>

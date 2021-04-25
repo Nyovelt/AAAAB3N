@@ -6,32 +6,67 @@
     <description>Recent content in Linux on Canarypwn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Jan 2019 13:59:33 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 18 Jan 2021 10:02:59 +0800</lastBuildDate>
     
 	<atom:link href="https://aaaab3n.moe/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>在树莓派上配置Clash-linux</title>
-      <link>https://aaaab3n.moe/posts/2019-1-30-raspberrypi-clash-tutor/</link>
-      <pubDate>Wed, 30 Jan 2019 13:59:33 +0800</pubDate>
+      <title>[残卷]CentOS8 下 slurm 的安装配置尝试</title>
+      <link>https://aaaab3n.moe/posts/2021-1-18-centos8-slurm/</link>
+      <pubDate>Mon, 18 Jan 2021 10:02:59 +0800</pubDate>
       
-      <guid>https://aaaab3n.moe/posts/2019-1-30-raspberrypi-clash-tutor/</guid>
-      <description>前言 一直在折腾家里的路由器和相关网络设备，想提供一个较为完美的网络环境。之前在Phicomm K2P上通过Openwrt安装luci-ssr-plus来进行国外ip的代理，但受限于简单的规则和MT7261令人捉鸡的性能，体验不佳。因此萌生了使用树莓派搭建透明网关的想法。在查阅了为数不多的教程并踩了很多坑以后基本搭建完成，并且到目前还未出现问题，所以说说如何使用。
-准备工作  树莓派 正常的网络连接 一定的动手和解决问题的能力  Clash  Clash is a rule-based tunnel in Go.
- Clash 类似 IOS/Mac OS上的Surge，可以在提供SS/V2RAY代理的同时资瓷自定义的代理规则。
-编译 虽然说Clash的项目主页说你可以通过go get -u -v github.com/Dreamacro/clash的方式构建，但是因为要去Google服务器上下载包而变得困难；项目主页的预先构建并不支持ARM架构的树莓派，因此需要自行编译。
-这里@shinohara-rin 构建了 Clash-arm (v0.10.2) ，点击这里下载。
-配置 首先将clash文件移动/下载到树莓派的目录下，然后移动到 /usr/local/bin，并给予权限。
-# 把解压的二进制放到 /usr/local/bin 目录下 $sudo mv ./clash /usr/local/bin #给予权限 $chmod 555 /usr/local/bin 关于配置方法，Github的项目主页有详细的说明，在这里简单说一下我的配置。
-#运行Clash $clash 正常的话会提示
-INFO[0000] Can&amp;#39;t find config, create a empty file INFO[0000] Can&amp;#39;t find MMDB, start download FATA[0005] Parse config error: Configuration file /home/pi/.</description>
+      <guid>https://aaaab3n.moe/posts/2021-1-18-centos8-slurm/</guid>
+      <description>Slurm 任务调度工具（前身为极简Linux资源管理工具，英文：Simple Linux Utility for Resource Management，取首字母，简写为SLURM），或 Slurm，是一个用于 Linux 和 Unix 内核系统的免费、开源的任务调度工具，被世界范围内的超级计算机和计算机群广泛采用。它提供了三个关键功能。第一，为用户分配一定时间的专享或非专享的资源(计算机节点)，以供用户执行工作。第二，它提供了一个框架，用于启动、执行、监测在节点上运行着的任务(通常是并行的任务，例如 MPI)，第三，为任务队列合理地分配资源。
+安装步骤 系统为 CentOS 8, 一共有两个 node 。其中 node1 作为主节点， node2 作为计算节点。
+设置slurm账户 # 新建用户。-m 为用户创建家目录；-G wheel 将用户添加到 wheel 用户组 useradd -m -G wheel slurm # 设置密码 passwd slurm # 查看账户相关性喜 id slurm # 所有节点的 slurm 组 id 必须一致。否则无法启动成功 安装munge yum -y install epel-release yum -y install gtk2 yum -y install gtk-devel yum -y install munge yum -y install munge-devel yum -y install hdf5-devel 手动创建目录,这些目录在munge安装时不会自动创建，分别用于munge的配置、运行、日志等需求。</description>
+    </item>
+    
+    <item>
+      <title>修复由误操作导致的分区表重建问题</title>
+      <link>https://aaaab3n.moe/posts/2020-8-21-fstab/</link>
+      <pubDate>Fri, 21 Aug 2020 10:01:59 +0800</pubDate>
+      
+      <guid>https://aaaab3n.moe/posts/2020-8-21-fstab/</guid>
+      <description>起因 在8月初的时候，我接下了学校信息学院某实验室集群助管的工作，上任第一天的工作就是配置管理环境。集群的架构大致是这样，一共是约30台服务器，在上面跑 docker , 映射 ssh 端口，分派给不同的用户使用。除此以外还有两台大容量NFS服务器用于用户存储数据。
+我使用了 Portainer.io 进行多机器的 docker 管理。同时用了一个 shell 来完成其它机器运行 portainer.io - agent 以及挂载 nfs 磁盘的操作。
+脚本
+ERROR 在某一次，由于 NFS 磁盘掉线导致 docker 卡在了 create 的状态上。没有在意，在 nfs 服务器重新上线后重启服务器，发现 docker 掉线了。不过机器足够多，因此把原先的 docker 放在了新的机器上面，这台服务器的问题就被搁置了。
+昨天去 SHLUG 的时候见到了 @LightQuantum ，顺便和他说起了这件事情。我们都觉得很奇怪，于是进行排查，发现整个文件系统都被写保护了。最后发现在 /etc/fstab 中是这么写的
+10.15.??.??:/mnt/data /mount nfs 0 0 10.15.??.??:/mnt/data /mount1 nfs 0 0 于是想起来脚本中的这一行
+echo &amp;#39;helloworld&amp;#39; &amp;gt; aaaa 只有一个 &amp;lsquo;&amp;gt;&amp;rsquo; 是覆盖文件并写入，因此我抹掉了整个分区表。
+还好大部分服务都在内存中，修复起来稍微容易一些。除了之前被重启过的和为了试验当场重启的。
+于是后面两台服务器，首先挂载分区
+mount -o remount,rw /dev/sda3 / 对于其它机器以及这两台服务器，更改其分区文件
+/dev/sda3 / ext4 defaults,relatime 0 1 /dev/sda1 /boot ext4 defaults,relatime 0 0 /dev/sda2 none swap defaults 0 0 /dev/sdb1 /data ext4 defaults,relatime 0 0 10.</description>
+    </item>
+    
+    <item>
+      <title>618电脑指北</title>
+      <link>https://aaaab3n.moe/posts/2020-7-7-618-workstation-setup-guide/</link>
+      <pubDate>Tue, 07 Jul 2020 09:00:59 +0800</pubDate>
+      
+      <guid>https://aaaab3n.moe/posts/2020-7-7-618-workstation-setup-guide/</guid>
+      <description>618 由于笔者的笔记本（六代标压i5 + gtx965m）已经跟不上笔者剪辑4K视频和机器学习的需求了。所以在618的时候拿到了预算，有能力购入一台新电脑。
+新电脑旨在追求长期性价比，并且尽量追求边际效应最小化。笔者是计算机科学的学生，因此未来可能会写CUDA，大型编译以及多系统的需求。适逢AMD的Zen2架构和英伟达图灵显卡大降价，因此618可以算是购入电脑的一个好时机。
+配置 AMD 锐龙9 3900X 处理器 JD 3286.33
+华硕（ASUS）PRO WS X570-ACE 主板 JD 2890.00
+32G ECC UDIMM DDR4 3200内存 TAOBAO 1100.00
+[Intel/英特尔P4500 1T SSD U.2](Intel/英特尔P4500 1T SSD U.2) TAOBAO 787.50
+利民（Thermalright） FS140 霜灵 双塔散热器 JD 228.00
+美商海盗船 (USCORSAIR) 额定850W RM850x 全模组电脑电源 JD 818.17
+索泰(ZOTAC)RTX2060super霹雳版OC HA JD 2491.00
+先马（SAMA）黑洞 黑色 中塔式机箱 JD 247.00
+外加一根 U.2连接线
+外加问同学暂时借了块970， 以后会收一块RX580 给 Linux 用
+**ALL 11848 **
+购买理由   3900X 一共拥有 2 个CCD，总共十二核心，二十四线程。 每个CCD分表包含着6个核心和十二个线程 (id: 0-5, 12-17)(i: 6-11, 18-23) ，一共 64M 的三级缓存（虽然跨CCD时延迟会很大）。三级缓存对编译的提升是很大的，同时多核心更利于虚拟机运行。</description>
     </item>
     
     <item>
       <title>Remote-SSH:我的开发环境</title>
       <link>https://aaaab3n.moe/posts/2020-3-24-remote-ssh-on-vscode/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 24 Mar 2020 09:00:59 +0800</pubDate>
       
       <guid>https://aaaab3n.moe/posts/2020-3-24-remote-ssh-on-vscode/</guid>
       <description>Remote-SSH: 我的开发环境 Visual Studio Code 在之前发布了插件 remote-ssh 和 remote-wsl 作为vsc的远程开发套件。这两款插件对于 Linux 的支持非常的好，甚至有人认为这是Windows下最好的ssh工具。我目前的主力设备是HP-OMEN 2 (i5-6300HQ) 和 Surface Pro 6 (i5) 。为了用上好用的包管理器，我都是装了Arch的Windows Subsystem Linux 作为日常开发。
@@ -49,7 +84,7 @@ sh -c &amp;#34;$(wget https://raw.</description>
     <item>
       <title>一次服务器迁移的尝试</title>
       <link>https://aaaab3n.moe/posts/2020-1-14-server-move/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 Jan 2020 12:59:59 +0800</pubDate>
       
       <guid>https://aaaab3n.moe/posts/2020-1-14-server-move/</guid>
       <description>0x00 缘起 在2019年的某天深夜，所有信院的同学的突然惊恐的发现，交作业的OJ上不去了。然后欣喜的在第二天接到了ddl延期的通知罪魁祸首是&amp;hellip;Azure欠费了。
@@ -67,22 +102,20 @@ sh -c &amp;#34;$(wget https://raw.</description>
     </item>
     
     <item>
-      <title>修复由误操作导致的分区表重建问题</title>
-      <link>https://aaaab3n.moe/posts/2020-8-21-fstab/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>在树莓派上配置Clash-linux</title>
+      <link>https://aaaab3n.moe/posts/2019-1-30-raspberrypi-clash-tutor/</link>
+      <pubDate>Wed, 30 Jan 2019 13:59:33 +0800</pubDate>
       
-      <guid>https://aaaab3n.moe/posts/2020-8-21-fstab/</guid>
-      <description>起因 在8月初的时候，我接下了学校信息学院某实验室集群助管的工作，上任第一天的工作就是配置管理环境。集群的架构大致是这样，一共是约30台服务器，在上面跑 docker , 映射 ssh 端口，分派给不同的用户使用。除此以外还有两台大容量NFS服务器用于用户存储数据。
-我使用了 Portainer.io 进行多机器的 docker 管理。同时用了一个 shell 来完成其它机器运行 portainer.io - agent 以及挂载 nfs 磁盘的操作。
-脚本
-ERROR 在某一次，由于 NFS 磁盘掉线导致 docker 卡在了 create 的状态上。没有在意，在 nfs 服务器重新上线后重启服务器，发现 docker 掉线了。不过机器足够多，因此把原先的 docker 放在了新的机器上面，这台服务器的问题就被搁置了。
-昨天去 SHLUG 的时候见到了 @LightQuantum ，顺便和他说起了这件事情。我们都觉得很奇怪，于是进行排查，发现整个文件系统都被写保护了。最后发现在 /etc/fstab 中是这么写的
-10.15.??.??:/mnt/data /mount nfs 0 0 10.15.??.??:/mnt/data /mount1 nfs 0 0 于是想起来脚本中的这一行
-echo &amp;#39;helloworld&amp;#39; &amp;gt; aaaa 只有一个 &amp;lsquo;&amp;gt;&amp;rsquo; 是覆盖文件并写入，因此我抹掉了整个分区表。
-还好大部分服务都在内存中，修复起来稍微容易一些。除了之前被重启过的和为了试验当场重启的。
-于是后面两台服务器，首先挂载分区
-mount -o remount,rw /dev/sda3 / 对于其它机器以及这两台服务器，更改其分区文件
-/dev/sda3 / ext4 defaults,relatime 0 1 /dev/sda1 /boot ext4 defaults,relatime 0 0 /dev/sda2 none swap defaults 0 0 /dev/sdb1 /data ext4 defaults,relatime 0 0 10.</description>
+      <guid>https://aaaab3n.moe/posts/2019-1-30-raspberrypi-clash-tutor/</guid>
+      <description>前言 一直在折腾家里的路由器和相关网络设备，想提供一个较为完美的网络环境。之前在Phicomm K2P上通过Openwrt安装luci-ssr-plus来进行国外ip的代理，但受限于简单的规则和MT7261令人捉鸡的性能，体验不佳。因此萌生了使用树莓派搭建透明网关的想法。在查阅了为数不多的教程并踩了很多坑以后基本搭建完成，并且到目前还未出现问题，所以说说如何使用。
+准备工作  树莓派 正常的网络连接 一定的动手和解决问题的能力  Clash  Clash is a rule-based tunnel in Go.
+ Clash 类似 IOS/Mac OS上的Surge，可以在提供SS/V2RAY代理的同时资瓷自定义的代理规则。
+编译 虽然说Clash的项目主页说你可以通过go get -u -v github.com/Dreamacro/clash的方式构建，但是因为要去Google服务器上下载包而变得困难；项目主页的预先构建并不支持ARM架构的树莓派，因此需要自行编译。
+这里@shinohara-rin 构建了 Clash-arm (v0.10.2) ，点击这里下载。
+配置 首先将clash文件移动/下载到树莓派的目录下，然后移动到 /usr/local/bin，并给予权限。
+# 把解压的二进制放到 /usr/local/bin 目录下 $sudo mv ./clash /usr/local/bin #给予权限 $chmod 555 /usr/local/bin 关于配置方法，Github的项目主页有详细的说明，在这里简单说一下我的配置。
+#运行Clash $clash 正常的话会提示
+INFO[0000] Can&amp;#39;t find config, create a empty file INFO[0000] Can&amp;#39;t find MMDB, start download FATA[0005] Parse config error: Configuration file /home/pi/.</description>
     </item>
     
   </channel>

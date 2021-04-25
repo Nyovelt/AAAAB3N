@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Canarypwn</title>
+    <link>https://aaaab3n.moe/tags/docker/</link>
+    <description>Recent content in Docker on Canarypwn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Apr 2020 12:00:59 +0800</lastBuildDate>
+    
+	<atom:link href="https://aaaab3n.moe/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>一次关于alphine和pip的docker build失败解决</title>
+      <link>https://aaaab3n.moe/posts/2020-4-12-aplinelatest_error_with_multidict/</link>
+      <pubDate>Sun, 12 Apr 2020 12:00:59 +0800</pubDate>
+      
+      <guid>https://aaaab3n.moe/posts/2020-4-12-aplinelatest_error_with_multidict/</guid>
+      <description>起因 时隔五个月之后，接手镜像站维护的我准备开始为学校的镜像站(外网访问 通用访问)增加新的镜像时遇到了问题。我们的镜像同步脚本是放在Docker里的，而做了改动之后过不了Docker Build这关。
+问题一 错误 起初的 dockerfile :
+FROMalpine:latestMAINTAINERzxt @ Geek Pie AssociationRUN apk update &amp;amp;&amp;amp; apk add --no-cache git python3 rsync zsh findutils wget util-linux grep &amp;amp;&amp;amp; pip3 install apscheduler bandersnatchRUN mkdir /Mirrors-AutoSyncCOPY Mirrors-AutoSync.conf Mirrors-AutoSync.py bandersnatch.conf /Mirrors-AutoSync/COPY script /Mirrors-AutoSync/scriptCOPY quick-fedora-mirror.conf /Mirrors-AutoSync/script/RUN find /Mirrors-AutoSync/script/ -regex &amp;#39;[^\.]*[^/]&amp;#39; | xargs chmod +xRUN find /Mirrors-AutoSync/script/ -regex &amp;#39;[^\.]*\.sh&amp;#39; | xargs chmod +xCMD python3 /Mirrors-AutoSync/Mirrors-AutoSync.py在build过程中遇到了:
+ Building wheels for collected packages: multidict Building wheel for multidict (PEP 517): started Building wheel for multidict (PEP 517): finished with status &#39;error&#39; [91m ERROR: Command errored out with exit status 1: command: /usr/bin/python3.</description>
+    </item>
+    
+  </channel>
+</rss>

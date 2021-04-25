@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Month on Canarypwn</title>
+    <link>https://aaaab3n.moe/tags/month/</link>
+    <description>Recent content in Month on Canarypwn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Jan 2020 22:00:59 +0800</lastBuildDate>
+    
+	<atom:link href="https://aaaab3n.moe/tags/month/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>【Monthly Report】202001</title>
+      <link>https://aaaab3n.moe/posts/2020-1-31-monthly-report/</link>
+      <pubDate>Wed, 29 Jan 2020 22:00:59 +0800</pubDate>
+      
+      <guid>https://aaaab3n.moe/posts/2020-1-31-monthly-report/</guid>
+      <description>0x00 最重要的是，放寒假了。虽然寒假之前指定了很多计划，但无一例外都咕了&amp;hellip;&amp;hellip; （传统艺能）
+不能再这么颓废下去了（再一次传统艺能）
+0x01 在寒假期间完成了服务器迁移的大部分工作，详见这里。
+目前还有Jenkins + Portus 的自动构建问题有待解决。
+0x02 原本准备学很多东西的。比如为.Net充值一下信仰，或者像 @Luv Letter 在这里 提到的那样提前学一下 CSAPP ，或者按照数一和Vizna说的刷一下LeetCode，或者和朋友一起闯关freecodecamp &amp;hellip;.
+以上无一例外都咕了。
+0x03  不过这个寒假还是做了些事情的。比如把我所有的设备用zerotier串起来。   入了一台蜗牛星际，打造成了nas。    补考完了科目二，只剩下科目四就可以领证了。
+  见到了重要的人。
+  完善了科学上网的途径，目前使用中港IPLC国内外分流。
+  第一次正规的剪辑（意思是有不给你们看的黑历史）
+  暂时令人满意的工作环境
+  暂时养成了睡觉不带手机的习惯
+  0x04 新年新设备   家里入了一台 TCL 75v2 。 我装上的kodi，连上了nas，并且去筛选了一个直播源，并将直播源托管到了Github上。（目前处于放置play状态，因为PC上的Arch WSL出现了非常严重的问题，缺少筛选脚本的运行环境）
+  咸鱼300入了一台蜗牛星际A款硬改千兆单网口+ 500元 4T 的西数紫盘。
+  328 的 ikbc c104 红轴。 以后又可以愉快的当个键政壬了呢。</description>
+    </item>
+    
+  </channel>
+</rss>
