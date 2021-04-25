@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Remote-SSH:我的开发环境"
-date: 2020-3-24 9:00:59 +0800
+date: 2020-03-24 9:00:59 +0800
 category: Technology
 tags: Linux
 img: https://7mqmqw.sn.files.1drv.com/y4miWu0rU_v6GnYG0v1VjpJFfidcgxdtJa9z1mlK4jIwL-8-w7JVw37cy2aVlAtfcLE3M1krppVVNNvxjLXYO3mjXBwXgHbh2CV30FMCRxPsrsqHCVl64WHxQNtjGZTER36RjeHqxs3z0ayRDOVRXSv_XjFdR1rYF3DESVLVgE7C7FmCSumQjbBpSt89xalBEPPtuCwWT36Pk7T87T0aDBxTw?width=960&height=909&cropmode=none

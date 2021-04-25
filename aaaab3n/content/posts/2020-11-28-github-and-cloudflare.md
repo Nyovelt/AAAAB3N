@@ -3,7 +3,9 @@ layout: post
 title: "使用 GitHub Actions 与 Cloudflare 重构博客体验"
 date: 2020-11-28   10:01:59 +0800
 category: Technology
-tags: Cloudflare Blog Website
+tags: 
+- Cloudflare 
+- Github Actions
 img: https://sn3301files.storage.live.com/y4mZYn8vf-p5nrzEvWW-um6hUJ1f8Su2Qo4Yz-LMD9h1h2lk_6Zynu5KmSaN9pgz9H-Sa76WUhuyvurPQ8bfvx4P8XE7qOJGBi_WWAN5g0ycQMLQt7uHc8fNR2hwB54kB7ZgmJSEYcYZBseNJcwc-IvJS93TwbcQMSOLbHaEDqcYHt6ZJ1Fqi2dmkC9NMLbsjT6?width=660&height=440&cropmode=none
 describe: Netlify 要收钱了
 

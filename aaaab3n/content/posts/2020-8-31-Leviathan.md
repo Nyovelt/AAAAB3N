@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "“万民管理万民”——国家的必然与终极"
-date: 2020-8-31 10:01:59 +0800
+date: 2020-08-31 10:01:59 +0800
 category: Literature
-tags: EDU
+tags: Essay
 img: https://2prpsq.sn.files.1drv.com/y4mGr3NxsL-D0xdyw98jfZTYm304kRDCY485kq2BCqPMDAlrt4u9AvaaA-h93pCASlw4X2xU_iOIiZO1nt6sUC-XLIwGSYluIQsHxOKGDw188DzV4sM-G8Zbr04573nOXSPkmbnYepPPo2sdPwczpCVqivXGg5l5ib-8SFczs2qNEfxz9TajyG2rUaTJSm_aiEKK2cud_XJ1aZGrqVwpVwQjA?width=512&height=512&cropmode=none
 describe: 暑期课程《利维坦导读》论文
 

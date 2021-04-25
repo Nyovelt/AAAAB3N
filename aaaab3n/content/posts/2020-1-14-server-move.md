@@ -1,7 +1,7 @@
 ---
 laout: post
 title: "一次服务器迁移的尝试"
-date: 2020-1-14 12:59:59 +0800
+date: 2020-01-14 12:59:59 +0800
 category: Technology
 tags: Linux
 img: https://5c8ozw.sn.files.1drv.com/y4mir1p8g0V4gmG9KNPHknVQozqYnvINjDau6z4QA-Hhic8O_-o7AyRw7TVp1Hrp_TTUMnq7sk90rIetYfGota354t-GU2d9cVV5mdH_RBvfYPxBgGncIleToT9gFPnsiD07A_rWTfXfQCJ924l5z8H8IkcQn4661SxgsBTsd4UDav1oJsU0m3coWiWJJfa4NCF3h_YUwDxFgmq-jS2D7Io3w?width=680&height=397&cropmode=none

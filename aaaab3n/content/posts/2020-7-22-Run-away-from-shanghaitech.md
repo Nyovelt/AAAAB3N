@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 我为什么对新生说''快逃(''
-date: 2020-7-23 10:01:59 +0800
+date: 2020-07-23 10:01:59 +0800
 category:  Life
 tags: Life
 img: https://5c8nzw.sn.files.1drv.com/y4mHIrHDFEpWxFz41VEDx0VBP-L8C7vF2PXAWFfyjuhQxrsrbNm0K1UAocPW2tWpkNhDthiTl9zIVxZ3WkMoT7JbsYwQ5tYGOu_I6YaQ5CGD2UI2v-JsGOdTGorVfP5GD6MYyK5qdEjJuD7ua1pvJNNVWOWn03bEmPqPpmaxpyM44Q-jnnEvjKrhwcqjB65FE8_z4V6KDAA-9z_0aewbg1kMQ?width=1024&height=678&cropmode=none

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "PIGEON OJ 配置指南（评卷机）"
-date: 2020-7-7 10:00:59 +0800
+date: 2020-07-07 10:00:59 +0800
 category: Technology
 tags: Technology
 img: https://sozp6g.sn.files.1drv.com/y4m0CQRdGXS0RMOHS1FtC6sGvzQujWvZTDq5IT22jkUMLz594GgYa0fFjHPJDtQGppr8rJNFdjir93uz_rFgRGQOtOd8ZGxvfR2nn0s_txH7Jym_OdFBfJSfj7HxOyRy9aQ1h8pRmZuJJflirEwW74yJUjS8lgv4wCQrA5IeL0M5Ivy_Fc55lRfaG3ErtTGFGNPLGFoXCKetdggEmybzw_ipg?width=2736&height=1847&cropmode=none

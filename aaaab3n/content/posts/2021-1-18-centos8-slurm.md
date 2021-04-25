@@ -1,9 +1,12 @@
 ---
 layout: post
-title: "CentOS8 下 slurm 的安装配置"
-date: 2021-1-18   10:02:59 +0800
+title: "[残卷]CentOS8 下 slurm 的安装配置尝试"
+date: 2021-01-18   10:02:59 +0800
 category: Technology
-tags: Linux HPC CentOS slurm 
+tags: 
+- Linux 
+- HPC
+- slurm
 img: https://oss.aaaab3n.moe/uPic/6EFbA4.jpg
 describe:  CentOS8 下 slurm 的安装配置
 ---

@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "一次关于alphine和pip的docker build失败解决"
-date: 2020-4-12 12:00:59 +0800
+date: 2020-04-12 12:00:59 +0800
 category: Technology
-tags: Linux Docker
+tags: 
+- Docker
 img: https://7mqbqw.sn.files.1drv.com/y4msL9leOSEeOD5tisvwXa-7YDFh524YJd-Vzv4VJ2Hu6r75sUBTkEu30isecaUyBliVKSm8ngykmLcbHxphdEDh39oszMA5ZNY7BVx6-pqT0mKLCXqE-Zw8Vv22WC0GnASj_b5rF3-VuCia6vWC5vyw-acZ7reaxLhC2wv87Z6LjJPCwCYIiMSVp5PLBkSI06rz9w9rc8WVbSURh0mBkw0hA?width=650&height=450&cropmode=none
 describe: Building wheel for multidict (PEP 517) -finished with status 'error' 
 ---
