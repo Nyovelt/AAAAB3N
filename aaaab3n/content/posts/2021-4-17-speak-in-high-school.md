@@ -24,11 +24,13 @@ tags: School
 
 到了大学以后, 我很快的加入了全校唯一一个计算机与科创社团,并且成为了核心人员. 在这里能遇到更多有意思的人, 做更多有意思的事. 比如说去年参加了 Intel 举办的黑客马拉松, 实现了一个实时的风格迁移.
 
+![f7HEAo](https://oss.aaaab3n.moe/uPic/f7HEAo.png)
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TXjWvf2tOGk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # 选择
 
-在大学的概率论课上讲到过老虎机模型. exploration 和 exploitation 是相对的，需要交替的使用两种策略以找到最优解。如同老虎机一样，你可以继续摇第一个拉杆，因为它还没有出奖券，所以出奖券的几率更大，也可以选择摇第二个拉杆，因为这样有助于增进对整体的预测。
+在大学的概率论课上讲到过老虎机模型. exploration 和 exploitation 是相对的，需要交替的使用两种策略以找到最优解。如同老虎机一样，你可以继续摇第一个拉杆，因为它出奖券的几率更大，也可以选择摇第二个拉杆，因为这样有助于增进对整体的预测。
 
 ![RTIbj9](https://oss.aaaab3n.moe/uPic/RTIbj9.png)
 
@@ -37,4 +39,6 @@ tags: School
 那对于我来说, 通过高中的 exploration, 我很明白之后我要做什么, 并且也逐渐知道了我要怎样去做, 我希望成为一位计算机科学家, 并且更希望能够对这个世界有着更多的了解, 高中的经历让我思考并明白了这一点.
 
 但容我最后提示一下, 各位明年或者后年依旧要通过**高考**进入大学, 诚然 exploration 能对自己的人生和未来有着更多的了解, 但在隧道中看到亮光的时候也可能是一辆迎面驶来的列车. 高中三年全力投入自己的兴趣爱好是真的值得敬佩和羡慕的事情, 但如果我和我当年的科创队友们因为一些随机性没有通过自主招生, 那么情况又会变得怎么样呢?
+
+# 不会在宣讲中说的话
 
