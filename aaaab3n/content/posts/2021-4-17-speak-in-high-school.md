@@ -6,7 +6,7 @@ category: Life
 tags: School
 ---
 
-# 科创
+# 科创[写给老师看]
 
 不知道现在的上大附中是否还像我当年那样管理严格, 那个时候的机电工程社是我高中回忆中最难忘的地方,我翘了无数次晚自习,好在最后上科大收留了我.  高中三年的时间里参加过很多科创竞赛和活动,比如说
 
@@ -30,7 +30,7 @@ tags: School
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TXjWvf2tOGk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# 选择
+# 选择[写给学生看]
 
 在大学的概率论课上讲到过老虎机模型. exploration 和 exploitation 是相对的，需要交替的使用两种策略以找到最优解。如同老虎机一样，你可以继续摇第一个拉杆，因为它出奖券的几率更大，也可以选择摇第二个拉杆，因为这样有助于增进对整体的预测。
 
@@ -42,7 +42,7 @@ tags: School
 
 但容我最后提示一下, 各位明年或者后年依旧要通过**高考**进入大学, 诚然 exploration 能对自己的人生和未来有着更多的了解, 但在隧道中看到亮光的时候也可能是一辆迎面驶来的列车. 高中三年全力投入自己的兴趣爱好是真的值得敬佩和羡慕的事情, 但如果我和我当年的科创队友们因为一些随机性没有通过自主招生, 那么情况又会变得怎么样呢?
 
-# 不会在宣讲中说的话
+# 不会在宣讲中说的话[写给有缘人]
 
 写完本文后去隔壁寝室和一位英才的同学交流了一下,并更深刻的探讨了老虎机模型. 他认为, 引导学生做科创并不是很负责任的方式, 因为大部分人最终还是会通过高考录取. 
 
