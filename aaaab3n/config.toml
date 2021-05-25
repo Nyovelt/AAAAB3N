@@ -26,6 +26,14 @@ theme = "cactus"
   link = "nyovelt@outlook.com" # no need for "mailto:" at the start
 
 [[params.social]]
+  name = "keybase"
+  link = "https://keybase.io/canarypwn" # no need for "mailto:" at the start
+
+[[params.social]]
+  name = "twitter"
+  link = "https://twitter.com/nyovelt" # no need for "mailto:" at the start
+
+[[params.social]]
   name = "telegram"
   link = "https://t.me/moe_canary" # no need for "mailto:" at the start
 
