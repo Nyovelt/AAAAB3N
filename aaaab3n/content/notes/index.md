@@ -11,7 +11,7 @@ Here lie all of my lecture notes. I am used to taking structured notes on things
 
 ## Computer Science
 
-- Computer Architecture I: ST-CS110 [ [Notes](https://notes.aaaab3n.moe/cs-131-programming-languages-and-compilers)  ]
+- [**Computer Architecture I: ST-CS110**](https://robotics.shanghaitech.edu.cn/courses/ca/21s/) [ [Notes](https://notes.aaaab3n.moe/cs-131-programming-languages-and-compilers)  ]
 - [Programming Languages and Compilers: ST-CS131](https://notes.aaaab3n.moe/cs-131-programming-languages-and-compilers-1) [ [Github](https://github.com/Nyovelt/CS131-Projects) ]
 
 ## Others
