@@ -1,513 +1,61 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> 一次服务器迁移的尝试 | Canarypwn</title>
-  <meta name="description" content="Full-Stack overflow Engineer and Dependent Developer. ">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="all,follow">
-  <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="一次服务器迁移的尝试" />
-<meta property="og:description" content="0x00 缘起 在2019年的某天深夜，所有信院的同学的突然惊恐的发现，交作业的OJ上不去了。然后欣喜的在第二天接到了ddl延期的通知罪魁祸首是&hellip;Azure欠费了。
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><title>一次服务器迁移的尝试 | Canarypwn</title><meta name=description content="Full-Stack overflow Engineer and Dependent Developer."><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="all,follow"><meta name=googlebot content="index,follow,snippet,archive"><meta property="og:title" content="一次服务器迁移的尝试"><meta property="og:description" content="0x00 缘起 在2019年的某天深夜，所有信院的同学的突然惊恐的发现，交作业的OJ上不去了。然后欣喜的在第二天接到了ddl延期的通知罪魁祸首是&mldr;Azure欠费了。
 好在作为叠境附属学院，金主爸爸重新赞助了一批阿里云服务器，这批新的服务器将会在2019年双十二期间划归社团。
 在没有迁移到阿里云之前，社团暂时由社团经费新开了两台Azure HK，并通过快照的方式及时恢复了服务。费用为11欧/天。
  OJ为社团自建，向全校学生提供服务。
 该OJ已开源，详见 https://oj.geekpie.club/about 顺便求star 0x01 服务器架构 出于轻量化和弹性化的考虑，我们社团的服务器集群管理用的是 Rancher 1.6 ，所有的服务是纯docker的，我们会封装到docker里，上传到代码托管平台，由CI服务自动build完放到私有registry里，再通过rancher提供给其它服务器使用。
 所有的服务器通过 zerotier 组成内网，通过 zerotier 内网访问。
-之前，我们一共有三台Azure &#43; 若干台其它server 所有服务器都用算法命名 Azure-CN-E2-0 【brent﻿】 64G 1C2G 负责跑 Rancher 1.6 服务 Azure-CN-E2-1 【prim﻿】 64G 1C2G 因为服务器在海外，负责 Jenkins自动docker构建和 registry 服务 Azure-CN-E2-2 【kruskal﻿】 64G 1C2G 负责跑大多数的服务，拥有大量数据库 etc  叠镜赞助了我们四台服务器：
+之前，我们一共有三台Azure + 若干台其它server 所有服务器都用算法命名 Azure-CN-E2-0 【brent﻿】 64G 1C2G 负责跑 Rancher 1.6 服务 Azure-CN-E2-1 【prim﻿】 64G 1C2G 因为服务器在海外，负责 Jenkins自动docker构建和 registry 服务 Azure-CN-E2-2 【kruskal﻿】 64G 1C2G 负责跑大多数的服务，拥有大量数据库 etc  叠镜赞助了我们四台服务器：
  3台上海阿里云 硬盘为 30G 2C2G 1台香港阿里云  现在的工作是将 Azure 迁移至 Aliyun ，并保证所有服务都可用。
 0x02 阿里云官方迁移工具 我们首先查阅了这篇文档
  Azure虚拟机迁移至阿里云ECS
  由于阿里云提供了官方的迁云工具，所以这一步稍显简单。
-我下载了迁云工具，解压后首先运行./Check/client_check --check命令检查，没有问题，然后配置user_config." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://aaaab3n.moe/posts/2020-1-14-server-move/" />
-<meta property="article:published_time" content="2020-01-14T12:59:59+08:00" />
-<meta property="article:modified_time" content="2020-01-14T12:59:59+08:00" />
-
-  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="一次服务器迁移的尝试"/>
-<meta name="twitter:description" content="0x00 缘起 在2019年的某天深夜，所有信院的同学的突然惊恐的发现，交作业的OJ上不去了。然后欣喜的在第二天接到了ddl延期的通知罪魁祸首是&hellip;Azure欠费了。
+我下载了迁云工具，解压后首先运行./Check/client_check --check命令检查，没有问题，然后配置user_config."><meta property="og:type" content="article"><meta property="og:url" content="https://aaaab3n.moe/posts/2020-1-14-server-move/"><meta property="article:published_time" content="2020-01-14T12:59:59+08:00"><meta property="article:modified_time" content="2020-01-14T12:59:59+08:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="一次服务器迁移的尝试"><meta name=twitter:description content="0x00 缘起 在2019年的某天深夜，所有信院的同学的突然惊恐的发现，交作业的OJ上不去了。然后欣喜的在第二天接到了ddl延期的通知罪魁祸首是&mldr;Azure欠费了。
 好在作为叠境附属学院，金主爸爸重新赞助了一批阿里云服务器，这批新的服务器将会在2019年双十二期间划归社团。
 在没有迁移到阿里云之前，社团暂时由社团经费新开了两台Azure HK，并通过快照的方式及时恢复了服务。费用为11欧/天。
  OJ为社团自建，向全校学生提供服务。
 该OJ已开源，详见 https://oj.geekpie.club/about 顺便求star 0x01 服务器架构 出于轻量化和弹性化的考虑，我们社团的服务器集群管理用的是 Rancher 1.6 ，所有的服务是纯docker的，我们会封装到docker里，上传到代码托管平台，由CI服务自动build完放到私有registry里，再通过rancher提供给其它服务器使用。
 所有的服务器通过 zerotier 组成内网，通过 zerotier 内网访问。
-之前，我们一共有三台Azure &#43; 若干台其它server 所有服务器都用算法命名 Azure-CN-E2-0 【brent﻿】 64G 1C2G 负责跑 Rancher 1.6 服务 Azure-CN-E2-1 【prim﻿】 64G 1C2G 因为服务器在海外，负责 Jenkins自动docker构建和 registry 服务 Azure-CN-E2-2 【kruskal﻿】 64G 1C2G 负责跑大多数的服务，拥有大量数据库 etc  叠镜赞助了我们四台服务器：
+之前，我们一共有三台Azure + 若干台其它server 所有服务器都用算法命名 Azure-CN-E2-0 【brent﻿】 64G 1C2G 负责跑 Rancher 1.6 服务 Azure-CN-E2-1 【prim﻿】 64G 1C2G 因为服务器在海外，负责 Jenkins自动docker构建和 registry 服务 Azure-CN-E2-2 【kruskal﻿】 64G 1C2G 负责跑大多数的服务，拥有大量数据库 etc  叠镜赞助了我们四台服务器：
  3台上海阿里云 硬盘为 30G 2C2G 1台香港阿里云  现在的工作是将 Azure 迁移至 Aliyun ，并保证所有服务都可用。
 0x02 阿里云官方迁移工具 我们首先查阅了这篇文档
  Azure虚拟机迁移至阿里云ECS
  由于阿里云提供了官方的迁云工具，所以这一步稍显简单。
-我下载了迁云工具，解压后首先运行./Check/client_check --check命令检查，没有问题，然后配置user_config."/>
-
-  
-  
-    
-  
-  
-  <link rel="stylesheet" href="https://aaaab3n.moe/css/style-white.css">
-  
-
-  <link href='http://fonts.loli.net/css?family=Roboto' rel='stylesheet' type='text/css'>
-
-   <link rel="stylesheet" href="https://aaaab3n.moe/css/custom.css"> 
-  
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  
-
-  
-<link rel="icon" type="image/png" href="https://aaaab3n.moe/images/favicon.ico" />
-
-  
-  
-  
-  
-</head>
-
-<body class="max-width mx-auto px3 ltr">
-  <div class="content index py4">
-
-  <div id="header-post">
-  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
-  <span id="menu">
-    <span id="nav">
-      <ul>
-         
-        <li><a href="/">Home</a></li>
-         
-        <li><a href="/posts">Posts</a></li>
-         
-        <li><a href="/tags">Tags</a></li>
-         
-        <li><a href="/networks">Network</a></li>
-         
-        <li><a href="/notes">Notes</a></li>
-         
-        <li><a href="/friends">Friends</a></li>
-         
-        <li><a href="https://who.aaaab3n.moe/">About</a></li>
-        
-      </ul>
-    </span>
-    <br/>
-    <span id="actions">
-      <ul>
-        
-        <li>
-          <a class="icon" href=" https://aaaab3n.moe/posts/2019-12-31-2020-say-hello/">
-            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
-          </a>
-        </li>
-        
-        
-        <li>
-          <a class="icon" href="https://aaaab3n.moe/posts/2020-1-31-monthly-report/">
-            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
-          </a>
-        </li>
-        
-        <li>
-          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
-            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
-          </a>
-        </li>
-        <li>
-          <a class="icon" href="#">
-            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
-          </a>
-        </li>
-      </ul>
-      <span id="i-prev" class="info" style="display:none;">Previous post</span>
-      <span id="i-next" class="info" style="display:none;">Next post</span>
-      <span id="i-top" class="info" style="display:none;">Back to top</span>
-      <span id="i-share" class="info" style="display:none;">Share post</span>
-    </span>
-    <br/>
-    <div id="share" style="display: none">
-      
-      <ul>
-  
-  
-    
-  
-  
-  <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f">
-      <i class="fab fa-facebook " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&text=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95">
-      <i class="fab fa-twitter " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&title=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95">
-      <i class="fab fa-linkedin " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&is_video=false&description=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95">
-      <i class="fab fa-pinterest " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="mailto:?subject=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95&body=Check out this article: https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f">
-      <i class="fas fa-envelope " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&title=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95">
-      <i class="fab fa-get-pocket " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&title=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95">
-      <i class="fab fa-reddit " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&name=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95&description=0x00%20%e7%bc%98%e8%b5%b7%20%e5%9c%a82019%e5%b9%b4%e7%9a%84%e6%9f%90%e5%a4%a9%e6%b7%b1%e5%a4%9c%ef%bc%8c%e6%89%80%e6%9c%89%e4%bf%a1%e9%99%a2%e7%9a%84%e5%90%8c%e5%ad%a6%e7%9a%84%e7%aa%81%e7%84%b6%e6%83%8a%e6%81%90%e7%9a%84%e5%8f%91%e7%8e%b0%ef%bc%8c%e4%ba%a4%e4%bd%9c%e4%b8%9a%e7%9a%84OJ%e4%b8%8a%e4%b8%8d%e5%8e%bb%e4%ba%86%e3%80%82%e7%84%b6%e5%90%8e%e6%ac%a3%e5%96%9c%e7%9a%84%e5%9c%a8%e7%ac%ac%e4%ba%8c%e5%a4%a9%e6%8e%a5%e5%88%b0%e4%ba%86ddl%e5%bb%b6%e6%9c%9f%e7%9a%84%e9%80%9a%e7%9f%a5%e7%bd%aa%e9%ad%81%e7%a5%b8%e9%a6%96%e6%98%af%26hellip%3bAzure%e6%ac%a0%e8%b4%b9%e4%ba%86%e3%80%82%0a%e5%a5%bd%e5%9c%a8%e4%bd%9c%e4%b8%ba%e5%8f%a0%e5%a2%83%e9%99%84%e5%b1%9e%e5%ad%a6%e9%99%a2%ef%bc%8c%e9%87%91%e4%b8%bb%e7%88%b8%e7%88%b8%e9%87%8d%e6%96%b0%e8%b5%9e%e5%8a%a9%e4%ba%86%e4%b8%80%e6%89%b9%e9%98%bf%e9%87%8c%e4%ba%91%e6%9c%8d%e5%8a%a1%e5%99%a8%ef%bc%8c%e8%bf%99%e6%89%b9%e6%96%b0%e7%9a%84%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%b0%86%e4%bc%9a%e5%9c%a82019%e5%b9%b4%e5%8f%8c%e5%8d%81%e4%ba%8c%e6%9c%9f%e9%97%b4%e5%88%92%e5%bd%92%e7%a4%be%e5%9b%a2%e3%80%82%0a%e5%9c%a8%e6%b2%a1%e6%9c%89%e8%bf%81%e7%a7%bb%e5%88%b0%e9%98%bf%e9%87%8c%e4%ba%91%e4%b9%8b%e5%89%8d%ef%bc%8c%e7%a4%be%e5%9b%a2%e6%9a%82%e6%97%b6%e7%94%b1%e7%a4%be%e5%9b%a2%e7%bb%8f%e8%b4%b9%e6%96%b0%e5%bc%80%e4%ba%86%e4%b8%a4%e5%8f%b0Azure%20HK%ef%bc%8c%e5%b9%b6%e9%80%9a%e8%bf%87%e5%bf%ab%e7%85%a7%e7%9a%84%e6%96%b9%e5%bc%8f%e5%8f%8a%e6%97%b6%e6%81%a2%e5%a4%8d%e4%ba%86%e6%9c%8d%e5%8a%a1%e3%80%82%e8%b4%b9%e7%94%a8%e4%b8%ba11%e6%ac%a7%2f%e5%a4%a9%e3%80%82%0a%20OJ%e4%b8%ba%e7%a4%be%e5%9b%a2%e8%87%aa%e5%bb%ba%ef%bc%8c%e5%90%91%e5%85%a8%e6%a0%a1%e5%ad%a6%e7%94%9f%e6%8f%90%e4%be%9b%e6%9c%8d%e5%8a%a1%e3%80%82%0a%e8%af%a5OJ%e5%b7%b2%e5%bc%80%e6%ba%90%ef%bc%8c%e8%af%a6%e8%a7%81%20https%3a%2f%2foj.geekpie.club%2fabout%20%e9%a1%ba%e4%be%bf%e6%b1%82star%200x01%20%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%9e%b6%e6%9e%84%20%e5%87%ba%e4%ba%8e%e8%bd%bb%e9%87%8f%e5%8c%96%e5%92%8c%e5%bc%b9%e6%80%a7%e5%8c%96%e7%9a%84%e8%80%83%e8%99%91%ef%bc%8c%e6%88%91%e4%bb%ac%e7%a4%be%e5%9b%a2%e7%9a%84%e6%9c%8d%e5%8a%a1%e5%99%a8%e9%9b%86%e7%be%a4%e7%ae%a1%e7%90%86%e7%94%a8%e7%9a%84%e6%98%af%20Rancher%201.6%20%ef%bc%8c%e6%89%80%e6%9c%89%e7%9a%84%e6%9c%8d%e5%8a%a1%e6%98%af%e7%ba%afdocker%e7%9a%84%ef%bc%8c%e6%88%91%e4%bb%ac%e4%bc%9a%e5%b0%81%e8%a3%85%e5%88%b0docker%e9%87%8c%ef%bc%8c%e4%b8%8a%e4%bc%a0%e5%88%b0%e4%bb%a3%e7%a0%81%e6%89%98%e7%ae%a1%e5%b9%b3%e5%8f%b0%ef%bc%8c%e7%94%b1CI%e6%9c%8d%e5%8a%a1%e8%87%aa%e5%8a%a8build%e5%ae%8c%e6%94%be%e5%88%b0%e7%a7%81%e6%9c%89registry%e9%87%8c%ef%bc%8c%e5%86%8d%e9%80%9a%e8%bf%87rancher%e6%8f%90%e4%be%9b%e7%bb%99%e5%85%b6%e5%ae%83%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%bd%bf%e7%94%a8%e3%80%82%0a%e6%89%80%e6%9c%89%e7%9a%84%e6%9c%8d%e5%8a%a1%e5%99%a8%e9%80%9a%e8%bf%87%20zerotier%20%e7%bb%84%e6%88%90%e5%86%85%e7%bd%91%ef%bc%8c%e9%80%9a%e8%bf%87%20zerotier%20%e5%86%85%e7%bd%91%e8%ae%bf%e9%97%ae%e3%80%82%0a%e4%b9%8b%e5%89%8d%ef%bc%8c%e6%88%91%e4%bb%ac%e4%b8%80%e5%85%b1%e6%9c%89%e4%b8%89%e5%8f%b0Azure%20%2b%20%e8%8b%a5%e5%b9%b2%e5%8f%b0%e5%85%b6%e5%ae%83server%20%e6%89%80%e6%9c%89%e6%9c%8d%e5%8a%a1%e5%99%a8%e9%83%bd%e7%94%a8%e7%ae%97%e6%b3%95%e5%91%bd%e5%90%8d%20Azure-CN-E2-0%20%e3%80%90brent%ef%bb%bf%e3%80%91%2064G%201C2G%20%e8%b4%9f%e8%b4%a3%e8%b7%91%20Rancher%201.6%20%e6%9c%8d%e5%8a%a1%20Azure-CN-E2-1%20%e3%80%90prim%ef%bb%bf%e3%80%91%2064G%201C2G%20%e5%9b%a0%e4%b8%ba%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%9c%a8%e6%b5%b7%e5%a4%96%ef%bc%8c%e8%b4%9f%e8%b4%a3%20Jenkins%e8%87%aa%e5%8a%a8docker%e6%9e%84%e5%bb%ba%e5%92%8c%20registry%20%e6%9c%8d%e5%8a%a1%20Azure-CN-E2-2%20%e3%80%90kruskal%ef%bb%bf%e3%80%91%2064G%201C2G%20%e8%b4%9f%e8%b4%a3%e8%b7%91%e5%a4%a7%e5%a4%9a%e6%95%b0%e7%9a%84%e6%9c%8d%e5%8a%a1%ef%bc%8c%e6%8b%a5%e6%9c%89%e5%a4%a7%e9%87%8f%e6%95%b0%e6%8d%ae%e5%ba%93%20etc%20%20%e5%8f%a0%e9%95%9c%e8%b5%9e%e5%8a%a9%e4%ba%86%e6%88%91%e4%bb%ac%e5%9b%9b%e5%8f%b0%e6%9c%8d%e5%8a%a1%e5%99%a8%ef%bc%9a%0a%203%e5%8f%b0%e4%b8%8a%e6%b5%b7%e9%98%bf%e9%87%8c%e4%ba%91%20%e7%a1%ac%e7%9b%98%e4%b8%ba%2030G%202C2G%201%e5%8f%b0%e9%a6%99%e6%b8%af%e9%98%bf%e9%87%8c%e4%ba%91%20%20%e7%8e%b0%e5%9c%a8%e7%9a%84%e5%b7%a5%e4%bd%9c%e6%98%af%e5%b0%86%20Azure%20%e8%bf%81%e7%a7%bb%e8%87%b3%20Aliyun%20%ef%bc%8c%e5%b9%b6%e4%bf%9d%e8%af%81%e6%89%80%e6%9c%89%e6%9c%8d%e5%8a%a1%e9%83%bd%e5%8f%af%e7%94%a8%e3%80%82%0a0x02%20%e9%98%bf%e9%87%8c%e4%ba%91%e5%ae%98%e6%96%b9%e8%bf%81%e7%a7%bb%e5%b7%a5%e5%85%b7%20%e6%88%91%e4%bb%ac%e9%a6%96%e5%85%88%e6%9f%a5%e9%98%85%e4%ba%86%e8%bf%99%e7%af%87%e6%96%87%e6%a1%a3%0a%20Azure%e8%99%9a%e6%8b%9f%e6%9c%ba%e8%bf%81%e7%a7%bb%e8%87%b3%e9%98%bf%e9%87%8c%e4%ba%91ECS%0a%20%e7%94%b1%e4%ba%8e%e9%98%bf%e9%87%8c%e4%ba%91%e6%8f%90%e4%be%9b%e4%ba%86%e5%ae%98%e6%96%b9%e7%9a%84%e8%bf%81%e4%ba%91%e5%b7%a5%e5%85%b7%ef%bc%8c%e6%89%80%e4%bb%a5%e8%bf%99%e4%b8%80%e6%ad%a5%e7%a8%8d%e6%98%be%e7%ae%80%e5%8d%95%e3%80%82%0a%e6%88%91%e4%b8%8b%e8%bd%bd%e4%ba%86%e8%bf%81%e4%ba%91%e5%b7%a5%e5%85%b7%ef%bc%8c%e8%a7%a3%e5%8e%8b%e5%90%8e%e9%a6%96%e5%85%88%e8%bf%90%e8%a1%8c.%2fCheck%2fclient_check%20--check%e5%91%bd%e4%bb%a4%e6%a3%80%e6%9f%a5%ef%bc%8c%e6%b2%a1%e6%9c%89%e9%97%ae%e9%a2%98%ef%bc%8c%e7%84%b6%e5%90%8e%e9%85%8d%e7%bd%aeuser_config.">
-      <i class="fab fa-tumblr " aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&t=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95">
-      <i class="fab fa-hacker-news " aria-hidden="true"></i>
-    </a>
-  </li>
-</ul>
-
-    </div>
-    <div id="toc">
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#0x00-缘起">0x00 缘起</a></li>
-    <li><a href="#0x01-服务器架构">0x01 服务器架构</a></li>
-    <li><a href="#0x02-阿里云官方迁移工具">0x02 阿里云官方迁移工具</a>
-      <ul>
-        <li><a href="#坑点一----系统盘容量问题">坑点一    系统盘容量问题</a></li>
-      </ul>
-    </li>
-    <li><a href="#0x03-rancher的启动与zerotier">0x03 Rancher的启动与Zerotier</a>
-      <ul>
-        <li><a href="#坑点二-zerotier">坑点二 Zerotier</a></li>
-        <li><a href="#坑点三-mysql">坑点三 MySQL</a></li>
-      </ul>
-    </li>
-    <li><a href="#0x04-jenkins-和-portus">0x04 Jenkins 和 Portus</a></li>
-  </ul>
-</nav>
-    </div>
-  </span>
-</div>
-
-
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header>
-      <h1 class="posttitle" itemprop="name headline">
-        一次服务器迁移的尝试
-      </h1>
-      <div class="meta">
-        
-        <div class="postdate">
-          
-          <time datetime="2020-01-14 12:59:59 &#43;0800 &#43;0800" itemprop="datePublished">2020-01-14</time>
-          
-        </div>
-        
-        
-      </div>
-    </header>
-
-  
-    <div class="content" itemprop="articleBody">
-      <h2 id="0x00-缘起">0x00 缘起</h2>
-<p>在2019年的某天深夜，所有信院的同学的突然惊恐的发现，交作业的OJ上不去了。<!-- raw HTML omitted -->然后欣喜的在第二天接到了ddl延期的通知<!-- raw HTML omitted -->罪魁祸首是&hellip;Azure欠费了。</p>
-<p>好在作为<a href="%5Bhttps://www.dgene.com%5D(https://www.dgene.com/)">叠境</a>附属学院，金主爸爸重新赞助了一批阿里云服务器，这批新的服务器将会在2019年双十二期间划归社团。</p>
-<p>在没有迁移到阿里云之前，社团暂时由社团经费新开了两台Azure HK，并通过快照的方式及时恢复了服务。费用为11欧/天。</p>
-<blockquote>
-<p>OJ为社团自建，向全校学生提供服务。</p>
-<p>该OJ已开源，详见 <a href="https://oj.geekpie.club/about">https://oj.geekpie.club/about</a>  <!-- raw HTML omitted -->顺便求star<!-- raw HTML omitted --></p>
-</blockquote>
-<h2 id="0x01-服务器架构">0x01 服务器架构</h2>
-<p>出于轻量化和弹性化的考虑，我们社团的服务器集群管理用的是 Rancher 1.6 ，所有的服务是纯docker的，我们会封装到docker里，上传到代码托管平台，由CI服务自动build完放到私有registry里，再通过rancher提供给其它服务器使用。</p>
-<p>所有的服务器通过 zerotier 组成内网，通过 zerotier 内网访问。</p>
-<p>之前，我们一共有三台Azure + 若干台其它server <!-- raw HTML omitted -->所有服务器都用算法命名<!-- raw HTML omitted --></p>
-<ul>
-<li>Azure-CN-E2-0 【brent﻿】            64G        1C2G        负责跑 Rancher 1.6  服务</li>
-<li>Azure-CN-E2-1 【prim﻿】             64G         1C2G        因为服务器在海外，负责 Jenkins自动docker构建和 registry 服务</li>
-<li>Azure-CN-E2-2 【kruskal﻿】         64G         1C2G        负责跑大多数的服务，拥有大量数据库</li>
-<li>etc</li>
-</ul>
-<p>叠镜赞助了我们四台服务器：</p>
-<ul>
-<li>3台上海阿里云 硬盘为 30G  2C2G</li>
-<li>1台香港阿里云</li>
-</ul>
-<p>现在的工作是将 Azure 迁移至 Aliyun ，并保证所有服务都可用。</p>
-<h2 id="0x02-阿里云官方迁移工具">0x02 阿里云官方迁移工具</h2>
-<p>我们首先查阅了这篇文档</p>
-<blockquote>
-<p><a href="https://help.aliyun.com/document_detail/100959.html">Azure虚拟机迁移至阿里云ECS</a></p>
-</blockquote>
-<p>由于阿里云提供了官方的迁云工具，所以这一步稍显简单。</p>
-<p>我下载了<a href="https://help.aliyun.com/document_detail/62394.html?spm=a2c4g.11186623.2.18.6c1d7f90FuSH6T#section-twq-sxz-jfb">迁云工具</a>，解压后首先运行<code>./Check/client_check --check</code>命令检查，没有问题，然后配置<code>user_config.json</code>。</p>
-<p>我的配置是这样的：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-    <span style="color:#f92672">&#34;access_id&#34;</span>: <span style="color:#e6db74">&#34;YourAccessKeyID&#34;</span>,
-    <span style="color:#f92672">&#34;secret_key&#34;</span>: <span style="color:#e6db74">&#34;YourAccessKeySecret&#34;</span>,
-    <span style="color:#f92672">&#34;region_id&#34;</span>: <span style="color:#e6db74">&#34;cn-hangzhou&#34;</span>,
-    <span style="color:#f92672">&#34;image_name&#34;</span>: <span style="color:#e6db74">&#34;Azure-CN-E2-2&#34;</span>,
-    <span style="color:#f92672">&#34;system_disk_size&#34;</span>: <span style="color:#ae81ff">70</span>,
-    <span style="color:#f92672">&#34;platform&#34;</span>: <span style="color:#e6db74">&#34;Ubuntu&#34;</span>,
-    <span style="color:#f92672">&#34;architecture&#34;</span>: <span style="color:#e6db74">&#34;x86_64&#34;</span>,
-    <span style="color:#f92672">&#34;data_disks&#34;</span>: [],
-    <span style="color:#f92672">&#34;bandwidth_limit&#34;</span>: <span style="color:#ae81ff">0</span>
+我下载了迁云工具，解压后首先运行./Check/client_check --check命令检查，没有问题，然后配置user_config."><link rel=stylesheet href=https://aaaab3n.moe/css/style-white.css><link href="http://fonts.loli.net/css?family=Roboto" rel=stylesheet type=text/css><link rel=stylesheet href=https://aaaab3n.moe/css/custom.css><!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js></script><script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script><![endif]--><link rel=icon type=image/png href=https://aaaab3n.moe/images/favicon.ico></head><body class="max-width mx-auto px3 ltr"><div class="content index py4"><div id=header-post><a id=menu-icon href=#><i class="fas fa-bars fa-lg"></i></a><a id=menu-icon-tablet href=#><i class="fas fa-bars fa-lg"></i></a><a id=top-icon-tablet href=# onclick="$('html, body').animate({scrollTop:0},'fast');" style=display:none><i class="fas fa-chevron-up fa-lg"></i></a><span id=menu><span id=nav><ul><li><a href=/>Home</a></li><li><a href=/posts>Posts</a></li><li><a href=/tags>Tags</a></li><li><a href=/networks>Network</a></li><li><a href=/notes>Notes</a></li><li><a href=/friends>Friends</a></li><li><a href=https://who.aaaab3n.moe/>About</a></li></ul></span><br><span id=actions><ul><li><a class=icon href=https://aaaab3n.moe/posts/2019-12-31-2020-say-hello/><i class="fas fa-chevron-left" aria-hidden=true onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li><li><a class=icon href=https://aaaab3n.moe/posts/2020-1-31-monthly-report/><i class="fas fa-chevron-right" aria-hidden=true onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li><li><a class=icon href=# onclick="$('html, body').animate({scrollTop:0},'fast');"><i class="fas fa-chevron-up" aria-hidden=true onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li><li><a class=icon href=#><i class="fas fa-share-alt" aria-hidden=true onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li></ul><span id=i-prev class=info style=display:none>Previous post</span>
+<span id=i-next class=info style=display:none>Next post</span>
+<span id=i-top class=info style=display:none>Back to top</span>
+<span id=i-share class=info style=display:none>Share post</span></span><br><div id=share style=display:none><ul><li><a class=icon href="http://www.facebook.com/sharer.php?u=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f"><i class="fab fa-facebook" aria-hidden=true></i></a></li><li><a class=icon href="https://twitter.com/share?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&text=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95"><i class="fab fa-twitter" aria-hidden=true></i></a></li><li><a class=icon href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&title=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95"><i class="fab fa-linkedin" aria-hidden=true></i></a></li><li><a class=icon href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&is_video=false&description=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95"><i class="fab fa-pinterest" aria-hidden=true></i></a></li><li><a class=icon href="mailto:?subject=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95&body=Check out this article: https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f"><i class="fas fa-envelope" aria-hidden=true></i></a></li><li><a class=icon href="https://getpocket.com/save?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&title=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95"><i class="fab fa-get-pocket" aria-hidden=true></i></a></li><li><a class=icon href="http://reddit.com/submit?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&title=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95"><i class="fab fa-reddit" aria-hidden=true></i></a></li><li><a class=icon href="http://www.tumblr.com/share/link?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&name=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95&description=0x00%20%e7%bc%98%e8%b5%b7%20%e5%9c%a82019%e5%b9%b4%e7%9a%84%e6%9f%90%e5%a4%a9%e6%b7%b1%e5%a4%9c%ef%bc%8c%e6%89%80%e6%9c%89%e4%bf%a1%e9%99%a2%e7%9a%84%e5%90%8c%e5%ad%a6%e7%9a%84%e7%aa%81%e7%84%b6%e6%83%8a%e6%81%90%e7%9a%84%e5%8f%91%e7%8e%b0%ef%bc%8c%e4%ba%a4%e4%bd%9c%e4%b8%9a%e7%9a%84OJ%e4%b8%8a%e4%b8%8d%e5%8e%bb%e4%ba%86%e3%80%82%e7%84%b6%e5%90%8e%e6%ac%a3%e5%96%9c%e7%9a%84%e5%9c%a8%e7%ac%ac%e4%ba%8c%e5%a4%a9%e6%8e%a5%e5%88%b0%e4%ba%86ddl%e5%bb%b6%e6%9c%9f%e7%9a%84%e9%80%9a%e7%9f%a5%e7%bd%aa%e9%ad%81%e7%a5%b8%e9%a6%96%e6%98%af%26hellip%3bAzure%e6%ac%a0%e8%b4%b9%e4%ba%86%e3%80%82%0a%e5%a5%bd%e5%9c%a8%e4%bd%9c%e4%b8%ba%e5%8f%a0%e5%a2%83%e9%99%84%e5%b1%9e%e5%ad%a6%e9%99%a2%ef%bc%8c%e9%87%91%e4%b8%bb%e7%88%b8%e7%88%b8%e9%87%8d%e6%96%b0%e8%b5%9e%e5%8a%a9%e4%ba%86%e4%b8%80%e6%89%b9%e9%98%bf%e9%87%8c%e4%ba%91%e6%9c%8d%e5%8a%a1%e5%99%a8%ef%bc%8c%e8%bf%99%e6%89%b9%e6%96%b0%e7%9a%84%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%b0%86%e4%bc%9a%e5%9c%a82019%e5%b9%b4%e5%8f%8c%e5%8d%81%e4%ba%8c%e6%9c%9f%e9%97%b4%e5%88%92%e5%bd%92%e7%a4%be%e5%9b%a2%e3%80%82%0a%e5%9c%a8%e6%b2%a1%e6%9c%89%e8%bf%81%e7%a7%bb%e5%88%b0%e9%98%bf%e9%87%8c%e4%ba%91%e4%b9%8b%e5%89%8d%ef%bc%8c%e7%a4%be%e5%9b%a2%e6%9a%82%e6%97%b6%e7%94%b1%e7%a4%be%e5%9b%a2%e7%bb%8f%e8%b4%b9%e6%96%b0%e5%bc%80%e4%ba%86%e4%b8%a4%e5%8f%b0Azure%20HK%ef%bc%8c%e5%b9%b6%e9%80%9a%e8%bf%87%e5%bf%ab%e7%85%a7%e7%9a%84%e6%96%b9%e5%bc%8f%e5%8f%8a%e6%97%b6%e6%81%a2%e5%a4%8d%e4%ba%86%e6%9c%8d%e5%8a%a1%e3%80%82%e8%b4%b9%e7%94%a8%e4%b8%ba11%e6%ac%a7%2f%e5%a4%a9%e3%80%82%0a%20OJ%e4%b8%ba%e7%a4%be%e5%9b%a2%e8%87%aa%e5%bb%ba%ef%bc%8c%e5%90%91%e5%85%a8%e6%a0%a1%e5%ad%a6%e7%94%9f%e6%8f%90%e4%be%9b%e6%9c%8d%e5%8a%a1%e3%80%82%0a%e8%af%a5OJ%e5%b7%b2%e5%bc%80%e6%ba%90%ef%bc%8c%e8%af%a6%e8%a7%81%20https%3a%2f%2foj.geekpie.club%2fabout%20%e9%a1%ba%e4%be%bf%e6%b1%82star%200x01%20%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%9e%b6%e6%9e%84%20%e5%87%ba%e4%ba%8e%e8%bd%bb%e9%87%8f%e5%8c%96%e5%92%8c%e5%bc%b9%e6%80%a7%e5%8c%96%e7%9a%84%e8%80%83%e8%99%91%ef%bc%8c%e6%88%91%e4%bb%ac%e7%a4%be%e5%9b%a2%e7%9a%84%e6%9c%8d%e5%8a%a1%e5%99%a8%e9%9b%86%e7%be%a4%e7%ae%a1%e7%90%86%e7%94%a8%e7%9a%84%e6%98%af%20Rancher%201.6%20%ef%bc%8c%e6%89%80%e6%9c%89%e7%9a%84%e6%9c%8d%e5%8a%a1%e6%98%af%e7%ba%afdocker%e7%9a%84%ef%bc%8c%e6%88%91%e4%bb%ac%e4%bc%9a%e5%b0%81%e8%a3%85%e5%88%b0docker%e9%87%8c%ef%bc%8c%e4%b8%8a%e4%bc%a0%e5%88%b0%e4%bb%a3%e7%a0%81%e6%89%98%e7%ae%a1%e5%b9%b3%e5%8f%b0%ef%bc%8c%e7%94%b1CI%e6%9c%8d%e5%8a%a1%e8%87%aa%e5%8a%a8build%e5%ae%8c%e6%94%be%e5%88%b0%e7%a7%81%e6%9c%89registry%e9%87%8c%ef%bc%8c%e5%86%8d%e9%80%9a%e8%bf%87rancher%e6%8f%90%e4%be%9b%e7%bb%99%e5%85%b6%e5%ae%83%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%bd%bf%e7%94%a8%e3%80%82%0a%e6%89%80%e6%9c%89%e7%9a%84%e6%9c%8d%e5%8a%a1%e5%99%a8%e9%80%9a%e8%bf%87%20zerotier%20%e7%bb%84%e6%88%90%e5%86%85%e7%bd%91%ef%bc%8c%e9%80%9a%e8%bf%87%20zerotier%20%e5%86%85%e7%bd%91%e8%ae%bf%e9%97%ae%e3%80%82%0a%e4%b9%8b%e5%89%8d%ef%bc%8c%e6%88%91%e4%bb%ac%e4%b8%80%e5%85%b1%e6%9c%89%e4%b8%89%e5%8f%b0Azure%20%2b%20%e8%8b%a5%e5%b9%b2%e5%8f%b0%e5%85%b6%e5%ae%83server%20%e6%89%80%e6%9c%89%e6%9c%8d%e5%8a%a1%e5%99%a8%e9%83%bd%e7%94%a8%e7%ae%97%e6%b3%95%e5%91%bd%e5%90%8d%20Azure-CN-E2-0%20%e3%80%90brent%ef%bb%bf%e3%80%91%2064G%201C2G%20%e8%b4%9f%e8%b4%a3%e8%b7%91%20Rancher%201.6%20%e6%9c%8d%e5%8a%a1%20Azure-CN-E2-1%20%e3%80%90prim%ef%bb%bf%e3%80%91%2064G%201C2G%20%e5%9b%a0%e4%b8%ba%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%9c%a8%e6%b5%b7%e5%a4%96%ef%bc%8c%e8%b4%9f%e8%b4%a3%20Jenkins%e8%87%aa%e5%8a%a8docker%e6%9e%84%e5%bb%ba%e5%92%8c%20registry%20%e6%9c%8d%e5%8a%a1%20Azure-CN-E2-2%20%e3%80%90kruskal%ef%bb%bf%e3%80%91%2064G%201C2G%20%e8%b4%9f%e8%b4%a3%e8%b7%91%e5%a4%a7%e5%a4%9a%e6%95%b0%e7%9a%84%e6%9c%8d%e5%8a%a1%ef%bc%8c%e6%8b%a5%e6%9c%89%e5%a4%a7%e9%87%8f%e6%95%b0%e6%8d%ae%e5%ba%93%20etc%20%20%e5%8f%a0%e9%95%9c%e8%b5%9e%e5%8a%a9%e4%ba%86%e6%88%91%e4%bb%ac%e5%9b%9b%e5%8f%b0%e6%9c%8d%e5%8a%a1%e5%99%a8%ef%bc%9a%0a%203%e5%8f%b0%e4%b8%8a%e6%b5%b7%e9%98%bf%e9%87%8c%e4%ba%91%20%e7%a1%ac%e7%9b%98%e4%b8%ba%2030G%202C2G%201%e5%8f%b0%e9%a6%99%e6%b8%af%e9%98%bf%e9%87%8c%e4%ba%91%20%20%e7%8e%b0%e5%9c%a8%e7%9a%84%e5%b7%a5%e4%bd%9c%e6%98%af%e5%b0%86%20Azure%20%e8%bf%81%e7%a7%bb%e8%87%b3%20Aliyun%20%ef%bc%8c%e5%b9%b6%e4%bf%9d%e8%af%81%e6%89%80%e6%9c%89%e6%9c%8d%e5%8a%a1%e9%83%bd%e5%8f%af%e7%94%a8%e3%80%82%0a0x02%20%e9%98%bf%e9%87%8c%e4%ba%91%e5%ae%98%e6%96%b9%e8%bf%81%e7%a7%bb%e5%b7%a5%e5%85%b7%20%e6%88%91%e4%bb%ac%e9%a6%96%e5%85%88%e6%9f%a5%e9%98%85%e4%ba%86%e8%bf%99%e7%af%87%e6%96%87%e6%a1%a3%0a%20Azure%e8%99%9a%e6%8b%9f%e6%9c%ba%e8%bf%81%e7%a7%bb%e8%87%b3%e9%98%bf%e9%87%8c%e4%ba%91ECS%0a%20%e7%94%b1%e4%ba%8e%e9%98%bf%e9%87%8c%e4%ba%91%e6%8f%90%e4%be%9b%e4%ba%86%e5%ae%98%e6%96%b9%e7%9a%84%e8%bf%81%e4%ba%91%e5%b7%a5%e5%85%b7%ef%bc%8c%e6%89%80%e4%bb%a5%e8%bf%99%e4%b8%80%e6%ad%a5%e7%a8%8d%e6%98%be%e7%ae%80%e5%8d%95%e3%80%82%0a%e6%88%91%e4%b8%8b%e8%bd%bd%e4%ba%86%e8%bf%81%e4%ba%91%e5%b7%a5%e5%85%b7%ef%bc%8c%e8%a7%a3%e5%8e%8b%e5%90%8e%e9%a6%96%e5%85%88%e8%bf%90%e8%a1%8c.%2fCheck%2fclient_check%20--check%e5%91%bd%e4%bb%a4%e6%a3%80%e6%9f%a5%ef%bc%8c%e6%b2%a1%e6%9c%89%e9%97%ae%e9%a2%98%ef%bc%8c%e7%84%b6%e5%90%8e%e9%85%8d%e7%bd%aeuser_config."><i class="fab fa-tumblr" aria-hidden=true></i></a></li><li><a class=icon href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&t=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95"><i class="fab fa-hacker-news" aria-hidden=true></i></a></li></ul></div><div id=toc><nav id=TableOfContents><ul><li><a href=#0x00-缘起>0x00 缘起</a></li><li><a href=#0x01-服务器架构>0x01 服务器架构</a></li><li><a href=#0x02-阿里云官方迁移工具>0x02 阿里云官方迁移工具</a><ul><li><a href=#坑点一----系统盘容量问题>坑点一 系统盘容量问题</a></li></ul></li><li><a href=#0x03-rancher的启动与zerotier>0x03 Rancher的启动与Zerotier</a><ul><li><a href=#坑点二-zerotier>坑点二 Zerotier</a></li><li><a href=#坑点三-mysql>坑点三 MySQL</a></li></ul></li><li><a href=#0x04-jenkins-和-portus>0x04 Jenkins 和 Portus</a></li></ul></nav></div></span></div><article class=post itemscope itemtype=http://schema.org/BlogPosting><header><h1 class=posttitle itemprop="name headline">一次服务器迁移的尝试</h1><div class=meta><div class=postdate><time datetime="2020-01-14 12:59:59 +0800 +0800" itemprop=datePublished>2020-01-14</time></div></div></header><div class=content itemprop=articleBody><h2 id=0x00-缘起>0x00 缘起</h2><p>在2019年的某天深夜，所有信院的同学的突然惊恐的发现，交作业的OJ上不去了。然后欣喜的在第二天接到了ddl延期的通知罪魁祸首是&mldr;Azure欠费了。</p><p>好在作为<a href=%5Bhttps://www.dgene.com%5D(https://www.dgene.com/)>叠境</a>附属学院，金主爸爸重新赞助了一批阿里云服务器，这批新的服务器将会在2019年双十二期间划归社团。</p><p>在没有迁移到阿里云之前，社团暂时由社团经费新开了两台Azure HK，并通过快照的方式及时恢复了服务。费用为11欧/天。</p><blockquote><p>OJ为社团自建，向全校学生提供服务。</p><p>该OJ已开源，详见 <a href=https://oj.geekpie.club/about>https://oj.geekpie.club/about</a> 顺便求star</p></blockquote><h2 id=0x01-服务器架构>0x01 服务器架构</h2><p>出于轻量化和弹性化的考虑，我们社团的服务器集群管理用的是 Rancher 1.6 ，所有的服务是纯docker的，我们会封装到docker里，上传到代码托管平台，由CI服务自动build完放到私有registry里，再通过rancher提供给其它服务器使用。</p><p>所有的服务器通过 zerotier 组成内网，通过 zerotier 内网访问。</p><p>之前，我们一共有三台Azure + 若干台其它server 所有服务器都用算法命名</p><ul><li>Azure-CN-E2-0 【brent﻿】 64G 1C2G 负责跑 Rancher 1.6 服务</li><li>Azure-CN-E2-1 【prim﻿】 64G 1C2G 因为服务器在海外，负责 Jenkins自动docker构建和 registry 服务</li><li>Azure-CN-E2-2 【kruskal﻿】 64G 1C2G 负责跑大多数的服务，拥有大量数据库</li><li>etc</li></ul><p>叠镜赞助了我们四台服务器：</p><ul><li>3台上海阿里云 硬盘为 30G 2C2G</li><li>1台香港阿里云</li></ul><p>现在的工作是将 Azure 迁移至 Aliyun ，并保证所有服务都可用。</p><h2 id=0x02-阿里云官方迁移工具>0x02 阿里云官方迁移工具</h2><p>我们首先查阅了这篇文档</p><blockquote><p><a href=https://help.aliyun.com/document_detail/100959.html>Azure虚拟机迁移至阿里云ECS</a></p></blockquote><p>由于阿里云提供了官方的迁云工具，所以这一步稍显简单。</p><p>我下载了<a href="https://help.aliyun.com/document_detail/62394.html?spm=a2c4g.11186623.2.18.6c1d7f90FuSH6T#section-twq-sxz-jfb">迁云工具</a>，解压后首先运行<code>./Check/client_check --check</code>命令检查，没有问题，然后配置<code>user_config.json</code>。</p><p>我的配置是这样的：</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+    <span style=color:#f92672>&#34;access_id&#34;</span>: <span style=color:#e6db74>&#34;YourAccessKeyID&#34;</span>,
+    <span style=color:#f92672>&#34;secret_key&#34;</span>: <span style=color:#e6db74>&#34;YourAccessKeySecret&#34;</span>,
+    <span style=color:#f92672>&#34;region_id&#34;</span>: <span style=color:#e6db74>&#34;cn-hangzhou&#34;</span>,
+    <span style=color:#f92672>&#34;image_name&#34;</span>: <span style=color:#e6db74>&#34;Azure-CN-E2-2&#34;</span>,
+    <span style=color:#f92672>&#34;system_disk_size&#34;</span>: <span style=color:#ae81ff>70</span>,
+    <span style=color:#f92672>&#34;platform&#34;</span>: <span style=color:#e6db74>&#34;Ubuntu&#34;</span>,
+    <span style=color:#f92672>&#34;architecture&#34;</span>: <span style=color:#e6db74>&#34;x86_64&#34;</span>,
+    <span style=color:#f92672>&#34;data_disks&#34;</span>: [],
+    <span style=color:#f92672>&#34;bandwidth_limit&#34;</span>: <span style=color:#ae81ff>0</span>
 }
-</code></pre></div><p>为了确保容量不会有什么问题，我特意做了些冗余，将64G(实际占用54G)的系统盘<strong>做成了70G的快照(image)</strong>。</p>
-<h3 id="坑点一----系统盘容量问题">坑点一    系统盘容量问题</h3>
-<p>大家是否还记得，阿里云的系统盘只开了30G [ QwQ ] 这样做会在快照恢复的时候提示需要多交100多块软妹币将30G系统盘升级到70G。本着<strong>勤俭节约的精神</strong>，我做了如下尝试：</p>
-<h4 id="尝试方案">尝试方案</h4>
-<p>想利用30G的数据盘，将docker放到数据盘上(docker是大头)：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-	<span style="color:#f92672">&#34;access_id&#34;</span> : <span style="color:#e6db74">&#34;YourAccessKeyID&#34;</span>,
-	<span style="color:#f92672">&#34;bandwidth_limit&#34;</span> : <span style="color:#ae81ff">0</span>,
-	<span style="color:#f92672">&#34;data_disks&#34;</span> : 
+</code></pre></div><p>为了确保容量不会有什么问题，我特意做了些冗余，将64G(实际占用54G)的系统盘<strong>做成了70G的快照(image)</strong>。</p><h3 id=坑点一----系统盘容量问题>坑点一 系统盘容量问题</h3><p>大家是否还记得，阿里云的系统盘只开了30G [ QwQ ] 这样做会在快照恢复的时候提示需要多交100多块软妹币将30G系统盘升级到70G。本着<strong>勤俭节约的精神</strong>，我做了如下尝试：</p><h4 id=尝试方案>尝试方案</h4><p>想利用30G的数据盘，将docker放到数据盘上(docker是大头)：</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+	<span style=color:#f92672>&#34;access_id&#34;</span> : <span style=color:#e6db74>&#34;YourAccessKeyID&#34;</span>,
+	<span style=color:#f92672>&#34;bandwidth_limit&#34;</span> : <span style=color:#ae81ff>0</span>,
+	<span style=color:#f92672>&#34;data_disks&#34;</span> : 
 	[
 		{
-			<span style="color:#f92672">&#34;data_disk_index&#34;</span> : <span style="color:#ae81ff">1</span>,
-			<span style="color:#f92672">&#34;data_disk_size&#34;</span> : <span style="color:#ae81ff">28</span>,
-			<span style="color:#f92672">&#34;src_path&#34;</span> : <span style="color:#e6db74">&#34;/var/lib/docker&#34;</span>
+			<span style=color:#f92672>&#34;data_disk_index&#34;</span> : <span style=color:#ae81ff>1</span>,
+			<span style=color:#f92672>&#34;data_disk_size&#34;</span> : <span style=color:#ae81ff>28</span>,
+			<span style=color:#f92672>&#34;src_path&#34;</span> : <span style=color:#e6db74>&#34;/var/lib/docker&#34;</span>
 		}
 	],
-	<span style="color:#f92672">&#34;image_name&#34;</span> : <span style="color:#e6db74">&#34;Azure-CN-E2-2-1&#34;</span>,
-	<span style="color:#f92672">&#34;platform&#34;</span> : <span style="color:#e6db74">&#34;Ubuntu&#34;</span>,
-	<span style="color:#f92672">&#34;region_id&#34;</span> : <span style="color:#e6db74">&#34;cn-shanghai&#34;</span>,
-	<span style="color:#f92672">&#34;secret_key&#34;</span> : <span style="color:#e6db74">&#34;YourAccessKeySecret&#34;</span>,
-	<span style="color:#f92672">&#34;system_disk_size&#34;</span> : <span style="color:#ae81ff">28</span>
+	<span style=color:#f92672>&#34;image_name&#34;</span> : <span style=color:#e6db74>&#34;Azure-CN-E2-2-1&#34;</span>,
+	<span style=color:#f92672>&#34;platform&#34;</span> : <span style=color:#e6db74>&#34;Ubuntu&#34;</span>,
+	<span style=color:#f92672>&#34;region_id&#34;</span> : <span style=color:#e6db74>&#34;cn-shanghai&#34;</span>,
+	<span style=color:#f92672>&#34;secret_key&#34;</span> : <span style=color:#e6db74>&#34;YourAccessKeySecret&#34;</span>,
+	<span style=color:#f92672>&#34;system_disk_size&#34;</span> : <span style=color:#ae81ff>28</span>
 }
 
-</code></pre></div><p><strong>结果：</strong> 不明原因失败</p>
-<h4 id="解决方案">解决方案</h4>
-<p>某天周五放学去了离学校只有10分钟走路程的叠境，用叠镜的钱加了系统盘，顺便配置了一下防火墙 ( Remark : Zerotier 需要<code>9000</code>以上端口的UDP通信 ) 。</p>
-<p><!-- raw HTML omitted -->然后发现迁移过程中烧掉的流量钱可以扩好几次硬盘了<!-- raw HTML omitted --></p>
-<p><!-- raw HTML omitted -->原来叠境离学校这么近，果然我们是叠境附属学院<!-- raw HTML omitted --></p>
-<h2 id="0x03-rancher的启动与zerotier">0x03 Rancher的启动与Zerotier</h2>
-<h3 id="坑点二-zerotier">坑点二 Zerotier</h3>
-<p>由于阿里云的机器是由Azure迁移过去的，所以两者的Zerotier NodeID是一样的。对于Zerotier来说，它只负责建立两者之间的路由，因此你无法判断你到某个阿里云的内网ip会落到阿里云还是Azure。<strong>并且这个路由并不能有效的通过强制刷新解决</strong>。造成了相当程度的内网混乱。</p>
-<p>通过<strong>更改NodeID</strong>解决了这个问题。</p>
-<p>同时，对于迁移的服务器可以重新配置一个新的内网ip，等完全迁移完成之后改一下ip就行。</p>
-<h3 id="坑点三-mysql">坑点三 MySQL</h3>
-<p>对于数据库的复制，要注意权限的对应。如果文件的属性不一样，mysql就可能跑不起来。刚迁移完时，docker跑了五个服务(rancher/server, nginx, ldap, phpmyadmin, mysql) ，其中 MySQL不断重启。</p>
-<p>对于rancher来说，分为rancher/server 和 rancher/agent 。 在Rancher 1.6， 所有的数据都被存在数据库中。包括各rancher/agent 的配置。rancher/agent只需要运行 <code>sudo docker run -e CATTLE_AGENT_IP=&quot;[Rancher ip]&quot;  --rm --privileged -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/rancher:/var/lib/rancher rancher/agent:v1.2.11 [Rancher domain/ip + id]</code>就能加入集群。同样的，agent的配置(比如agent里面的docker和环境变量也存在server的数据库中)。只需要再次运行该命令就能重新拉起agent。</p>
-<p>由于docker的临时性质（在docker里面的文件会随着docker的结束而结束），我们做了一个映射，将数据映射到<code>/data</code>目录，来保存数据库等信息。</p>
-<p>因此通过<strong>再一次完整的复制</strong><code>/data</code>解决。</p>
-<h4 id="坑点三杠一-文件复制">坑点三杠一 文件复制</h4>
-<p>文件的迁移一共有三种方法。分别是<code>rsync</code>, <code>tar</code> 和 <code>dd</code>。这一次我尝试使用了<code>rsync</code> 和<code>tar</code>。</p>
-<p>一开始使用的是 <code>rsync</code> ，因为我们的服务器是通过私钥访问的，所以额外添加了私钥。而mysql数据库文件的迁移需要保证两者文件属性和权限完全一样，所以使用了命令</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$rsync -avzP <span style="color:#f92672">[</span>username<span style="color:#f92672">]</span>@<span style="color:#f92672">[</span>ipaddress<span style="color:#f92672">]</span>:/home/geekpie/backup
-</code></pre></div><p>最后的错误信息是：</p>
-<p>我们的数据是通过 docker 的 -v 参数映射到了根目录下的 /data 文件夹下。 因此在 Azure 上，我们运行了保留文件属性的打包命令:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$tar cvpzf backup.tgz /data/*
-</code></pre></div><p>然后通过 winSCP <!-- raw HTML omitted -->基金会<!-- raw HTML omitted -->把backup.gz下载到个人电脑上再上传到阿里云上去。</p>
-<p>运行命令进行复原</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tar xvpfz /home/geekpie/backup.tgz -C /
-</code></pre></div><p>至此，rancher 的数据库以及其它的配置文件就恢复完成了。</p>
-<h4 id="坑点三杠二--rancher连接数据库">坑点三杠二  Rancher连接数据库</h4>
-<p>参考<a href="https://rancher.com/docs/rancher/v1.6/en/faqs/server/#releasing-the-database-lock">链接</a></p>
-<p>至此，Rancher就恢复完成了。接下来就是通过 Zerotier 组网，修改域名解析，搭建Zerotier-MOON等工作。负责Rancher的prim和负责各种服务的 kruskal 迁移完成。</p>
-<p>从12月初到1月23号，大约两个月的时间，<!-- raw HTML omitted -->每天11欧<!-- raw HTML omitted -->，完成了迁移的大部分工作。<!-- raw HTML omitted -->希望明年社团年夜饭不要自费<!-- raw HTML omitted --></p>
-<h2 id="0x04-jenkins-和-portus">0x04 Jenkins 和 Portus</h2>
-<p>大家不一定还记得，我们还有一套自动构建系统 —— Jenkins 和 Portus 。</p>
-<p>第一部分的迁移很简单。因为在Rancher上每台主机都有一个lable，因此只要docker的调度不变，重启docker就能跑到新服务器上了。</p>
-<p><!-- raw HTML omitted -->截止今日 Jenkins 还没有完全恢复<!-- raw HTML omitted --></p>
-<p><strong>To be continued.</strong></p>
-
-    </div>
-  </article>
-
-  
-  
-
-
-
-
-
-  <div id="footer-post-container">
-  <div id="footer-post">
-
-    <div id="nav-footer" style="display: none">
-      <ul>
-         
-          <li><a href="/">Home</a></li>
-         
-          <li><a href="/posts">Posts</a></li>
-         
-          <li><a href="/tags">Tags</a></li>
-         
-          <li><a href="/networks">Network</a></li>
-         
-          <li><a href="/notes">Notes</a></li>
-         
-          <li><a href="/friends">Friends</a></li>
-         
-          <li><a href="https://who.aaaab3n.moe/">About</a></li>
-        
-      </ul>
-    </div>
-
-    <div id="toc-footer" style="display: none">
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#0x00-缘起">0x00 缘起</a></li>
-    <li><a href="#0x01-服务器架构">0x01 服务器架构</a></li>
-    <li><a href="#0x02-阿里云官方迁移工具">0x02 阿里云官方迁移工具</a>
-      <ul>
-        <li><a href="#坑点一----系统盘容量问题">坑点一    系统盘容量问题</a></li>
-      </ul>
-    </li>
-    <li><a href="#0x03-rancher的启动与zerotier">0x03 Rancher的启动与Zerotier</a>
-      <ul>
-        <li><a href="#坑点二-zerotier">坑点二 Zerotier</a></li>
-        <li><a href="#坑点三-mysql">坑点三 MySQL</a></li>
-      </ul>
-    </li>
-    <li><a href="#0x04-jenkins-和-portus">0x04 Jenkins 和 Portus</a></li>
-  </ul>
-</nav>
-    </div>
-
-    <div id="share-footer" style="display: none">
-      
-      <ul>
-  
-  
-    
-  
-  
-  <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f">
-      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&text=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95">
-      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&title=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95">
-      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&is_video=false&description=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95">
-      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="mailto:?subject=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95&body=Check out this article: https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f">
-      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&title=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95">
-      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&title=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95">
-      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&name=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95&description=0x00%20%e7%bc%98%e8%b5%b7%20%e5%9c%a82019%e5%b9%b4%e7%9a%84%e6%9f%90%e5%a4%a9%e6%b7%b1%e5%a4%9c%ef%bc%8c%e6%89%80%e6%9c%89%e4%bf%a1%e9%99%a2%e7%9a%84%e5%90%8c%e5%ad%a6%e7%9a%84%e7%aa%81%e7%84%b6%e6%83%8a%e6%81%90%e7%9a%84%e5%8f%91%e7%8e%b0%ef%bc%8c%e4%ba%a4%e4%bd%9c%e4%b8%9a%e7%9a%84OJ%e4%b8%8a%e4%b8%8d%e5%8e%bb%e4%ba%86%e3%80%82%e7%84%b6%e5%90%8e%e6%ac%a3%e5%96%9c%e7%9a%84%e5%9c%a8%e7%ac%ac%e4%ba%8c%e5%a4%a9%e6%8e%a5%e5%88%b0%e4%ba%86ddl%e5%bb%b6%e6%9c%9f%e7%9a%84%e9%80%9a%e7%9f%a5%e7%bd%aa%e9%ad%81%e7%a5%b8%e9%a6%96%e6%98%af%26hellip%3bAzure%e6%ac%a0%e8%b4%b9%e4%ba%86%e3%80%82%0a%e5%a5%bd%e5%9c%a8%e4%bd%9c%e4%b8%ba%e5%8f%a0%e5%a2%83%e9%99%84%e5%b1%9e%e5%ad%a6%e9%99%a2%ef%bc%8c%e9%87%91%e4%b8%bb%e7%88%b8%e7%88%b8%e9%87%8d%e6%96%b0%e8%b5%9e%e5%8a%a9%e4%ba%86%e4%b8%80%e6%89%b9%e9%98%bf%e9%87%8c%e4%ba%91%e6%9c%8d%e5%8a%a1%e5%99%a8%ef%bc%8c%e8%bf%99%e6%89%b9%e6%96%b0%e7%9a%84%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%b0%86%e4%bc%9a%e5%9c%a82019%e5%b9%b4%e5%8f%8c%e5%8d%81%e4%ba%8c%e6%9c%9f%e9%97%b4%e5%88%92%e5%bd%92%e7%a4%be%e5%9b%a2%e3%80%82%0a%e5%9c%a8%e6%b2%a1%e6%9c%89%e8%bf%81%e7%a7%bb%e5%88%b0%e9%98%bf%e9%87%8c%e4%ba%91%e4%b9%8b%e5%89%8d%ef%bc%8c%e7%a4%be%e5%9b%a2%e6%9a%82%e6%97%b6%e7%94%b1%e7%a4%be%e5%9b%a2%e7%bb%8f%e8%b4%b9%e6%96%b0%e5%bc%80%e4%ba%86%e4%b8%a4%e5%8f%b0Azure%20HK%ef%bc%8c%e5%b9%b6%e9%80%9a%e8%bf%87%e5%bf%ab%e7%85%a7%e7%9a%84%e6%96%b9%e5%bc%8f%e5%8f%8a%e6%97%b6%e6%81%a2%e5%a4%8d%e4%ba%86%e6%9c%8d%e5%8a%a1%e3%80%82%e8%b4%b9%e7%94%a8%e4%b8%ba11%e6%ac%a7%2f%e5%a4%a9%e3%80%82%0a%20OJ%e4%b8%ba%e7%a4%be%e5%9b%a2%e8%87%aa%e5%bb%ba%ef%bc%8c%e5%90%91%e5%85%a8%e6%a0%a1%e5%ad%a6%e7%94%9f%e6%8f%90%e4%be%9b%e6%9c%8d%e5%8a%a1%e3%80%82%0a%e8%af%a5OJ%e5%b7%b2%e5%bc%80%e6%ba%90%ef%bc%8c%e8%af%a6%e8%a7%81%20https%3a%2f%2foj.geekpie.club%2fabout%20%e9%a1%ba%e4%be%bf%e6%b1%82star%200x01%20%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%9e%b6%e6%9e%84%20%e5%87%ba%e4%ba%8e%e8%bd%bb%e9%87%8f%e5%8c%96%e5%92%8c%e5%bc%b9%e6%80%a7%e5%8c%96%e7%9a%84%e8%80%83%e8%99%91%ef%bc%8c%e6%88%91%e4%bb%ac%e7%a4%be%e5%9b%a2%e7%9a%84%e6%9c%8d%e5%8a%a1%e5%99%a8%e9%9b%86%e7%be%a4%e7%ae%a1%e7%90%86%e7%94%a8%e7%9a%84%e6%98%af%20Rancher%201.6%20%ef%bc%8c%e6%89%80%e6%9c%89%e7%9a%84%e6%9c%8d%e5%8a%a1%e6%98%af%e7%ba%afdocker%e7%9a%84%ef%bc%8c%e6%88%91%e4%bb%ac%e4%bc%9a%e5%b0%81%e8%a3%85%e5%88%b0docker%e9%87%8c%ef%bc%8c%e4%b8%8a%e4%bc%a0%e5%88%b0%e4%bb%a3%e7%a0%81%e6%89%98%e7%ae%a1%e5%b9%b3%e5%8f%b0%ef%bc%8c%e7%94%b1CI%e6%9c%8d%e5%8a%a1%e8%87%aa%e5%8a%a8build%e5%ae%8c%e6%94%be%e5%88%b0%e7%a7%81%e6%9c%89registry%e9%87%8c%ef%bc%8c%e5%86%8d%e9%80%9a%e8%bf%87rancher%e6%8f%90%e4%be%9b%e7%bb%99%e5%85%b6%e5%ae%83%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%bd%bf%e7%94%a8%e3%80%82%0a%e6%89%80%e6%9c%89%e7%9a%84%e6%9c%8d%e5%8a%a1%e5%99%a8%e9%80%9a%e8%bf%87%20zerotier%20%e7%bb%84%e6%88%90%e5%86%85%e7%bd%91%ef%bc%8c%e9%80%9a%e8%bf%87%20zerotier%20%e5%86%85%e7%bd%91%e8%ae%bf%e9%97%ae%e3%80%82%0a%e4%b9%8b%e5%89%8d%ef%bc%8c%e6%88%91%e4%bb%ac%e4%b8%80%e5%85%b1%e6%9c%89%e4%b8%89%e5%8f%b0Azure%20%2b%20%e8%8b%a5%e5%b9%b2%e5%8f%b0%e5%85%b6%e5%ae%83server%20%e6%89%80%e6%9c%89%e6%9c%8d%e5%8a%a1%e5%99%a8%e9%83%bd%e7%94%a8%e7%ae%97%e6%b3%95%e5%91%bd%e5%90%8d%20Azure-CN-E2-0%20%e3%80%90brent%ef%bb%bf%e3%80%91%2064G%201C2G%20%e8%b4%9f%e8%b4%a3%e8%b7%91%20Rancher%201.6%20%e6%9c%8d%e5%8a%a1%20Azure-CN-E2-1%20%e3%80%90prim%ef%bb%bf%e3%80%91%2064G%201C2G%20%e5%9b%a0%e4%b8%ba%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%9c%a8%e6%b5%b7%e5%a4%96%ef%bc%8c%e8%b4%9f%e8%b4%a3%20Jenkins%e8%87%aa%e5%8a%a8docker%e6%9e%84%e5%bb%ba%e5%92%8c%20registry%20%e6%9c%8d%e5%8a%a1%20Azure-CN-E2-2%20%e3%80%90kruskal%ef%bb%bf%e3%80%91%2064G%201C2G%20%e8%b4%9f%e8%b4%a3%e8%b7%91%e5%a4%a7%e5%a4%9a%e6%95%b0%e7%9a%84%e6%9c%8d%e5%8a%a1%ef%bc%8c%e6%8b%a5%e6%9c%89%e5%a4%a7%e9%87%8f%e6%95%b0%e6%8d%ae%e5%ba%93%20etc%20%20%e5%8f%a0%e9%95%9c%e8%b5%9e%e5%8a%a9%e4%ba%86%e6%88%91%e4%bb%ac%e5%9b%9b%e5%8f%b0%e6%9c%8d%e5%8a%a1%e5%99%a8%ef%bc%9a%0a%203%e5%8f%b0%e4%b8%8a%e6%b5%b7%e9%98%bf%e9%87%8c%e4%ba%91%20%e7%a1%ac%e7%9b%98%e4%b8%ba%2030G%202C2G%201%e5%8f%b0%e9%a6%99%e6%b8%af%e9%98%bf%e9%87%8c%e4%ba%91%20%20%e7%8e%b0%e5%9c%a8%e7%9a%84%e5%b7%a5%e4%bd%9c%e6%98%af%e5%b0%86%20Azure%20%e8%bf%81%e7%a7%bb%e8%87%b3%20Aliyun%20%ef%bc%8c%e5%b9%b6%e4%bf%9d%e8%af%81%e6%89%80%e6%9c%89%e6%9c%8d%e5%8a%a1%e9%83%bd%e5%8f%af%e7%94%a8%e3%80%82%0a0x02%20%e9%98%bf%e9%87%8c%e4%ba%91%e5%ae%98%e6%96%b9%e8%bf%81%e7%a7%bb%e5%b7%a5%e5%85%b7%20%e6%88%91%e4%bb%ac%e9%a6%96%e5%85%88%e6%9f%a5%e9%98%85%e4%ba%86%e8%bf%99%e7%af%87%e6%96%87%e6%a1%a3%0a%20Azure%e8%99%9a%e6%8b%9f%e6%9c%ba%e8%bf%81%e7%a7%bb%e8%87%b3%e9%98%bf%e9%87%8c%e4%ba%91ECS%0a%20%e7%94%b1%e4%ba%8e%e9%98%bf%e9%87%8c%e4%ba%91%e6%8f%90%e4%be%9b%e4%ba%86%e5%ae%98%e6%96%b9%e7%9a%84%e8%bf%81%e4%ba%91%e5%b7%a5%e5%85%b7%ef%bc%8c%e6%89%80%e4%bb%a5%e8%bf%99%e4%b8%80%e6%ad%a5%e7%a8%8d%e6%98%be%e7%ae%80%e5%8d%95%e3%80%82%0a%e6%88%91%e4%b8%8b%e8%bd%bd%e4%ba%86%e8%bf%81%e4%ba%91%e5%b7%a5%e5%85%b7%ef%bc%8c%e8%a7%a3%e5%8e%8b%e5%90%8e%e9%a6%96%e5%85%88%e8%bf%90%e8%a1%8c.%2fCheck%2fclient_check%20--check%e5%91%bd%e4%bb%a4%e6%a3%80%e6%9f%a5%ef%bc%8c%e6%b2%a1%e6%9c%89%e9%97%ae%e9%a2%98%ef%bc%8c%e7%84%b6%e5%90%8e%e9%85%8d%e7%bd%aeuser_config.">
-      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-  <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&t=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95">
-      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
-    </a>
-  </li>
-</ul>
-
-    </div>
-
-    <div id="actions-footer">
-      
-        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
-          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
-          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
-          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
-          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
-    </div>
-
-  </div>
-</div>
-
-
-  <footer id="footer">
-  <div class="footer-left">
-    Copyright  &copy; 2021  Canarypwn 
-  </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-         
-        <li><a href="/">Home</a></li>
-         
-        <li><a href="/posts">Posts</a></li>
-         
-        <li><a href="/tags">Tags</a></li>
-         
-        <li><a href="/networks">Network</a></li>
-         
-        <li><a href="/notes">Notes</a></li>
-         
-        <li><a href="/friends">Friends</a></li>
-         
-        <li><a href="https://who.aaaab3n.moe/">About</a></li>
-        
-      </ul>
-    </nav>
-  </div>
-</footer>
-
-
-  </div>
-</body>
-
-<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
-<script src=/lib/jquery/jquery.min.js></script>
-<script src=/js/main.js></script>
-
-
-  
-
-
-<script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']]
-    },
-    svg: {
-      fontCache: 'global'
-    }
-  };
-</script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
-</html>
+</code></pre></div><p><strong>结果：</strong> 不明原因失败</p><h4 id=解决方案>解决方案</h4><p>某天周五放学去了离学校只有10分钟走路程的叠境，用叠镜的钱加了系统盘，顺便配置了一下防火墙 ( Remark : Zerotier 需要<code>9000</code>以上端口的UDP通信 ) 。</p><p>然后发现迁移过程中烧掉的流量钱可以扩好几次硬盘了</p><p>原来叠境离学校这么近，果然我们是叠境附属学院</p><h2 id=0x03-rancher的启动与zerotier>0x03 Rancher的启动与Zerotier</h2><h3 id=坑点二-zerotier>坑点二 Zerotier</h3><p>由于阿里云的机器是由Azure迁移过去的，所以两者的Zerotier NodeID是一样的。对于Zerotier来说，它只负责建立两者之间的路由，因此你无法判断你到某个阿里云的内网ip会落到阿里云还是Azure。<strong>并且这个路由并不能有效的通过强制刷新解决</strong>。造成了相当程度的内网混乱。</p><p>通过<strong>更改NodeID</strong>解决了这个问题。</p><p>同时，对于迁移的服务器可以重新配置一个新的内网ip，等完全迁移完成之后改一下ip就行。</p><h3 id=坑点三-mysql>坑点三 MySQL</h3><p>对于数据库的复制，要注意权限的对应。如果文件的属性不一样，mysql就可能跑不起来。刚迁移完时，docker跑了五个服务(rancher/server, nginx, ldap, phpmyadmin, mysql) ，其中 MySQL不断重启。</p><p>对于rancher来说，分为rancher/server 和 rancher/agent 。 在Rancher 1.6， 所有的数据都被存在数据库中。包括各rancher/agent 的配置。rancher/agent只需要运行 <code>sudo docker run -e CATTLE_AGENT_IP="[Rancher ip]" --rm --privileged -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/rancher:/var/lib/rancher rancher/agent:v1.2.11 [Rancher domain/ip + id]</code>就能加入集群。同样的，agent的配置(比如agent里面的docker和环境变量也存在server的数据库中)。只需要再次运行该命令就能重新拉起agent。</p><p>由于docker的临时性质（在docker里面的文件会随着docker的结束而结束），我们做了一个映射，将数据映射到<code>/data</code>目录，来保存数据库等信息。</p><p>因此通过<strong>再一次完整的复制</strong><code>/data</code>解决。</p><h4 id=坑点三杠一-文件复制>坑点三杠一 文件复制</h4><p>文件的迁移一共有三种方法。分别是<code>rsync</code>, <code>tar</code> 和 <code>dd</code>。这一次我尝试使用了<code>rsync</code> 和<code>tar</code>。</p><p>一开始使用的是 <code>rsync</code> ，因为我们的服务器是通过私钥访问的，所以额外添加了私钥。而mysql数据库文件的迁移需要保证两者文件属性和权限完全一样，所以使用了命令</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$rsync -avzP <span style=color:#f92672>[</span>username<span style=color:#f92672>]</span>@<span style=color:#f92672>[</span>ipaddress<span style=color:#f92672>]</span>:/home/geekpie/backup
+</code></pre></div><p>最后的错误信息是：</p><p>我们的数据是通过 docker 的 -v 参数映射到了根目录下的 /data 文件夹下。 因此在 Azure 上，我们运行了保留文件属性的打包命令:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$tar cvpzf backup.tgz /data/*
+</code></pre></div><p>然后通过 winSCP 基金会把backup.gz下载到个人电脑上再上传到阿里云上去。</p><p>运行命令进行复原</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>tar xvpfz /home/geekpie/backup.tgz -C /
+</code></pre></div><p>至此，rancher 的数据库以及其它的配置文件就恢复完成了。</p><h4 id=坑点三杠二--rancher连接数据库>坑点三杠二 Rancher连接数据库</h4><p>参考<a href=https://rancher.com/docs/rancher/v1.6/en/faqs/server/#releasing-the-database-lock>链接</a></p><p>至此，Rancher就恢复完成了。接下来就是通过 Zerotier 组网，修改域名解析，搭建Zerotier-MOON等工作。负责Rancher的prim和负责各种服务的 kruskal 迁移完成。</p><p>从12月初到1月23号，大约两个月的时间，每天11欧，完成了迁移的大部分工作。希望明年社团年夜饭不要自费</p><h2 id=0x04-jenkins-和-portus>0x04 Jenkins 和 Portus</h2><p>大家不一定还记得，我们还有一套自动构建系统 —— Jenkins 和 Portus 。</p><p>第一部分的迁移很简单。因为在Rancher上每台主机都有一个lable，因此只要docker的调度不变，重启docker就能跑到新服务器上了。</p><p>截止今日 Jenkins 还没有完全恢复</p><p><strong>To be continued.</strong></p></div></article><div id=footer-post-container><div id=footer-post><div id=nav-footer style=display:none><ul><li><a href=/>Home</a></li><li><a href=/posts>Posts</a></li><li><a href=/tags>Tags</a></li><li><a href=/networks>Network</a></li><li><a href=/notes>Notes</a></li><li><a href=/friends>Friends</a></li><li><a href=https://who.aaaab3n.moe/>About</a></li></ul></div><div id=toc-footer style=display:none><nav id=TableOfContents><ul><li><a href=#0x00-缘起>0x00 缘起</a></li><li><a href=#0x01-服务器架构>0x01 服务器架构</a></li><li><a href=#0x02-阿里云官方迁移工具>0x02 阿里云官方迁移工具</a><ul><li><a href=#坑点一----系统盘容量问题>坑点一 系统盘容量问题</a></li></ul></li><li><a href=#0x03-rancher的启动与zerotier>0x03 Rancher的启动与Zerotier</a><ul><li><a href=#坑点二-zerotier>坑点二 Zerotier</a></li><li><a href=#坑点三-mysql>坑点三 MySQL</a></li></ul></li><li><a href=#0x04-jenkins-和-portus>0x04 Jenkins 和 Portus</a></li></ul></nav></div><div id=share-footer style=display:none><ul><li><a class=icon href="http://www.facebook.com/sharer.php?u=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f"><i class="fab fa-facebook fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="https://twitter.com/share?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&text=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95"><i class="fab fa-twitter fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&title=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95"><i class="fab fa-linkedin fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&is_video=false&description=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95"><i class="fab fa-pinterest fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="mailto:?subject=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95&body=Check out this article: https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f"><i class="fas fa-envelope fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="https://getpocket.com/save?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&title=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95"><i class="fab fa-get-pocket fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="http://reddit.com/submit?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&title=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95"><i class="fab fa-reddit fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="http://www.tumblr.com/share/link?url=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&name=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95&description=0x00%20%e7%bc%98%e8%b5%b7%20%e5%9c%a82019%e5%b9%b4%e7%9a%84%e6%9f%90%e5%a4%a9%e6%b7%b1%e5%a4%9c%ef%bc%8c%e6%89%80%e6%9c%89%e4%bf%a1%e9%99%a2%e7%9a%84%e5%90%8c%e5%ad%a6%e7%9a%84%e7%aa%81%e7%84%b6%e6%83%8a%e6%81%90%e7%9a%84%e5%8f%91%e7%8e%b0%ef%bc%8c%e4%ba%a4%e4%bd%9c%e4%b8%9a%e7%9a%84OJ%e4%b8%8a%e4%b8%8d%e5%8e%bb%e4%ba%86%e3%80%82%e7%84%b6%e5%90%8e%e6%ac%a3%e5%96%9c%e7%9a%84%e5%9c%a8%e7%ac%ac%e4%ba%8c%e5%a4%a9%e6%8e%a5%e5%88%b0%e4%ba%86ddl%e5%bb%b6%e6%9c%9f%e7%9a%84%e9%80%9a%e7%9f%a5%e7%bd%aa%e9%ad%81%e7%a5%b8%e9%a6%96%e6%98%af%26hellip%3bAzure%e6%ac%a0%e8%b4%b9%e4%ba%86%e3%80%82%0a%e5%a5%bd%e5%9c%a8%e4%bd%9c%e4%b8%ba%e5%8f%a0%e5%a2%83%e9%99%84%e5%b1%9e%e5%ad%a6%e9%99%a2%ef%bc%8c%e9%87%91%e4%b8%bb%e7%88%b8%e7%88%b8%e9%87%8d%e6%96%b0%e8%b5%9e%e5%8a%a9%e4%ba%86%e4%b8%80%e6%89%b9%e9%98%bf%e9%87%8c%e4%ba%91%e6%9c%8d%e5%8a%a1%e5%99%a8%ef%bc%8c%e8%bf%99%e6%89%b9%e6%96%b0%e7%9a%84%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%b0%86%e4%bc%9a%e5%9c%a82019%e5%b9%b4%e5%8f%8c%e5%8d%81%e4%ba%8c%e6%9c%9f%e9%97%b4%e5%88%92%e5%bd%92%e7%a4%be%e5%9b%a2%e3%80%82%0a%e5%9c%a8%e6%b2%a1%e6%9c%89%e8%bf%81%e7%a7%bb%e5%88%b0%e9%98%bf%e9%87%8c%e4%ba%91%e4%b9%8b%e5%89%8d%ef%bc%8c%e7%a4%be%e5%9b%a2%e6%9a%82%e6%97%b6%e7%94%b1%e7%a4%be%e5%9b%a2%e7%bb%8f%e8%b4%b9%e6%96%b0%e5%bc%80%e4%ba%86%e4%b8%a4%e5%8f%b0Azure%20HK%ef%bc%8c%e5%b9%b6%e9%80%9a%e8%bf%87%e5%bf%ab%e7%85%a7%e7%9a%84%e6%96%b9%e5%bc%8f%e5%8f%8a%e6%97%b6%e6%81%a2%e5%a4%8d%e4%ba%86%e6%9c%8d%e5%8a%a1%e3%80%82%e8%b4%b9%e7%94%a8%e4%b8%ba11%e6%ac%a7%2f%e5%a4%a9%e3%80%82%0a%20OJ%e4%b8%ba%e7%a4%be%e5%9b%a2%e8%87%aa%e5%bb%ba%ef%bc%8c%e5%90%91%e5%85%a8%e6%a0%a1%e5%ad%a6%e7%94%9f%e6%8f%90%e4%be%9b%e6%9c%8d%e5%8a%a1%e3%80%82%0a%e8%af%a5OJ%e5%b7%b2%e5%bc%80%e6%ba%90%ef%bc%8c%e8%af%a6%e8%a7%81%20https%3a%2f%2foj.geekpie.club%2fabout%20%e9%a1%ba%e4%be%bf%e6%b1%82star%200x01%20%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%9e%b6%e6%9e%84%20%e5%87%ba%e4%ba%8e%e8%bd%bb%e9%87%8f%e5%8c%96%e5%92%8c%e5%bc%b9%e6%80%a7%e5%8c%96%e7%9a%84%e8%80%83%e8%99%91%ef%bc%8c%e6%88%91%e4%bb%ac%e7%a4%be%e5%9b%a2%e7%9a%84%e6%9c%8d%e5%8a%a1%e5%99%a8%e9%9b%86%e7%be%a4%e7%ae%a1%e7%90%86%e7%94%a8%e7%9a%84%e6%98%af%20Rancher%201.6%20%ef%bc%8c%e6%89%80%e6%9c%89%e7%9a%84%e6%9c%8d%e5%8a%a1%e6%98%af%e7%ba%afdocker%e7%9a%84%ef%bc%8c%e6%88%91%e4%bb%ac%e4%bc%9a%e5%b0%81%e8%a3%85%e5%88%b0docker%e9%87%8c%ef%bc%8c%e4%b8%8a%e4%bc%a0%e5%88%b0%e4%bb%a3%e7%a0%81%e6%89%98%e7%ae%a1%e5%b9%b3%e5%8f%b0%ef%bc%8c%e7%94%b1CI%e6%9c%8d%e5%8a%a1%e8%87%aa%e5%8a%a8build%e5%ae%8c%e6%94%be%e5%88%b0%e7%a7%81%e6%9c%89registry%e9%87%8c%ef%bc%8c%e5%86%8d%e9%80%9a%e8%bf%87rancher%e6%8f%90%e4%be%9b%e7%bb%99%e5%85%b6%e5%ae%83%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%bd%bf%e7%94%a8%e3%80%82%0a%e6%89%80%e6%9c%89%e7%9a%84%e6%9c%8d%e5%8a%a1%e5%99%a8%e9%80%9a%e8%bf%87%20zerotier%20%e7%bb%84%e6%88%90%e5%86%85%e7%bd%91%ef%bc%8c%e9%80%9a%e8%bf%87%20zerotier%20%e5%86%85%e7%bd%91%e8%ae%bf%e9%97%ae%e3%80%82%0a%e4%b9%8b%e5%89%8d%ef%bc%8c%e6%88%91%e4%bb%ac%e4%b8%80%e5%85%b1%e6%9c%89%e4%b8%89%e5%8f%b0Azure%20%2b%20%e8%8b%a5%e5%b9%b2%e5%8f%b0%e5%85%b6%e5%ae%83server%20%e6%89%80%e6%9c%89%e6%9c%8d%e5%8a%a1%e5%99%a8%e9%83%bd%e7%94%a8%e7%ae%97%e6%b3%95%e5%91%bd%e5%90%8d%20Azure-CN-E2-0%20%e3%80%90brent%ef%bb%bf%e3%80%91%2064G%201C2G%20%e8%b4%9f%e8%b4%a3%e8%b7%91%20Rancher%201.6%20%e6%9c%8d%e5%8a%a1%20Azure-CN-E2-1%20%e3%80%90prim%ef%bb%bf%e3%80%91%2064G%201C2G%20%e5%9b%a0%e4%b8%ba%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%9c%a8%e6%b5%b7%e5%a4%96%ef%bc%8c%e8%b4%9f%e8%b4%a3%20Jenkins%e8%87%aa%e5%8a%a8docker%e6%9e%84%e5%bb%ba%e5%92%8c%20registry%20%e6%9c%8d%e5%8a%a1%20Azure-CN-E2-2%20%e3%80%90kruskal%ef%bb%bf%e3%80%91%2064G%201C2G%20%e8%b4%9f%e8%b4%a3%e8%b7%91%e5%a4%a7%e5%a4%9a%e6%95%b0%e7%9a%84%e6%9c%8d%e5%8a%a1%ef%bc%8c%e6%8b%a5%e6%9c%89%e5%a4%a7%e9%87%8f%e6%95%b0%e6%8d%ae%e5%ba%93%20etc%20%20%e5%8f%a0%e9%95%9c%e8%b5%9e%e5%8a%a9%e4%ba%86%e6%88%91%e4%bb%ac%e5%9b%9b%e5%8f%b0%e6%9c%8d%e5%8a%a1%e5%99%a8%ef%bc%9a%0a%203%e5%8f%b0%e4%b8%8a%e6%b5%b7%e9%98%bf%e9%87%8c%e4%ba%91%20%e7%a1%ac%e7%9b%98%e4%b8%ba%2030G%202C2G%201%e5%8f%b0%e9%a6%99%e6%b8%af%e9%98%bf%e9%87%8c%e4%ba%91%20%20%e7%8e%b0%e5%9c%a8%e7%9a%84%e5%b7%a5%e4%bd%9c%e6%98%af%e5%b0%86%20Azure%20%e8%bf%81%e7%a7%bb%e8%87%b3%20Aliyun%20%ef%bc%8c%e5%b9%b6%e4%bf%9d%e8%af%81%e6%89%80%e6%9c%89%e6%9c%8d%e5%8a%a1%e9%83%bd%e5%8f%af%e7%94%a8%e3%80%82%0a0x02%20%e9%98%bf%e9%87%8c%e4%ba%91%e5%ae%98%e6%96%b9%e8%bf%81%e7%a7%bb%e5%b7%a5%e5%85%b7%20%e6%88%91%e4%bb%ac%e9%a6%96%e5%85%88%e6%9f%a5%e9%98%85%e4%ba%86%e8%bf%99%e7%af%87%e6%96%87%e6%a1%a3%0a%20Azure%e8%99%9a%e6%8b%9f%e6%9c%ba%e8%bf%81%e7%a7%bb%e8%87%b3%e9%98%bf%e9%87%8c%e4%ba%91ECS%0a%20%e7%94%b1%e4%ba%8e%e9%98%bf%e9%87%8c%e4%ba%91%e6%8f%90%e4%be%9b%e4%ba%86%e5%ae%98%e6%96%b9%e7%9a%84%e8%bf%81%e4%ba%91%e5%b7%a5%e5%85%b7%ef%bc%8c%e6%89%80%e4%bb%a5%e8%bf%99%e4%b8%80%e6%ad%a5%e7%a8%8d%e6%98%be%e7%ae%80%e5%8d%95%e3%80%82%0a%e6%88%91%e4%b8%8b%e8%bd%bd%e4%ba%86%e8%bf%81%e4%ba%91%e5%b7%a5%e5%85%b7%ef%bc%8c%e8%a7%a3%e5%8e%8b%e5%90%8e%e9%a6%96%e5%85%88%e8%bf%90%e8%a1%8c.%2fCheck%2fclient_check%20--check%e5%91%bd%e4%bb%a4%e6%a3%80%e6%9f%a5%ef%bc%8c%e6%b2%a1%e6%9c%89%e9%97%ae%e9%a2%98%ef%bc%8c%e7%84%b6%e5%90%8e%e9%85%8d%e7%bd%aeuser_config."><i class="fab fa-tumblr fa-lg" aria-hidden=true></i></a></li><li><a class=icon href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2faaaab3n.moe%2fposts%2f2020-1-14-server-move%2f&t=%e4%b8%80%e6%ac%a1%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%bf%81%e7%a7%bb%e7%9a%84%e5%b0%9d%e8%af%95"><i class="fab fa-hacker-news fa-lg" aria-hidden=true></i></a></li></ul></div><div id=actions-footer><a id=menu class=icon href=# onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden=true></i>Menu</a>
+<a id=toc class=icon href=# onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden=true></i>TOC</a>
+<a id=share class=icon href=# onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden=true></i>share</a>
+<a id=top style=display:none class=icon href=# onclick="$('html, body').animate({scrollTop:0},'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden=true></i>Top</a></div></div></div><footer id=footer><div class=footer-left>Copyright &copy; 2021 Canarypwn</div><div class=footer-right><nav><ul><li><a href=/>Home</a></li><li><a href=/posts>Posts</a></li><li><a href=/tags>Tags</a></li><li><a href=/networks>Network</a></li><li><a href=/notes>Notes</a></li><li><a href=/friends>Friends</a></li><li><a href=https://who.aaaab3n.moe/>About</a></li></ul></nav></div></footer></div></body><link rel=stylesheet href=/lib/font-awesome/css/all.min.css><script src=/lib/jquery/jquery.min.js></script><script src=/js/main.js></script><script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']]},svg:{fontCache:'global'}};</script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script></html>

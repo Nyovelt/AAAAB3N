@@ -1,34 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Linux on Canarypwn</title>
-    <link>https://aaaab3n.moe/tags/linux/</link>
-    <description>Recent content in Linux on Canarypwn</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 18 Jan 2021 10:02:59 +0800</lastBuildDate>
-    
-	<atom:link href="https://aaaab3n.moe/tags/linux/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>[残卷]CentOS8 下 slurm 的安装配置尝试</title>
-      <link>https://aaaab3n.moe/posts/2021-1-18-centos8-slurm/</link>
-      <pubDate>Mon, 18 Jan 2021 10:02:59 +0800</pubDate>
-      
-      <guid>https://aaaab3n.moe/posts/2021-1-18-centos8-slurm/</guid>
-      <description>Slurm 任务调度工具（前身为极简Linux资源管理工具，英文：Simple Linux Utility for Resource Management，取首字母，简写为SLURM），或 Slurm，是一个用于 Linux 和 Unix 内核系统的免费、开源的任务调度工具，被世界范围内的超级计算机和计算机群广泛采用。它提供了三个关键功能。第一，为用户分配一定时间的专享或非专享的资源(计算机节点)，以供用户执行工作。第二，它提供了一个框架，用于启动、执行、监测在节点上运行着的任务(通常是并行的任务，例如 MPI)，第三，为任务队列合理地分配资源。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Canarypwn</title><link>https://aaaab3n.moe/tags/linux/</link><description>Recent content in Linux on Canarypwn</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 18 Jan 2021 10:02:59 +0800</lastBuildDate><atom:link href="https://aaaab3n.moe/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>[残卷]CentOS8 下 slurm 的安装配置尝试</title><link>https://aaaab3n.moe/posts/2021-1-18-centos8-slurm/</link><pubDate>Mon, 18 Jan 2021 10:02:59 +0800</pubDate><guid>https://aaaab3n.moe/posts/2021-1-18-centos8-slurm/</guid><description>Slurm 任务调度工具（前身为极简Linux资源管理工具，英文：Simple Linux Utility for Resource Management，取首字母，简写为SLURM），或 Slurm，是一个用于 Linux 和 Unix 内核系统的免费、开源的任务调度工具，被世界范围内的超级计算机和计算机群广泛采用。它提供了三个关键功能。第一，为用户分配一定时间的专享或非专享的资源(计算机节点)，以供用户执行工作。第二，它提供了一个框架，用于启动、执行、监测在节点上运行着的任务(通常是并行的任务，例如 MPI)，第三，为任务队列合理地分配资源。
 安装步骤 系统为 CentOS 8, 一共有两个 node 。其中 node1 作为主节点， node2 作为计算节点。
-设置slurm账户 # 新建用户。-m 为用户创建家目录；-G wheel 将用户添加到 wheel 用户组 useradd -m -G wheel slurm # 设置密码 passwd slurm # 查看账户相关性喜 id slurm # 所有节点的 slurm 组 id 必须一致。否则无法启动成功 安装munge yum -y install epel-release yum -y install gtk2 yum -y install gtk-devel yum -y install munge yum -y install munge-devel yum -y install hdf5-devel 手动创建目录,这些目录在munge安装时不会自动创建，分别用于munge的配置、运行、日志等需求。</description>
-    </item>
-    
-    <item>
-      <title>修复由误操作导致的分区表重建问题</title>
-      <link>https://aaaab3n.moe/posts/2020-8-21-fstab/</link>
-      <pubDate>Fri, 21 Aug 2020 10:01:59 +0800</pubDate>
-      
-      <guid>https://aaaab3n.moe/posts/2020-8-21-fstab/</guid>
-      <description>起因 在8月初的时候，我接下了学校信息学院某实验室集群助管的工作，上任第一天的工作就是配置管理环境。集群的架构大致是这样，一共是约30台服务器，在上面跑 docker , 映射 ssh 端口，分派给不同的用户使用。除此以外还有两台大容量NFS服务器用于用户存储数据。
+设置slurm账户 # 新建用户。-m 为用户创建家目录；-G wheel 将用户添加到 wheel 用户组 useradd -m -G wheel slurm # 设置密码 passwd slurm # 查看账户相关性喜 id slurm # 所有节点的 slurm 组 id 必须一致。否则无法启动成功 安装munge yum -y install epel-release yum -y install gtk2 yum -y install gtk-devel yum -y install munge yum -y install munge-devel yum -y install hdf5-devel 手动创建目录,这些目录在munge安装时不会自动创建，分别用于munge的配置、运行、日志等需求。</description></item><item><title>修复由误操作导致的分区表重建问题</title><link>https://aaaab3n.moe/posts/2020-8-21-fstab/</link><pubDate>Fri, 21 Aug 2020 10:01:59 +0800</pubDate><guid>https://aaaab3n.moe/posts/2020-8-21-fstab/</guid><description>起因 在8月初的时候，我接下了学校信息学院某实验室集群助管的工作，上任第一天的工作就是配置管理环境。集群的架构大致是这样，一共是约30台服务器，在上面跑 docker , 映射 ssh 端口，分派给不同的用户使用。除此以外还有两台大容量NFS服务器用于用户存储数据。
 我使用了 Portainer.io 进行多机器的 docker 管理。同时用了一个 shell 来完成其它机器运行 portainer.io - agent 以及挂载 nfs 磁盘的操作。
 脚本
 ERROR 在某一次，由于 NFS 磁盘掉线导致 docker 卡在了 create 的状态上。没有在意，在 nfs 服务器重新上线后重启服务器，发现 docker 掉线了。不过机器足够多，因此把原先的 docker 放在了新的机器上面，这台服务器的问题就被搁置了。
@@ -38,16 +10,7 @@ echo &amp;#39;helloworld&amp;#39; &amp;gt; aaaa 只有一个 &amp;lsquo;&amp;gt;
 还好大部分服务都在内存中，修复起来稍微容易一些。除了之前被重启过的和为了试验当场重启的。
 于是后面两台服务器，首先挂载分区
 mount -o remount,rw /dev/sda3 / 对于其它机器以及这两台服务器，更改其分区文件
-/dev/sda3 / ext4 defaults,relatime 0 1 /dev/sda1 /boot ext4 defaults,relatime 0 0 /dev/sda2 none swap defaults 0 0 /dev/sdb1 /data ext4 defaults,relatime 0 0 10.</description>
-    </item>
-    
-    <item>
-      <title>618电脑指北</title>
-      <link>https://aaaab3n.moe/posts/2020-7-7-618-workstation-setup-guide/</link>
-      <pubDate>Tue, 07 Jul 2020 09:00:59 +0800</pubDate>
-      
-      <guid>https://aaaab3n.moe/posts/2020-7-7-618-workstation-setup-guide/</guid>
-      <description>618 由于笔者的笔记本（六代标压i5 + gtx965m）已经跟不上笔者剪辑4K视频和机器学习的需求了。所以在618的时候拿到了预算，有能力购入一台新电脑。
+/dev/sda3 / ext4 defaults,relatime 0 1 /dev/sda1 /boot ext4 defaults,relatime 0 0 /dev/sda2 none swap defaults 0 0 /dev/sdb1 /data ext4 defaults,relatime 0 0 10.</description></item><item><title>618电脑指北</title><link>https://aaaab3n.moe/posts/2020-7-7-618-workstation-setup-guide/</link><pubDate>Tue, 07 Jul 2020 09:00:59 +0800</pubDate><guid>https://aaaab3n.moe/posts/2020-7-7-618-workstation-setup-guide/</guid><description>618 由于笔者的笔记本（六代标压i5 + gtx965m）已经跟不上笔者剪辑4K视频和机器学习的需求了。所以在618的时候拿到了预算，有能力购入一台新电脑。
 新电脑旨在追求长期性价比，并且尽量追求边际效应最小化。笔者是计算机科学的学生，因此未来可能会写CUDA，大型编译以及多系统的需求。适逢AMD的Zen2架构和英伟达图灵显卡大降价，因此618可以算是购入电脑的一个好时机。
 配置 AMD 锐龙9 3900X 处理器 JD 3286.33
 华硕（ASUS）PRO WS X570-ACE 主板 JD 2890.00
@@ -60,16 +23,7 @@ mount -o remount,rw /dev/sda3 / 对于其它机器以及这两台服务器，更
 外加一根 U.2连接线
 外加问同学暂时借了块970， 以后会收一块RX580 给 Linux 用
 **ALL 11848 **
-购买理由   3900X 一共拥有 2 个CCD，总共十二核心，二十四线程。 每个CCD分表包含着6个核心和十二个线程 (id: 0-5, 12-17)(i: 6-11, 18-23) ，一共 64M 的三级缓存（虽然跨CCD时延迟会很大）。三级缓存对编译的提升是很大的，同时多核心更利于虚拟机运行。</description>
-    </item>
-    
-    <item>
-      <title>Remote-SSH:我的开发环境</title>
-      <link>https://aaaab3n.moe/posts/2020-3-24-remote-ssh-on-vscode/</link>
-      <pubDate>Tue, 24 Mar 2020 09:00:59 +0800</pubDate>
-      
-      <guid>https://aaaab3n.moe/posts/2020-3-24-remote-ssh-on-vscode/</guid>
-      <description>Remote-SSH: 我的开发环境 Visual Studio Code 在之前发布了插件 remote-ssh 和 remote-wsl 作为vsc的远程开发套件。这两款插件对于 Linux 的支持非常的好，甚至有人认为这是Windows下最好的ssh工具。我目前的主力设备是HP-OMEN 2 (i5-6300HQ) 和 Surface Pro 6 (i5) 。为了用上好用的包管理器，我都是装了Arch的Windows Subsystem Linux 作为日常开发。
+购买理由 3900X 一共拥有 2 个CCD，总共十二核心，二十四线程。 每个CCD分表包含着6个核心和十二个线程 (id: 0-5, 12-17)(i: 6-11, 18-23) ，一共 64M 的三级缓存（虽然跨CCD时延迟会很大）。三级缓存对编译的提升是很大的，同时多核心更利于虚拟机运行。</description></item><item><title>Remote-SSH:我的开发环境</title><link>https://aaaab3n.moe/posts/2020-3-24-remote-ssh-on-vscode/</link><pubDate>Tue, 24 Mar 2020 09:00:59 +0800</pubDate><guid>https://aaaab3n.moe/posts/2020-3-24-remote-ssh-on-vscode/</guid><description>Remote-SSH: 我的开发环境 Visual Studio Code 在之前发布了插件 remote-ssh 和 remote-wsl 作为vsc的远程开发套件。这两款插件对于 Linux 的支持非常的好，甚至有人认为这是Windows下最好的ssh工具。我目前的主力设备是HP-OMEN 2 (i5-6300HQ) 和 Surface Pro 6 (i5) 。为了用上好用的包管理器，我都是装了Arch的Windows Subsystem Linux 作为日常开发。
 在最近，随着天气转暖，以及经手了几个稍微复杂的项目部署，wsl相对于cpu的占用率经常达到了50%左右，明显感受到了性能瓶颈，外加hyper的内存泄漏，，让我周一的 python 在线 quiz雪上加霜。更不用说surface贫弱的性能和移动性，不适合在本地跑大项目。
 在半年前我刚上大学的时候，xa学长就向我推荐了remote-ssh 。可以充分利用阿里云学生机 9.9 块的羊毛，外加原生的 linux 在编译速度上玄学的快于 windows ( 在编译TeX时，有明显的感觉 )的特性。所以在最近我将开发环境转移到了阿里云。经过了一周的试用，我认为这是目前最适合我的使用场景的开发环境。首先，它解决了代码多设备同步的问题；其次，它分担了 surface 的压力 ；最后， surface 因此成为了我的便携式个人电脑。
 当然，如果没有阿里云学生机或者其它VPS，一块树莓派加 Zerotier 也应该是可以的。
@@ -78,45 +32,23 @@ Set-UP 首先，颜值既是生产力。因此首先在Linux主机上安装并�
 sudo apt install zsh 之后再安装 oh-my-zsh :
 curl 安装 :
 sh -c &amp;#34;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&amp;#34; wget安装 :
-sh -c &amp;#34;$(wget https://raw.</description>
-    </item>
-    
-    <item>
-      <title>一次服务器迁移的尝试</title>
-      <link>https://aaaab3n.moe/posts/2020-1-14-server-move/</link>
-      <pubDate>Tue, 14 Jan 2020 12:59:59 +0800</pubDate>
-      
-      <guid>https://aaaab3n.moe/posts/2020-1-14-server-move/</guid>
-      <description>0x00 缘起 在2019年的某天深夜，所有信院的同学的突然惊恐的发现，交作业的OJ上不去了。然后欣喜的在第二天接到了ddl延期的通知罪魁祸首是&amp;hellip;Azure欠费了。
+sh -c &amp;#34;$(wget https://raw.</description></item><item><title>一次服务器迁移的尝试</title><link>https://aaaab3n.moe/posts/2020-1-14-server-move/</link><pubDate>Tue, 14 Jan 2020 12:59:59 +0800</pubDate><guid>https://aaaab3n.moe/posts/2020-1-14-server-move/</guid><description>0x00 缘起 在2019年的某天深夜，所有信院的同学的突然惊恐的发现，交作业的OJ上不去了。然后欣喜的在第二天接到了ddl延期的通知罪魁祸首是&amp;hellip;Azure欠费了。
 好在作为叠境附属学院，金主爸爸重新赞助了一批阿里云服务器，这批新的服务器将会在2019年双十二期间划归社团。
 在没有迁移到阿里云之前，社团暂时由社团经费新开了两台Azure HK，并通过快照的方式及时恢复了服务。费用为11欧/天。
- OJ为社团自建，向全校学生提供服务。
+OJ为社团自建，向全校学生提供服务。
 该OJ已开源，详见 https://oj.geekpie.club/about 顺便求star 0x01 服务器架构 出于轻量化和弹性化的考虑，我们社团的服务器集群管理用的是 Rancher 1.6 ，所有的服务是纯docker的，我们会封装到docker里，上传到代码托管平台，由CI服务自动build完放到私有registry里，再通过rancher提供给其它服务器使用。
 所有的服务器通过 zerotier 组成内网，通过 zerotier 内网访问。
-之前，我们一共有三台Azure + 若干台其它server 所有服务器都用算法命名 Azure-CN-E2-0 【brent﻿】 64G 1C2G 负责跑 Rancher 1.6 服务 Azure-CN-E2-1 【prim﻿】 64G 1C2G 因为服务器在海外，负责 Jenkins自动docker构建和 registry 服务 Azure-CN-E2-2 【kruskal﻿】 64G 1C2G 负责跑大多数的服务，拥有大量数据库 etc  叠镜赞助了我们四台服务器：
- 3台上海阿里云 硬盘为 30G 2C2G 1台香港阿里云  现在的工作是将 Azure 迁移至 Aliyun ，并保证所有服务都可用。
+之前，我们一共有三台Azure + 若干台其它server 所有服务器都用算法命名 Azure-CN-E2-0 【brent﻿】 64G 1C2G 负责跑 Rancher 1.6 服务 Azure-CN-E2-1 【prim﻿】 64G 1C2G 因为服务器在海外，负责 Jenkins自动docker构建和 registry 服务 Azure-CN-E2-2 【kruskal﻿】 64G 1C2G 负责跑大多数的服务，拥有大量数据库 etc 叠镜赞助了我们四台服务器：
+3台上海阿里云 硬盘为 30G 2C2G 1台香港阿里云 现在的工作是将 Azure 迁移至 Aliyun ，并保证所有服务都可用。
 0x02 阿里云官方迁移工具 我们首先查阅了这篇文档
- Azure虚拟机迁移至阿里云ECS
- 由于阿里云提供了官方的迁云工具，所以这一步稍显简单。
-我下载了迁云工具，解压后首先运行./Check/client_check --check命令检查，没有问题，然后配置user_config.</description>
-    </item>
-    
-    <item>
-      <title>在树莓派上配置Clash-linux</title>
-      <link>https://aaaab3n.moe/posts/2019-1-30-raspberrypi-clash-tutor/</link>
-      <pubDate>Wed, 30 Jan 2019 13:59:33 +0800</pubDate>
-      
-      <guid>https://aaaab3n.moe/posts/2019-1-30-raspberrypi-clash-tutor/</guid>
-      <description>前言 一直在折腾家里的路由器和相关网络设备，想提供一个较为完美的网络环境。之前在Phicomm K2P上通过Openwrt安装luci-ssr-plus来进行国外ip的代理，但受限于简单的规则和MT7261令人捉鸡的性能，体验不佳。因此萌生了使用树莓派搭建透明网关的想法。在查阅了为数不多的教程并踩了很多坑以后基本搭建完成，并且到目前还未出现问题，所以说说如何使用。
-准备工作  树莓派 正常的网络连接 一定的动手和解决问题的能力  Clash  Clash is a rule-based tunnel in Go.
- Clash 类似 IOS/Mac OS上的Surge，可以在提供SS/V2RAY代理的同时资瓷自定义的代理规则。
+Azure虚拟机迁移至阿里云ECS
+由于阿里云提供了官方的迁云工具，所以这一步稍显简单。
+我下载了迁云工具，解压后首先运行./Check/client_check --check命令检查，没有问题，然后配置user_config.</description></item><item><title>在树莓派上配置Clash-linux</title><link>https://aaaab3n.moe/posts/2019-1-30-raspberrypi-clash-tutor/</link><pubDate>Wed, 30 Jan 2019 13:59:33 +0800</pubDate><guid>https://aaaab3n.moe/posts/2019-1-30-raspberrypi-clash-tutor/</guid><description>前言 一直在折腾家里的路由器和相关网络设备，想提供一个较为完美的网络环境。之前在Phicomm K2P上通过Openwrt安装luci-ssr-plus来进行国外ip的代理，但受限于简单的规则和MT7261令人捉鸡的性能，体验不佳。因此萌生了使用树莓派搭建透明网关的想法。在查阅了为数不多的教程并踩了很多坑以后基本搭建完成，并且到目前还未出现问题，所以说说如何使用。
+准备工作 树莓派 正常的网络连接 一定的动手和解决问题的能力 Clash Clash is a rule-based tunnel in Go.
+Clash 类似 IOS/Mac OS上的Surge，可以在提供SS/V2RAY代理的同时资瓷自定义的代理规则。
 编译 虽然说Clash的项目主页说你可以通过go get -u -v github.com/Dreamacro/clash的方式构建，但是因为要去Google服务器上下载包而变得困难；项目主页的预先构建并不支持ARM架构的树莓派，因此需要自行编译。
 这里@shinohara-rin 构建了 Clash-arm (v0.10.2) ，点击这里下载。
 配置 首先将clash文件移动/下载到树莓派的目录下，然后移动到 /usr/local/bin，并给予权限。
 # 把解压的二进制放到 /usr/local/bin 目录下 $sudo mv ./clash /usr/local/bin #给予权限 $chmod 555 /usr/local/bin 关于配置方法，Github的项目主页有详细的说明，在这里简单说一下我的配置。
 #运行Clash $clash 正常的话会提示
-INFO[0000] Can&amp;#39;t find config, create a empty file INFO[0000] Can&amp;#39;t find MMDB, start download FATA[0005] Parse config error: Configuration file /home/pi/.</description>
-    </item>
-    
-  </channel>
-</rss>
+INFO[0000] Can&amp;#39;t find config, create a empty file INFO[0000] Can&amp;#39;t find MMDB, start download FATA[0005] Parse config error: Configuration file /home/pi/.</description></item></channel></rss>

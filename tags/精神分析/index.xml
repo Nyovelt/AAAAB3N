@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>精神分析 on Canarypwn</title>
-    <link>https://aaaab3n.moe/tags/%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90/</link>
-    <description>Recent content in 精神分析 on Canarypwn</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 01 Mar 2020 22:00:59 +0800</lastBuildDate>
-    
-	<atom:link href="https://aaaab3n.moe/tags/%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>什么叫自由互联网啊（战术后仰）</title>
-      <link>https://aaaab3n.moe/posts/2020-3-1-free-internet/</link>
-      <pubDate>Sun, 01 Mar 2020 22:00:59 +0800</pubDate>
-      
-      <guid>https://aaaab3n.moe/posts/2020-3-1-free-internet/</guid>
-      <description>什么叫自由互联网啊（战术后仰） 当我们在谈论自由互联网的时候我们在谈论什么 国际互联网是一个宏大的概念，就其运作原理简单的说，我们将网线接入自己的房间，房间里的网线再经过家庭的网络中心，家里的网线再通过光纤接入ISP（互联网服务提供商 Internet Service Provider 一个例子就是中国电信）。ISP会接入自己建的或者公用的光纤海缆，把你传出的信息发送到它该去的地方。ISP和ISP之间会做peer（互联），这样你发出的信息可以被你的朋友收到。这样的模式看上去是自由的，它打破了空间和时间的尺度，“把人和人前所未有的紧紧联系在一起”。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>精神分析 on Canarypwn</title><link>https://aaaab3n.moe/tags/%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90/</link><description>Recent content in 精神分析 on Canarypwn</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 01 Mar 2020 22:00:59 +0800</lastBuildDate><atom:link href="https://aaaab3n.moe/tags/%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml"/><item><title>什么叫自由互联网啊（战术后仰）</title><link>https://aaaab3n.moe/posts/2020-3-1-free-internet/</link><pubDate>Sun, 01 Mar 2020 22:00:59 +0800</pubDate><guid>https://aaaab3n.moe/posts/2020-3-1-free-internet/</guid><description>什么叫自由互联网啊（战术后仰） 当我们在谈论自由互联网的时候我们在谈论什么 国际互联网是一个宏大的概念，就其运作原理简单的说，我们将网线接入自己的房间，房间里的网线再经过家庭的网络中心，家里的网线再通过光纤接入ISP（互联网服务提供商 Internet Service Provider 一个例子就是中国电信）。ISP会接入自己建的或者公用的光纤海缆，把你传出的信息发送到它该去的地方。ISP和ISP之间会做peer（互联），这样你发出的信息可以被你的朋友收到。这样的模式看上去是自由的，它打破了空间和时间的尺度，“把人和人前所未有的紧紧联系在一起”。
 但我们却在互联网前加上的定语，似乎先天的定义了互联网是“不自由”的。相对的来说，互联网并不像看上去的那么美好。《1984》中写道，所谓自由就是能说出1+1=2的自由。但似乎在互联网上这种自由受到了一定威胁。在聊天的时候，我曾对朋友说，自由互联网应该是能畅所欲言的自由，是发送一个文件能跑满宽带的自由，是上网冲浪时DNS（Domain Name System，负责寻找你输入的网址）不会被劫持的自由（你也在上网冲浪？），是论坛发帖不会被降权的自由。
 而我们今天看到的是各大ISP开始对流量劫持，某即时通讯工具看似只能在本地保存聊天记录但实际上在云端早有备份，一丘之貉的类似通讯工具更是决定了用户应该看到什么不应该看到什么，某公司标榜不作恶但却作恶多端。
 所谓自由互联网是在本应该自由的国际互联网以不自由的方式寻求自由。
@@ -34,21 +15,12 @@ Firefox 启用 DNS over HTTPS 的方法
 红鱼 DNS 正式发布， DoT &amp;amp; DoH only
 科学上网 我认为，科学上网要比重新找一个论坛靠谱的多&amp;hellip;这方面的教程多入牛毛，但需要警惕的是一些免费的软件可能会是泄露隐私的钓鱼软件。
 中立的服务 这部分见仁见智，很多人说我们在一个个大公司那里成为了数据库的一条条信息，所以我们需要分散的使用网络服务和使用开源自由的服务来避免被大公司控制。比如使用firefox浏览器和telegram。
-非对称加密 简而言之，非对称加密是一种很难破解的加密技术。同时PGP概念的引入使得我们可以利用非对称加密来在网络上证明“你是你”。简单的例子是把公钥放在github上，然后用本地的私钥来证明“我就是我，就是那个生成公钥的人，这个账户的所有者”。还有一个例子是yubikey，一个类似U盘的加密设备，起到私钥的作用，紧急时刻可以咬碎。区块链技术  今日同人创作网站AO3被墙，我把这事折腾了一下，刻到以太坊上去了。 交易地址：https://etherscan.io/tx/0x8d5d42c8ab24d7db5ddf7cecffdd621b778b67ca5713cf695cbb679a9ffc5c53
-  2月7日，有用户在以太坊区块链上为李文亮医生树了一座碑，区块高度9432824。李文亮医生的事迹将永远铭刻在区块链上，不可篡改，不可删除。
- nekoneteworkrouter以及p2p技术  其实我们一开始的想法只是希望把内网的资源共享起来，至于在互联网上出现是因为我们不希望被单个ISP捆绑起来。
- 或许互联网还是存在一些极客精神的，这也是我一直在折腾一些看似无用的东西。你还是可以在网上找到一些公益的组织，他们在尽力维护着互联网的自由。
+非对称加密 简而言之，非对称加密是一种很难破解的加密技术。同时PGP概念的引入使得我们可以利用非对称加密来在网络上证明“你是你”。简单的例子是把公钥放在github上，然后用本地的私钥来证明“我就是我，就是那个生成公钥的人，这个账户的所有者”。还有一个例子是yubikey，一个类似U盘的加密设备，起到私钥的作用，紧急时刻可以咬碎。区块链技术 今日同人创作网站AO3被墙，我把这事折腾了一下，刻到以太坊上去了。 交易地址：https://etherscan.io/tx/0x8d5d42c8ab24d7db5ddf7cecffdd621b778b67ca5713cf695cbb679a9ffc5c53
+2月7日，有用户在以太坊区块链上为李文亮医生树了一座碑，区块高度9432824。李文亮医生的事迹将永远铭刻在区块链上，不可篡改，不可删除。
+nekoneteworkrouter以及p2p技术 其实我们一开始的想法只是希望把内网的资源共享起来，至于在互联网上出现是因为我们不希望被单个ISP捆绑起来。
+或许互联网还是存在一些极客精神的，这也是我一直在折腾一些看似无用的东西。你还是可以在网上找到一些公益的组织，他们在尽力维护着互联网的自由。
 互联网的根本之恶 这就是互联网，一个本应该自由的地方。但ISP和大企业们似乎掌握了信息时代的话语权，同时也正是这些企业和ISP们推动了互联网的建设。根本之恶是什么，它是一种建设，是一种异化，也是一种破坏，一种恐怖。战争，婚姻，资本主义，以及其它事情都是一种根本之恶。我们在互联网时代是不自由的，但是这样的不自由，这样的恶也可以让我们遭遇到自己的本质，认识什么是自由。齐泽克认为，善是恶的面具。我们还是有办法利用不自由的互联网下创造出一个自由的空间。从这个角度说，恶的互联网也起到了善的作用。自由的真相在于，尽管我们遭遇了更多的恶，但我们同时有了更多的自由（相比互联网之前）。真相不是我们没有自由，而是过于自由，自由是我们能想到的最恐怖的东西，但不管它在哪里，我都会随之而去。
-参考文献 齐泽克对疫情的精神学分析</description>
-    </item>
-    
-    <item>
-      <title>爱，深渊与自由</title>
-      <link>https://aaaab3n.moe/posts/2018-11-06-love-abyss-freedom/</link>
-      <pubDate>Tue, 06 Nov 2018 15:38:33 +0800</pubDate>
-      
-      <guid>https://aaaab3n.moe/posts/2018-11-06-love-abyss-freedom/</guid>
-      <description>0
+参考文献 齐泽克对疫情的精神学分析</description></item><item><title>爱，深渊与自由</title><link>https://aaaab3n.moe/posts/2018-11-06-love-abyss-freedom/</link><pubDate>Tue, 06 Nov 2018 15:38:33 +0800</pubDate><guid>https://aaaab3n.moe/posts/2018-11-06-love-abyss-freedom/</guid><description>0
 贯彻爱与真实的邪恶，可爱又迷人的反派角色
 作者：武藏 小次郎 喵喵
 1
@@ -63,9 +35,4 @@ Firefox 启用 DNS over HTTPS 的方法
 通过上文由社会性构建得的精神分析理论，大多数人之间的爱是一种相互或单向将对方纳入自己想象中的过程，因此爱的对象更近似于自己。这很类似圣经中所讲的“像爱你自己一样爱你的邻人”，但这却是一种很不合理的行为，所爱的人有自己的个性特点，而把所爱的人纳入自己既定的印象中是对对方个性的消解，是一种不自由。佛洛依德说过，“Wo Es War，Soll Ich Werden”（它我所在之处，自我一定要形成）。他所崇尚的是保留双方的独立的主体性，将双方从各自刻板的印象中解放出来，去直面内心想象的本质，让自己感觉到对方在自己心中有一种不一样的，直达本质的恐惧。这种既是恐惧又是本质的，便是“他者”，便是“深渊”。爱对方就要去理解保留对方的本质。自由与爱并非不能共存，与其在爱中享受对方在自己想象中的投影，不如去寻求对方在实在界中的本质。为了自由与爱的兼得，需要保全对方的“他者性”，即保全对方的个性与特点，换句话说，只有将对方视作深渊，才能爱。
 5
 当然，从人的动物性角度探求，自由与爱的名目不过是人加以修饰而产生的，人们为了追求所谓的爱，一种非生理的情感，而备受束缚。“爱”与“自由”两者似乎无法兼容，想要得到爱就必须要放弃自己的主体性，而想要爱就必须放弃自由，寻求两者的统一。什么都不爱或许自由，但却难免虚无。在这矛盾中我们不妨探求一下爱的本质。爱本身毫无逻辑，没有人能说清楚什么是爱。爱更是一种非逻辑，非理性。但是爱的意义就在于他的非逻辑，他没有逻辑，却反而成为了最弥足珍贵的东西。人们放弃自由去追去爱，这是一种选择，是否选择这么做取决于你的内心，看似放弃了人生中最重要的自由，却反而感觉收获了人生中更重要的东西，这也许就是所谓的爱。
- 主要参考：神的意识形态
- </description>
-    </item>
-    
-  </channel>
-</rss>
+主要参考：神的意识形态</description></item></channel></rss>
