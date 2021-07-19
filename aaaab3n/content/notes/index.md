@@ -13,7 +13,8 @@ Here lie all of my lecture notes. I am used to taking structured notes on things
 - Introduction to Programming: ST-CS100 [ [Github](https://github.com/Nyovelt/CS100-Projects) ]
 - Introduction to Information Science and Technology: ST-SI100B [ [Github](https://github.com/Nyovelt/SI100B-Projects) ] 
 - Algorithms and Data Structures: ST-CS101 [ [Github](https://github.com/Nyovelt/CS101-Projects) ]
-- [Computer Architecture I: ST-CS110](https://robotics.shanghaitech.edu.cn/courses/ca/21s/) [ [Notes](https://notes.aaaab3n.moe/cs-131-programming-languages-and-compilers)][ [Github](https://github.com/Nyovelt/CS101-Projects) ]
+- [Computer Architecture I: ST-CS110](https://robotics.shanghaitech.edu.cn/courses/ca/21s/) [ [Notes](https://notes.aaaab3n.moe/cs-131-programming-languages-and-compilers)] [ [Notes]
+(https://notes.aaaab3n.moe/cs-131-programming-languages-and-compilers) ] [ [Github](https://github.com/Nyovelt/CS101-Projects) ]
 - Programming Languages and Compilers: ST-CS131 [ [Notes](https://notes.aaaab3n.moe/cs-131-programming-languages-and-compilers-1) ]  [ [Github](https://github.com/Nyovelt/CS131-Projects) ]
 
 ## Others
