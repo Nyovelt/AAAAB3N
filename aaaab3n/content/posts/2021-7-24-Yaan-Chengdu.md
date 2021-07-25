@@ -8,6 +8,10 @@ tags: School
 
 # 雅安
 
+首先安利一下这段视频，看完以后说不定你会对“最能代表雅安”的事情有所了解
+
+<iframe src="//player.bilibili.com/player.html?aid=846455891&bvid=BV1L54y1p7CZ&cid=364908224&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
 ## 出发之前
 
 众嗦粥汁，上科大每年的大一新生在暑假里都会"上山下乡"一次，学校报销必要的费用，让同学去贫困地区调研。因为疫情的原因，我们这级延期到了大二，去雅安。
@@ -69,3 +73,68 @@ tags: School
 ![你们那，总想搞个大新闻](https://snz04pap002files.storage.live.com/y4manXj7tBnLK9nloel99oKIVkwACm5m8ixJ_Bk598B6CwmvryKGqSfOUcwu5qko7iDvkRpLAxLK7yRvm7dJrupLO6R7bwW8862nXKD-MUxt9kSNW3CTATLs3ABQ_xLEY2Chzu4lwVZZn350aBs_07GYmpQR3BdKMdGpQ4CCsQt7VkRWde3at-18BHQ6bkOQEpN?width=1024&height=683&cropmode=none)
 
 不过腻了吧唧的，一点也不好吃 （逃
+
+当晚我们去雅安廊桥附近逛了下，很有生气。
+
+![](https://snz04pap002files.storage.live.com/y4mChxd9X4iZffk245CHxzvHyFoFuawe81kZXjVMxEEys22_BBQL_ZA1hvPsLBAmd4PzzV7kxTsXvnTybz8J3PseIb4wbV9DdgarcEC73ngzvxCkkvbdD3h1_8fEvl0WrNJAWvoGwV9gtccMe0-TvQxp4DnGOxb-t4vCFk7Fv0RWjj8pMnFXCokBE5d5f4NK_Xe?width=1024&height=505&cropmode=none)
+
+## 第三天
+
+当天我们去参观了当地的茶产业，地点在蒙顶山
+
+当地的茶产业类似一种专营的模式。茶企业承包了附近的茶山，雇佣当地人，配套农业科学院，专营向藏族的茶。好处是不管怎样这个庞大的市场都不会消失，但是坏处是四川的蒙顶山茶并不如西湖龙井那么有名。
+
+我和同学专门讨论过。我们家里都或多或少收到过各种各样的茶，但基本都没有喝这些茶的习惯。在年轻的族群中，似乎喝茶的比例还没有咖啡多，如同“饮料”这种A股奇葩一般，都是互相送礼再送给其他人。这个时候就看哪家茶厂营销做的好了。
+
+![](https://snz04pap002files.storage.live.com/y4mqI5vGIMi8baOApwOFBaUfFgWYKVGfmHDx1wO7A58xnJB_ZrARhxcRROEA6M7DLBoS8Gh0aJ-jK_vLuRdUa41k9u0nE6leSkoIMAjS3kvFSlbXDXugD3PRvzLKRRv10enLRZo_yh7g01SVplFpHfsmlxNKS_38VxMhyal_PAXUQnZ0st-8za9VxW2TU8i2WnQ?width=1024&height=683&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4mssxyUeoGHrPF7SazfpHCx1zOKBocJJaeyfH_PeP7NhD0JdSMaXNRZ-eKz96JOHrZVY2hEk5vCxil2-X9G7Sc_wzF1mo3EacamXxMk6lJYconCnEgispokWrr6WVtTTzyaqbWarch6laGCfzH5pLBkVtKtsSECFmiJYkML_QRWy1OKf3ubUELuRJGEOgWDw5m?width=1024&height=683&cropmode=none)
+
+这里的茶是黑茶，压紧运输时发酵，因此有了不同的风味。
+
+![全是茶树](https://snz04pap002files.storage.live.com/y4mqs4951PoNyiODMhKuuEHDVjMo9yjHxvWjcp2GRQ4fS92Mdms_v1GPGx8eXVvFYtXiTx-3ET9VoUjLyI4WAJ3OMqpCYfkfHeMfNEBqOhtMNtECNUD5gBIuZL-dIqmQyVhkvCkzxsonHzom8DKffr7PQd2hyAkePl7I1i_AhEDQJSodGsMp64SqzjqD8BT6pH3?width=1024&height=768&cropmode=none)
+
+不过二队去调查的结果更加悲观一点，他们去的山上成立了一个合作社，每个村民分到一两股，然后合作社雇佣村民进行手工艺劳动，一天工作很久，工钱大约几十块。而编织的手工艺品外销的价格是一个200好像。那么大头去哪了呢（笑
+
+## 第四天
+
+### 大数据
+
+第四天我们来到了雅安本地的大数据产业园。该产业园到成都电信配套有70T的交换机容量，租地皮送办公楼。客户多为天翼云，中华云一类的国企。电价3毛一度电（约为上海市电第一阶梯的一半）。
+
+不过我们刚过去以为是 IDC, 还说现在做云服务的成本不高，不如套个 openstack 做点附加产业。聊着聊着发现原来是收房租的 ...... 当地盖了房子，送了办公楼，做了 IDC 配套措施 （比如柴油发电机和应急水库一类的），但是机房都不是自己的，而是天翼云一类的 IDC 付钱给他们。
+
+想来 "数据中心" 即使在上海市宝山区都被纳入了 “禁入产业”， 因为信息产生的价值与收入所交的税并不会交到本地， 反而大耗电造就了极高的 “污染税收比” （即每收一块钱的税产生多少污染）。
+
+![这里 bug 很多](https://snz04pap002files.storage.live.com/y4mzFnC6YUbXufcVTIv6CMfhu1f3Uj4WYpxBL1CGsTNIcd5dVOoD-85dfKwCyGU40mMUz8FJiy1BSh0aglfcQHUcbFxpBLc6-7jMy2SqbPB88LjApYYG-Y39HwE1cIyz0zGAbpn01MWQ9Fh9ipQAIKSGXrKweM_HYyFIUxX0c3vu_CTemKtWoVLWuRgNt4ATopA?width=1024&height=768&cropmode=none)
+
+### 产业
+
+看完本视频可以帮助理解：
+
+<iframe src="//player.bilibili.com/player.html?aid=883193658&bvid=BV1ZK4y147u6&cid=195200269&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+在当天晚上，我们去街头进行采访。发现当地市中心市民的收入普遍在3000元上下，其中很多人领取失业补助金，有些人连失业补助都没有。疫情和之前的产业规划对当地商业产生重大打击。在15年的时候，雅安开发新城，商业转移，不利老城的商业。
+
+当时的规划也很扯淡，这份深圳院的规划要在雅安建造“医疗综合体”。经过我们的考察，房地产和基础设施建设做的不错，新城房地产泡沫严重。工业区有所缩减，商业分散，最高端的万达广场内的商业也不繁华。一个市的领导任期四年，非升即走，也许这要算在决策失误上吧。
+
+## 第五天
+
+今日摸鱼，献上雅安 美照
+
+![](https://snz04pap002files.storage.live.com/y4mEhnIpa5nnXTeC8kVEZM5uE8WXvtV7o_zzgnrgkSf2V-7_pnfTM3OQtmux7a6rmTaZKQ6KmNhqgC_URoyU9GGU4Ap2jRn0k_lOLQJ0nRzybopmcNVhDi82k9-Il16-P7fDTVtWO5F8N75ak_OmLKo14tkzjpmFjGmpiWUsS2EXK30F6Ow5GOQEbum2QKNVphd?width=1024&height=683&cropmode=none)
+
+这个月亮是假的，因为拍摄时间是11点，这个时候不可能有下弦月。实际上仔细看能看到黑色的轮廓，后面是一块圆形的灯板。考虑月相好评，可惜还没到下半夜呢。
+
+![](https://snz04pap002files.storage.live.com/y4m79bvqn0NOkpvxOZjrO3rS-zxiJMeFvit8x-aEm8mChPn906cCQLOg4c8Sdz9mxyC2OEVT-aL0KAc8huUlIh6CNBIBQhbE-nApSE_Nm6Ofr2zCrbU4UHITGx2uC_a2y3IHgvBjNgioBMBGsEEL2-6qBU07HEUasoIJ5s71qV-qUJCNXeDT1pXZ-6Ie6Cebh_D?width=1024&height=592&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4mZrjajRj6TpMJHovfizUc6UD_OnnrJl26kr6gDFHb4mZyIMFkXHjk0gUhd98mopSrUTLO_0tA3ZTU0frDtBTSCqXoyKgMKy7_cJxCovzVOaAaMtFWiXP6gpl2-jmyQodKP6xezYwDyv0z1Lf7UzbL8XsG8jm9aYLhdg6G2iPWadxaNhppAcloGLB83xLeiC9J?width=1024&height=537&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4mdrsvVN5JqkBNnwrsx8k-1dZk-Gq7HslbN9EfVG9W82JzkN2vXWMf1t6GrsbY6jxO7pS1Flrd3dXUuEZqOvlvMfEw0YunQIbjIqgoSeRuukC5sYUfo1SRjvQVk0HxcInE8SjCmwf_NrUPn_pdzrgRsCG-cLuXSklGDHo0i0xoE2YPYyhktHEC0Vt3cOPahHyQ?width=1024&height=683&cropmode=none)
+
+![红油抄手](https://snz04pap002files.storage.live.com/y4mdBAKCQmBkSZ2oMjR3hZyQk3W6F0qZewxSi6Nn0JDxYCxuBfHYNC38R4yLlvXYQWCUs8PDHf1nuk9QDOD_U0VXfUjBfc7qCsOIUKwd9CcNz4wfmxoSPIsRdSNLr-I-JeRMc8b15Yi_1OWGgJtrTMreWwJL4Lk8R7NVgwgbB-XBcH4tXc4wg8eEzVoezK3RlW-?width=1024&height=683&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4mXpxLjxTZWKfRZMY-oqzKsQlJWuO8yNhTKW5ws9r-V-3d-TpSPJgpjCrdYSd2gtmJoCCLaSPfC2jY954x1FmNqrTowisnpdr_LYTaAhCj0OZl1HNgJsU7dC0YphLx1Qg7NrfXz0lCyNjN701jGQ1PVkso-zMqLPmfb0rn0i28OcKLDo4AYshQUyxCDR0WTK5v?width=1024&height=683&cropmode=none)
+
+## 第六天
+
