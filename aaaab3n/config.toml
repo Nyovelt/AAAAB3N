@@ -1,9 +1,12 @@
 baseURL = "https://aaaab3n.moe/"
 languageCode = "en-us"
-title = "Canarypwn"
+title = "canarypwn"
 theme = "cactus"
 
 [params]
+  [params.comments]
+      enabled = true
+
     mathjax = true  # not required
     colortheme = "white" # dark, light, white, or classic
     rss = true # generate rss feed. default value is false
