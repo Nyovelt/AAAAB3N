@@ -2,7 +2,7 @@ baseURL = "https://aaaab3n.moe/"
 languageCode = "en-us"
 title = "canarypwn"
 theme = "cactus"
-
+googleAnalytics = "G-73VZSQL8QT"
 [params]
   [params.comments]
       enabled = true
