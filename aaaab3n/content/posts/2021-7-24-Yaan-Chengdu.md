@@ -114,7 +114,7 @@ tags: School
 
 看完本视频可以帮助理解：
 
-<iframe src="//player.bilibili.com/player.html?aid=883193658&bvid=BV1ZK4y147u6&cid=195200269&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+{{< bilibili 883193658 >}}
 
 在当天晚上，我们去街头进行采访。发现当地市中心市民的收入普遍在3000元上下，其中很多人领取失业补助金，有些人连失业补助都没有。疫情和之前的产业规划对当地商业产生重大打击。在15年的时候，雅安开发新城，商业转移，不利老城的商业。
 
