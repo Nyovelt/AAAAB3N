@@ -10,7 +10,9 @@ tags: School
 
 首先安利一下这段视频，看完以后说不定你会对“最能代表雅安”的事情有所了解
 
-<iframe src="//player.bilibili.com/player.html?aid=846455891&bvid=BV1L54y1p7CZ&cid=364908224&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+{{< bilibili 846455891 >}}
+
 
 ## 出发之前
 
