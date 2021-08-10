@@ -136,6 +136,12 @@ tags: School
 
 ![红油抄手](https://snz04pap002files.storage.live.com/y4mdBAKCQmBkSZ2oMjR3hZyQk3W6F0qZewxSi6Nn0JDxYCxuBfHYNC38R4yLlvXYQWCUs8PDHf1nuk9QDOD_U0VXfUjBfc7qCsOIUKwd9CcNz4wfmxoSPIsRdSNLr-I-JeRMc8b15Yi_1OWGgJtrTMreWwJL4Lk8R7NVgwgbB-XBcH4tXc4wg8eEzVoezK3RlW-?width=1024&height=683&cropmode=none)
 
+![](https://snz04pap002files.storage.live.com/y4mXpxLjxTZWKfRZMY-oqzKsQlJWuO8yNhTKW5ws9r-V-3d-TpSPJgpjCrdYSd2gtmJoCCLaSPfC2jY954x1FmNqrTowisnpdr_LYTaAhCj0OZl1HNgJsU7dC0YphLx1Qg7NrfXz0lCyNjN701jGQ1PVkso-zMqLPmfb0rn0i28OcKLDo4AYshQUyxCDR0WTK5v?width=1024&height=683&cropmode=none)
+
+## 第六天
+
+去了水力发电厂调研，这里统一说一下雅安水电的问题。以下节选自报告。
+
 ## 水电产业面临问题的探究与说明
 
 ### 水电产业面临的问题
@@ -211,9 +217,4 @@ https://mp.weixin.qq.com/s/PjODL6z5UbxYq4J6jzN8YA
 ##### 小水电的地方性保护主义上的矛盾
 目前当地对于小水电的政策是: 对自然保护区的小水电，在核心区、缓冲区，不能有人为的生产活动;其它的小水电,检查手续是否齐全，尽力帮助小水电完善手续，关停实在无法提供手续的电站;要求雅安所有水电站接入了生态流量的监控系统。5万千瓦时一下的水电站原则上不再兴建,审批权归四川省发改委.(来源于对雅安市电力科的采访)。实际执行困难在于小水电站的业主多样,且提供了丰富的就业岗位,无法一刀切的进行管理。
 
-从“水电消纳”的政策,以及采访时对于小水电整治的态度看出,当地电力部门对小水电执行了保护性的政策,投入资源来帮助小水电完善资质与建设.我们认为,这样的行为反而会破坏水电产业的自我升级与发展,并不能帮助本地水电产业发展.小水电作为我们认为的落后产能的代表,是应该逐渐退出历史舞台的,当地的保护性政策虽然让雅安本地的发电量和水电站产业看似扩大了,实际上对水电行业的根本性问题,也就是弃水问题和产业升级问题,没有任何帮助,这样的保护性政策是值得商榷的。![](https://snz04pap002files.storage.live.com/y4mXpxLjxTZWKfRZMY-oqzKsQlJWuO8yNhTKW5ws9r-V-3d-TpSPJgpjCrdYSd2gtmJoCCLaSPfC2jY954x1FmNqrTowisnpdr_LYTaAhCj0OZl1HNgJsU7dC0YphLx1Qg7NrfXz0lCyNjN701jGQ1PVkso-zMqLPmfb0rn0i28OcKLDo4AYshQUyxCDR0WTK5v?width=1024&height=683&cropmode=none)
-
-## 第六天
-
-去了水力发电厂调研，这里统一说一下雅安水电的问题。以下节选自报告。
-
+从“水电消纳”的政策,以及采访时对于小水电整治的态度看出,当地电力部门对小水电执行了保护性的政策,投入资源来帮助小水电完善资质与建设.我们认为,这样的行为反而会破坏水电产业的自我升级与发展,并不能帮助本地水电产业发展.小水电作为我们认为的落后产能的代表,是应该逐渐退出历史舞台的,当地的保护性政策虽然让雅安本地的发电量和水电站产业看似扩大了,实际上对水电行业的根本性问题,也就是弃水问题和产业升级问题,没有任何帮助,这样的保护性政策是值得商榷的。
