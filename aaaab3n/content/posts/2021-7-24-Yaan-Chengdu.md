@@ -218,3 +218,48 @@ https://mp.weixin.qq.com/s/PjODL6z5UbxYq4J6jzN8YA
 目前当地对于小水电的政策是: 对自然保护区的小水电，在核心区、缓冲区，不能有人为的生产活动;其它的小水电,检查手续是否齐全，尽力帮助小水电完善手续，关停实在无法提供手续的电站;要求雅安所有水电站接入了生态流量的监控系统。5万千瓦时一下的水电站原则上不再兴建,审批权归四川省发改委.(来源于对雅安市电力科的采访)。实际执行困难在于小水电站的业主多样,且提供了丰富的就业岗位,无法一刀切的进行管理。
 
 从“水电消纳”的政策,以及采访时对于小水电整治的态度看出,当地电力部门对小水电执行了保护性的政策,投入资源来帮助小水电完善资质与建设.我们认为,这样的行为反而会破坏水电产业的自我升级与发展,并不能帮助本地水电产业发展.小水电作为我们认为的落后产能的代表,是应该逐渐退出历史舞台的,当地的保护性政策虽然让雅安本地的发电量和水电站产业看似扩大了,实际上对水电行业的根本性问题,也就是弃水问题和产业升级问题,没有任何帮助,这样的保护性政策是值得商榷的。
+
+## 第七天
+
+休息 + 群团中心采访
+
+## 第八天
+
+国家电网采访
+
+比特币: 非法转合法, 争取保存量
+
+![奇怪的文件](https://snz04pap002files.storage.live.com/y4mL3n8m_lrLhMCWvs6VOyGVbaVS8md8dIkQ5hUiEg6PVVxAQi--7atfHBlMYpCKY1aqfOecwWWGunQwA4-yOQz0KbQckmWHS3auVSUsgG1j57RN-oUucV99AN4DzDwQzPM52-zjN3RLd0aCTwmyY6Neof5Gh4thm4pXKfKyt0JK6uAMASvcvxDCar3crQCwesI?width=683&height=1024&cropmode=none)
+
+## 第九天
+
+大熊猫 !
+
+![](https://snz04pap002files.storage.live.com/y4mCqeOIv0WNz0eQVeBVbctZckANNZ7Tnp_BIpy3YSMaC8uo5tbuJpX8aefpZyGGbxKQpWUiCNMgWHlMBbfMbY-2_PCtJUv7mVZQSpdC_MeAMvlS2VZ5yvaBTl3x2raF0IwTzx7jRJ2b2oX2pMVluiyCZOu36BAy5N_fEodUotftoS4_7YXL6mZ3l4EwheTH6GK?width=1024&height=565&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4mke4TmreuJgVhMU3U04yfxLp1FuqJjgsKAoJ-XjpLNHlYVV7rqOLs-UjR8jyOgfJv4cFy5934u3UdClkMfuydBYm7GxRuKH9srIBmHEbE575liaDyaioh_jLSetav_V6SOVlQ_mIG51MtJ8TtrXfW6sgF0kj4AHWsERkg1BAgsW_mBWHCfx68pZYIo-fGlEGg?width=1024&height=731&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4mtEoqCQVi7r_k9_ZoBDRIryu3hE4aH6l4WVgx9JH-BI5o-Ad2LK7bhjeswJ_ZUBEsAEmXDFcetRzpm4UDVmHQ7xqMzhgHoYma1cVH5nxR8F-J_9BeEYB-eEYwJuvIOryLtVJILg194tPE5xkLZSweV590RbhpezHF7Swg2SrauzZx3bW5Z258E478NpzUc0_4?width=939&height=1024&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4m9_Jfazt92aCjZVd0A6aT6jYkDbcaNYxj4e6Mgsd2vImXFMGlvCvanJUleZhxJEtnque5MPz4d5O0ozGxkVmmkX2PX6dysdFh7le3LwdXy0doTW8rQWsCfWDcx_1oqlw-1GbBY14vG_3EAscxmsPVTMPNT7c8SdRUhjwdIa5_vKwgvSuPvT6I6a7uDp5hsYv3?width=1024&height=683&cropmode=none)
+
+## 成都火锅
+
+成都鸳鸯锅吃法和上海有很大的不同, 很多上海人第一次看到成都的鸳鸯锅一定是非常惊讶的.
+
+![](https://snz04pap002files.storage.live.com/y4mdrsvVN5JqkBNnwrsx8k-1dZk-Gq7HslbN9EfVG9W82JzkN2vXWMf1t6GrsbY6jxO7pS1Flrd3dXUuEZqOvlvMfEw0YunQIbjIqgoSeRuukC5sYUfo1SRjvQVk0HxcInE8SjCmwf_NrUPn_pdzrgRsCG-cLuXSklGDHo0i0xoE2YPYyhktHEC0Vt3cOPahHyQ?width=1024&height=683&cropmode=none)
+
+因为很多上海的火锅都是白汤在外面
+
+然后油碟是用来稀释辣味的, 尤其要注意的是不要在辣锅里面涮蔬菜, 不然蔬菜就会变得很辣. 在雅安第一次吃火锅是四川的同学 [@FlashWarrier](https://blog.csdn.net/FlashWarrior) 带我们去吃的, 第二次是一位河南的同学带我们去的, 由于那位同学比较喜欢整活, 所以最后红锅里全是辣土豆.直接导致了 @murez 晚上肠胃炎去医院了.
+
+
+
+# 成都
+
+## 第一天
+
+### 人民公园
+
+![](https://snz04pap002files.storage.live.com/y4mchrgjDzWXkk0Z8IQdjWYdWXce6x9uinRUu-XgnWcaSTy_dERYy8cMJJd_rswBkv5I3HtVYFpxZjxZFTqUbZJD80V--Kl7HMg7pqus90fzs1B9p8GntqnQiXED8glYD-8Uc17wOAhawCMNeaUILcNbARZTJ1SM0KLeXdS9r-__5v6oFjTnrqjAvTd78Svw8vW?width=1024&height=683&cropmode=none)
+
