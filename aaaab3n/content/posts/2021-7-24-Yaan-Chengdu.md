@@ -321,3 +321,6 @@ https://mp.weixin.qq.com/s/PjODL6z5UbxYq4J6jzN8YA
 
 四川之行, 我见识了雅安发展的无力, 也见识了成都的玩家灯火. 回到上海, 有同学因为雅安的民生而半夜破防, 也有同学在写报告的时候不断的为雅安出谋划策.无论如何, 这段难忘的经历都使我们对生活有了新的认识, 当我们在几天内见识了祖国大地上最发达的城市和想对来说非常没有希望的城市的时候, something might have been grown in our minds.
 
+# 相关链接
+
+[我的大众点评 - 在雅安和成都吃过的店](http://www.dianping.com/member/2170134383)
