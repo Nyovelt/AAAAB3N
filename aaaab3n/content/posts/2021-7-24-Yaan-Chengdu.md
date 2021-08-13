@@ -267,6 +267,8 @@ https://mp.weixin.qq.com/s/PjODL6z5UbxYq4J6jzN8YA
 
 当天下午居然有这么多年轻人来公园喝茶, 这在上海是很难见到的现象. 附近有很多采耳工作者, 也是之前没见过的, 不过听说采耳可能有潜在的卫生问题, 再加上整个过程看的挺难受的, 就没有体验.
 
+正如我之前在谈蒙顶山茶时候说的那样, 年轻一代真的没有消费茶的习惯, 我在茶社点了一杯玻璃杯装的柠檬茶, 是公认的答案(逃)
+
 ### 夜刷 339
 
 作为一名 Ingress 特工, 唯一能证明我来过成都的方式就是做一排任务. 
@@ -275,7 +277,7 @@ https://mp.weixin.qq.com/s/PjODL6z5UbxYq4J6jzN8YA
 
 于是拉着同学在 339 广场转了不下六圈
 
-![](https://snz04pap002files.storage.live.com/y4mNM3AuQlvoG6mO4e_DqZ26UIa7aEfKPD59g0GtSxhNah1GQE0QvrIzNDb35x3gpcRNTbNC0eGxmL1m020Vim20HdiMXTit0cXFNTugFrEaN8w_5RqZ5I_wnNs9pSzNnc0eJkWmeOlAP5Frq74-RkUEODWNaRAUnqL6boK19j6jC00XcBgltrkAiMAbvpoXJnJ?width=768&height=1024&cropmode=none)
+![](https://snz04pap002files.storage.live.com/y4mlXnfLkpXiSXpG1dAWRSSTFb7eRrP3ZZMVYeODF4poTT9rXwKLs43BiFk5Q_RvA6-FlYpN0hXu340B0kG37LG9sc9ZikeZa0ML0MH1IJn3nGGadOPfk-4YU26NXVPZmd-BGt4hFflssUXizIaKfvwskttsURIjzLskuCNbgR765JUph4hCx2nQ_FYvdB8c8Lz?width=967&height=1024&cropmode=none)
 
 ![](https://snz04pap002files.storage.live.com/y4mQm8LQxQdAcrkQeQ3cTaZ-7toR921bKylcvUwzQ4n7SZk92rbcOmuddE7D3q0pdacCs2niBURvXLUZ22u0QaScqT-utb0oB_kiNKZ0B2rtIipdoiAoZ2KGR3e9T9F1pFqYysgLqklEd8fS9Zlz7ilLIKxvD34DFdGVJLwbOYsPhsOqDiVCNFy9hzXl8qXmle1?width=1024&height=683&cropmode=none)
 
@@ -297,5 +299,25 @@ https://mp.weixin.qq.com/s/PjODL6z5UbxYq4J6jzN8YA
 
 成都已经建到了 “七环” 了, 但真正商业繁荣的地方还数春熙路. 成都执行限号政策, 每天会 ban 掉两个末尾数字, 即使这样, 车辆保有量第二的成都春熙路硬是成为了全国最堵的道路. 
 
+## 第三天
 
+### 宽窄巷子
+
+宽窄巷子是我成都最推荐去的地方, 可以说我不知道成都有什么景点的时候就知道了宽窄巷子, 不知道宽着巷子里有什么的时候就知道了里面有家叫白夜的酒吧. 
+
+有一家手机评测自媒体叫 VZOO, 里面有一个很有意思的灵魂人物叫老杨, 这是他当年做的宽窄巷子游记, 我无法说的比他更好了.
+
+{{< bilibili 22047495 >}}
+
+### 武侯祠的泼猴
+
+下午的时候我们去了武侯祠, 在门口有几只孙悟空在拉游客拍照, 大概长这样
+
+![](https://snz04pap002files.storage.live.com/y4mD_QOnQ1r05aE0KblrhG5cjNsaHivGTkbh0crBrbhqUdtZNsM1qkFY32vEcCW9ck2vKvdell2ZsKeQfvFvXye1-Q-EfnJp4jFV4FJYe7Ukqox-0K-At2T3wr2U73z-BVyeH2cfD91CYJoxdd4J8Sm-sELtkHl_4J4gcZhnyED-JPJ3CVi7ILeey_ljszOeUxp?width=1024&height=683&cropmode=none)
+
+之后就是一个人20块了, 在交了钱以后我们拨打了 12345 市民热线. 当我们回到上海的时候, 接到了成都方面的反馈, 当地警方带了一车面包人将他们全部带回了派出所.
+
+# 总结
+
+四川之行, 我见识了雅安发展的无力, 也见识了成都的玩家灯火. 回到上海, 有同学因为雅安的民生而半夜破防, 也有同学在写报告的时候不断的为雅安出谋划策.无论如何, 这段难忘的经历都使我们对生活有了新的认识, 当我们在几天内见识了祖国大地上最发达的城市和想对来说非常没有希望的城市的时候, something might have been grown in our minds.
 
