@@ -38,7 +38,7 @@ tags: School
 
 ![](https://snz04pap002files.storage.live.com/y4mi5Qd4gPvvBYGXZSVE9bdEKpQK5XYU8fhHhJW_UhRNSOQAPpOFcc-uB0EJ0Uh5NTta9iEtNBQkg4VEZmrhbJcY7w_rIje1ucbDqZ8ur0qDZ1tJ67S9dmld6KKoiHwRAoEfR3l9owqFYhkMRsMzKCYJbO39OsXrggL0uhVLIDNCJtbwnjnZFRp3hjCZUEc7WIJ?width=1024&height=683&cropmode=none)
 
-火车上着实无聊，而且网络很不好。第一天我就把 MacBook 的电用完了，而且隔两三个车厢才有一个插座，最后祭出了 LightQuantum 推荐的 usb-hub。同学纷纷讲出了“火车上使用违禁电器上征信名单”的笑话。但实际上，车厢内的确间断性停电多次，不知道是为什么。
+火车上着实无聊，而且网络很不好。第一天我就把 MacBook 的电用完了，而且隔两三个车厢才有一个插座，最后祭出了 LightQuantum 推荐的 usb-hub。同学纷纷讲出了“火车上使用违禁电器上征信名单”的笑话。但实际上，车厢内的确间断性停电多次，不知道是为什么。(后来有人指出是取电钩脱网或者更换车头)
 
 ![每次别人看到都问我要淘宝链接](https://snz04pap002files.storage.live.com/y4mQ9Y_jpFMWhudppHXfGdcq4stDMSW7574Vk_QY_Cgy_EiGdLLWA2EYTap0Woq9Kz_TZp0Qic_mddV93pbivlGY6-2MJveGsxuEzyFenMwsYdbKn0ryqwWaUCmAAWsTfN0-eLsQ-ynA-fTE24TnBJ9sz-o0LcL6Z7c3PbBgjBRu5yf0lJTQ-c8_gdl2FsIF_Bz?width=1024&height=683&cropmode=none)
 
@@ -50,25 +50,25 @@ tags: School
 
 ![](https://snz04pap002files.storage.live.com/y4mLJf7IcfsxErA6xbFrQqob970-M_N2apzqjoRAQCpcG3JoNIb6UkxKa1cl7XIJSgnbAU7IFl2fDCz5n8fUM4zq5yrCf5cpDc9a3xvBuAqfFknMKUcCaCgZ0tqKBReoiCLkUoeToBBlhYKlDTi-rRMT4XA5Xmf3IKXSYCNdTnbavRFF0StTAIElz38PDxHqRi_?width=1024&height=768&cropmode=none)
 
-德克士一碗和全家差不多的咖喱饭要卖35块，差评，真不知道它怎么在雅安生存下去的。
+德克士一碗和全家差不多的咖喱饭要卖35块,缺只有全家14块的饭量，差评，真不知道它怎么在雅安生存下去的。卫生环境一般. 
 
 ## 第二天
 
 ### 群团中心
 
-第二天我们去了群团中心，听他们介绍了一下当地情况。将一些词藻褪去之后，并不是很出乎意料。第一产业第二产业不发达，基本没有第三产业，产业升级困难。
+第二天我们去了群团中心，听他们介绍了一下当地情况。将一些词藻褪去之后，并不是很出乎意料。第一产业第二产业不发达，基本没有第三产业，产业升级困难。而且地形原因不适合发展重工业. 
 
 ![当时的会议记录](https://snz04pap002files.storage.live.com/y4m4lhCBMrxn-OPAcs_vNkAW9qNtBiN058ampMXmgd-ayf7LwnMRaYQVko9Zs3lVY-E4bJlAywv1PegwgOLlXTxTaoQHkVoMDOcm4aFo6BSZ0Tu0JBX2A6Ox6G5HWAawjUZPfOSIrLFpuowAWupyThNuZPTYFBSpeblDOjFvM9Ezx1yBpD_1XThuSHcU3_ctDS3?width=1024&height=829&cropmode=none)
 
 不过那里的群团中心建设的真的很不错，大概几十万就造了一个集红色教育，政府办公， 帮助民生的建筑综合体。便宜办大事。
 
-就是一进门看到了转角处的校长父亲，感觉被 -1S
+就是一进门看到了转角处的校长父亲，感觉被续了一秒.
 
 ![](https://snz04pap002files.storage.live.com/y4mmykiZBNSr_JqhbTV072uKQKiCpCkuUxfXllOUDyWPVYr8A8zKA1e0mnsgRCBjagAkXimPkEeDXGwYK-7igJ111HUeGfEPe9ul1Xw5PVen-8WWOxkHdNz-8_a6jal2a_hEd-N6NdkIMBwYU61JYBCEnIKsj5KoGohoZrHNPBRNJjXkqX0UOrN6aOXcjNBaNak?width=768&height=1024&cropmode=none)
 
 ### 兰师傅哒哒面
 
-在出租车上的就地调研中，我们了解到附近有一家哒哒面馆，当年校长父亲去吃过一次。记得要点三鲜味的。
+在出租车上的就地调研中，我们了解到附近有一家哒哒面馆，当年校长父亲去吃过一次。记得要点三鲜 (xuan) 味的。
 
 ![](https://snz04pap002files.storage.live.com/y4mjGkvfUzDOkCYRbaL2sKZMjAgv1yYxBX9tJ7jDPzni0d5GOM7lb_D37ZDYvx4Dr_RGHHr_MItFvjf-Cmu-dVuoP8ys_1SXKVptB0yJsxgJhy_UHkpDf19ROV_8finP6WNXfvGPo2mZDkwHhJVaORwjBUm85z68Yb3yCQ80ax9-KGWbhCi2M9fbIAOWNDHBV7d?width=1024&height=683&cropmode=none)
 
@@ -76,7 +76,7 @@ tags: School
 
 不过腻了吧唧的，一点也不好吃 （逃
 
-当晚我们去雅安廊桥附近逛了下，很有生气。
+当晚我们去雅安廊桥附近逛了下，很有生气。当地还有家店专门卖便携式卡啦OK机. 
 
 ![](https://snz04pap002files.storage.live.com/y4mChxd9X4iZffk245CHxzvHyFoFuawe81kZXjVMxEEys22_BBQL_ZA1hvPsLBAmd4PzzV7kxTsXvnTybz8J3PseIb4wbV9DdgarcEC73ngzvxCkkvbdD3h1_8fEvl0WrNJAWvoGwV9gtccMe0-TvQxp4DnGOxb-t4vCFk7Fv0RWjj8pMnFXCokBE5d5f4NK_Xe?width=1024&height=505&cropmode=none)
 
@@ -262,4 +262,40 @@ https://mp.weixin.qq.com/s/PjODL6z5UbxYq4J6jzN8YA
 ### 人民公园
 
 ![](https://snz04pap002files.storage.live.com/y4mchrgjDzWXkk0Z8IQdjWYdWXce6x9uinRUu-XgnWcaSTy_dERYy8cMJJd_rswBkv5I3HtVYFpxZjxZFTqUbZJD80V--Kl7HMg7pqus90fzs1B9p8GntqnQiXED8glYD-8Uc17wOAhawCMNeaUILcNbARZTJ1SM0KLeXdS9r-__5v6oFjTnrqjAvTd78Svw8vW?width=1024&height=683&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4mlkq8V82cWgUBylbEr3jSEprjc0uWHxzOE-RzIvjyZxsOvgPSCoDQeriWYQyB6ni1Xjfh5VSE4as2OCbBK0vLd5eM_b32pPm0OMBePzfWnPtQfR42wPVyam9UgMSIXLqquatnXQwSsXsWl6ppLkZZfySmZ8751GrLqamqmsbHVBLrTKeYuUulEyp8rhXUfaRU?width=1024&height=908&cropmode=none)
+
+当天下午居然有这么多年轻人来公园喝茶, 这在上海是很难见到的现象. 附近有很多采耳工作者, 也是之前没见过的, 不过听说采耳可能有潜在的卫生问题, 再加上整个过程看的挺难受的, 就没有体验.
+
+### 夜刷 339
+
+作为一名 Ingress 特工, 唯一能证明我来过成都的方式就是做一排任务. 
+
+![](https://snz04pap002files.storage.live.com/y4mDn2CMO0IhIiifeG-4fRqh8zRr2BcrKU6hDS_k_mdHYiFqoh4SobwB7snBmRz2HwZIQbHe2eJCnhEosGnUB8x1aCNtz1wpJc6ORvDMuNrjxh52fJIRkZGtOnANphmSmb1UgemIQFPMQfnSn3YnxbxlQtlq_PirDRn0GWx4HTiW8zqvbGEYxKbZ4TzbPopV-9m?width=1024&height=594&cropmode=none)
+
+于是拉着同学在 339 广场转了不下六圈
+
+![](https://snz04pap002files.storage.live.com/y4mNM3AuQlvoG6mO4e_DqZ26UIa7aEfKPD59g0GtSxhNah1GQE0QvrIzNDb35x3gpcRNTbNC0eGxmL1m020Vim20HdiMXTit0cXFNTugFrEaN8w_5RqZ5I_wnNs9pSzNnc0eJkWmeOlAP5Frq74-RkUEODWNaRAUnqL6boK19j6jC00XcBgltrkAiMAbvpoXJnJ?width=768&height=1024&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4mQm8LQxQdAcrkQeQ3cTaZ-7toR921bKylcvUwzQ4n7SZk92rbcOmuddE7D3q0pdacCs2niBURvXLUZ22u0QaScqT-utb0oB_kiNKZ0B2rtIipdoiAoZ2KGR3e9T9F1pFqYysgLqklEd8fS9Zlz7ilLIKxvD34DFdGVJLwbOYsPhsOqDiVCNFy9hzXl8qXmle1?width=1024&height=683&cropmode=none)
+
+虽然听说上海在衡山路也有酒吧一条街, 但是上海的夜店街远不如成都来的奔放和外向. 成都所展现出来的不恪守规矩和吵闹般的热闹是上海远不及的.
+
+## 第二天
+
+### 都江堰
+
+正巧 2021 年双年展的主题是水体, 其中也特别提到了成都都江堰的历史地位.就放照片了.
+
+![](https://snz04pap002files.storage.live.com/y4mnxpvF8HF9GGz7r20tEWJ3URFt6uFmDPjMX5UlagfiXNMzPn4tap9nJNjYBHeKwWKHNGiDUuAZnyi3qoFYOUdDcFv8Sqyv9MvSL4bIpVDfjL8tz8cdo32Aq63aYmbbygUxccF90zTuOJuEa3VNIaicv3vCGYk_q9px-r69ljrr5gSI9zN_OqGqlTyiTPKfE4_?width=1024&height=768&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4m_ft-4YChDuoqs8l7Ce-32HLnV1_qNItu2acQ2X_SLWXQL-TiXeSviIrl0UcHm_T5gU9a0l9udUK3SBAK6Esi7ILA1AC05QBoXTzw4OhnhQABf4WUNehVRNt8xSSONO_jdf-vpOoBfDRh3CVS-Isd6YBG81GPSuCGWWnKgxzyPgTFalQlaOM6viWPvxHgYDrf?width=1024&height=768&cropmode=none)
+
+​	![](https://snz04pap002files.storage.live.com/y4mT0yyb0eT4CGoLCOryhLWSC7syjxpIeuFGqokL-XJ7UyZT7yoN1l_lU6tYxXsDiO66nrwFvkogPtG2Xk-bMzs_8xvRiTobFHikEgCIco-CG3KofVJCcbmbvdkBM3WqMUNl81YGB2FHNxCuZZeBoWjpXcPgP0_P1MJXQTZM_99EaJvLY7YD-tEZKRml8rDmKz0?width=1024&height=681&cropmode=none)
+
+### 繁华的春熙路
+
+成都已经建到了 “七环” 了, 但真正商业繁荣的地方还数春熙路. 成都执行限号政策, 每天会 ban 掉两个末尾数字, 即使这样, 车辆保有量第二的成都春熙路硬是成为了全国最堵的道路. 
+
+
 
