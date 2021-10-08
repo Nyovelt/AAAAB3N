@@ -69,12 +69,17 @@ url = "/notes"
 weight = 5
 
 [[menu.main]]
+name = "Images"
+url = "https://500px.com/p/nyovelt"
+weight = 6
+
+[[menu.main]]
 name = "Friends"
 url = "/friends"
-weight = 6
+weight = 7
 
 [[menu.main]]
 name = "About"
 url = "https://who.aaaab3n.moe/"
-weight = 7
+weight = 8
 
