@@ -15,7 +15,6 @@ Here lie all of my lecture notes. I am used to taking structured notes on things
 - Algorithms and Data Structures: ST-CS101 [ [Github](https://github.com/Nyovelt/CS101-Projects) ]
 - [Computer Architecture I: ST-CS110](https://robotics.shanghaitech.edu.cn/courses/ca/21s/) [ [Notes](https://notes.aaaab3n.moe/cs-131-programming-languages-and-compilers) ] [ [Github](https://github.com/Nyovelt/CS110-Projects) ]
 - Programming Languages and Compilers: ST-CS131 [ [Notes](https://notes.aaaab3n.moe/cs-131-programming-languages-and-compilers-1) ] [ [Github](https://github.com/Nyovelt/CS131-Projects) ]
-- 30240243X: Principles of Operating Systems: Tsinghua OS2020 [ [Notes](https://hackmd.io/@3-0qS-1xRgW22-1pkkgePA/r1upi4CeY) ]
 
 ## Others
 - Signals and Systems: ST-EE150 [ [Notes](https://notes.aaaab3n.moe/ee-150-signals-and-systems) ]
