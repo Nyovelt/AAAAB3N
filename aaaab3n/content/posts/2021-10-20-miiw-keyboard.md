@@ -11,7 +11,7 @@ tags: checkbox
 
 这块键盘是三模蓝牙，正好手上有三台设备，以后放在包里带出去也比较方便。截至本文，笔者大约用了一个晚上，接有线打 CS:GO 以及写这篇 Markdown。 总体体验不错，物有所值，手感满意，和笔者另一块 IKBC 樱桃红键盘比起来差不多，多了些黄轴的特色（稍微软那么一点点）。<del>反正都是按到底 </del>
 
-[点此查看说明书](https://snz04pap002files.storage.live.com/y4m5u4zSysxVFwwapzA-ehZiaWgxEeTuz-nnrul8dw1GBP7LuxEh9mr-1YOvkQS7qT22Xe5WKNKKrYdgRpdSEFLPH0g9u99lqgG94Ew0AYfrjySzXWS58ZTBQQN6WscrJs6VFarbQv9u62nYCETmRq13zzyanSzHiSS45Nrdl8McHr6lvSennEjSTyxqlIs6r1f?width=5797&height=3830&cropmode=none)
+[点此查看说明书](https://snz04pap002files.storage.live.com/y4mwVl5rUZwHb5YxztqTox918z7753YXocIOBa4_1pQzW-dz0xuVcYZiAOUOmW0cR7BY9Af3Fel2rAy72sP14nfOnUM0BLiHPHUeKyB_kYlarCngz9MpZGqAUbUDEMJAlzwcvitWv5q3bRnNd_Xtuv6gpDys7sIx4lLMs7kALW1nlInBe_aA7ouo6feJuQ7S5rG?width=3024&height=4032&cropmode=none)
 
 ## 图赏 (多图杀猫)
 ![](https://snz04pap002files.storage.live.com/y4m5u4zSysxVFwwapzA-ehZiaWgxEeTuz-nnrul8dw1GBP7LuxEh9mr-1YOvkQS7qT22Xe5WKNKKrYdgRpdSEFLPH0g9u99lqgG94Ew0AYfrjySzXWS58ZTBQQN6WscrJs6VFarbQv9u62nYCETmRq13zzyanSzHiSS45Nrdl8McHr6lvSennEjSTyxqlIs6r1f?width=5797&height=3830&cropmode=none)
