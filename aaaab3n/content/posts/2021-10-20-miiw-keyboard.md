@@ -1,0 +1,36 @@
+---
+layout: post
+title: "【开箱】MIIW 小米米物众筹键盘图赏"
+date: 2021-10-22  10:02:59 +0800
+category: Technology
+tags: checkbox
+---
+
+# 【开箱】MIIW 小米众筹键盘图赏
+这块键盘为米物 ART 系列 68 键蓝牙机械键盘，看荔枝木之前在频道里发的。正好最近 Macbook 的蝶式键盘偶然性会出现一些小问题，而且外接屏幕用的时候键盘会离手比较远。所以就入了。
+
+这块键盘是三模蓝牙，正好手上有三台设备，以后放在包里带出去也比较方便。截至本文，笔者大约用了一个晚上，接有线打 CS:GO 以及写这篇 Markdown。 总体体验不错，物有所值，手感满意，和笔者另一块 IKBC 樱桃红键盘比起来差不多，多了些黄轴的特色（稍微软那么一点点）。<del>反正都是按到底 </del>
+
+[点此查看说明书](https://snz04pap002files.storage.live.com/y4m5u4zSysxVFwwapzA-ehZiaWgxEeTuz-nnrul8dw1GBP7LuxEh9mr-1YOvkQS7qT22Xe5WKNKKrYdgRpdSEFLPH0g9u99lqgG94Ew0AYfrjySzXWS58ZTBQQN6WscrJs6VFarbQv9u62nYCETmRq13zzyanSzHiSS45Nrdl8McHr6lvSennEjSTyxqlIs6r1f?width=5797&height=3830&cropmode=none)
+
+## 图赏 (多图杀猫)
+![](https://snz04pap002files.storage.live.com/y4m5u4zSysxVFwwapzA-ehZiaWgxEeTuz-nnrul8dw1GBP7LuxEh9mr-1YOvkQS7qT22Xe5WKNKKrYdgRpdSEFLPH0g9u99lqgG94Ew0AYfrjySzXWS58ZTBQQN6WscrJs6VFarbQv9u62nYCETmRq13zzyanSzHiSS45Nrdl8McHr6lvSennEjSTyxqlIs6r1f?width=5797&height=3830&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4m6DK-8-aIGxzmPA1328lrWDqr4AGxbJ-jVX61lpyEUjFzerfccWJNj3s12IBn9oxsUxL30mTlpHdo3fQa315WHx_YkzbbnrEtnE0JUKEh7MbMAq4d-OIZ0nxkrRA_bcEV6tjkP8v6_SOCFFEqGMfahAzdRXbd9UX8629CJV1HvjV_U-f5iaqKi8oAtb_eON8V?width=5670&height=3780&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4mpipbuX0z74LD_r2AjSBNCYPXfK5CCfGRqWv3m28GpRTi0iGURN6hMkVSFjYlqj8xWirpqYHYpHkSjXaoJQHewRUlFU_PNgH5r8RagOUYc1FzNPGpHgApLvCb5RWqIlPc7tyi1ojlpSIcxB6qrvmrUM_uzg7vNkcfc7RBpqsUN22gdDtrn_r-64sHgmjMu95r?width=5835&height=3488&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4m8BVZ0IAsv2QggoWRCKy0QdKk8JItzie9OVzqA27tkNd4gbtSGROAlIEEBAk7vsDVrclSa-5li6StezBZ_TsMezl88KJRQesfBx3I0ilBKRWMw7vZhiaCSBcfhWsDD0ovvzUDuNWn80wuyw7rEEN4y4BKUVEnn82xlZmhwSgZQGWCLidFit9nokzzsvbriO4n?width=5380&height=4000&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4m8PeY_pO8_7GrXH16FkJVMaJmFHh-chit7djKg4rVK37bedc1c7kgsfm7FV6r_miSEtVqnB6z2F1xnvklnFuZAEZ34vaZVaDcWua30ld-S6cFqx3S74vQQ_AcOHAJFlmL6XnhlSkEwHLmjT6L7dRzAsmVXvYcG3YamqZBG9LstsT1oE64x2iu77LTK5lz3oCN?width=6000&height=4000&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4mlUxc9V-DeQspE3IFOmh3uCBKxf8psRd-Hjm-fPn7QoP07Rq2qaJVXYWTOhWCxvZaYc70QBKyqe3RO1HwJQnjRxAKCAx9JWmSIo8gK7mOiTs0dwm0Lds6irX03WmS3Knneb5zLRr30S4cHmAZpRdlUDsrYRR3GbQ7_tDjxRiQPmAri5uCOBTUHjhT7MXOANlJ?width=5612&height=3508&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4mm4HJNY-ebRfgjtn_jSG5nOftzS4v6Q4mdLS-7xgZAq_k-L2_UbFkIupeokMjYHd6QmhU_YZL5ah_geKo0y9SbeSoA78i2JeBAtd7sU42D1j3R-Q9h7XYqZwZw_iWSPhnuDFHnpVUjwjooQc93yxUUWv6S9ddJhtJRfdWeapYupNktsSxs36aJFunhDkj54NS?width=5778&height=4000&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4mlzbmgQVY6bXkzERb0am2cRyOYa0wKvebRh-xkk3bMF5FuNSKo2imF5DFASK82_1TTdICWljLLBWkmt1Ad4gT-SKLbX2fkOxSQZqq7858_qWSdq1jsMjEc-aUIwoyI0X0fyy3zbTlAlRQblLM7AZgTMGE2fEgHJ5Dct2id7FGJ_eGCfaCCz7tgWp9HC1J_d-h?width=6000&height=4000&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4mFCFz0SEspH4fLTisZpEAfyM0vLw7WfDUyN5n1JkbP0QgqxlNUXAl-q01Nm65XNb89mFwlGvkh6_wvYVVvk2s4crP501IUDp5gnvQirb76BJ34UlG7xrJ9okq6SNoydJeELpZfOLm5bXQwNIz0rDyTEPm1cxOAxhFP-WF86KneYHBhdL8OhkP6K45tbjn7cOr?width=5756&height=2726&cropmode=none)
+
+
+
