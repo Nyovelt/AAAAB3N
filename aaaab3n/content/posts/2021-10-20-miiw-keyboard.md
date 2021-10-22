@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "【开箱】MIIW 小米米物众筹键盘图赏"
+title: "【开箱】MIIIW 小米米物众筹键盘图赏"
 date: 2021-10-22  10:02:59 +0800
 category: Technology
 tags: checkbox
