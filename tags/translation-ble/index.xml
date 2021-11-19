@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Translation BLE on canarypwn</title><link>https://aaaab3n.moe/tags/translation-ble/</link><description>Recent content in Translation BLE on canarypwn</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 13 Nov 2021 10:02:59 +0800</lastBuildDate><atom:link href="https://aaaab3n.moe/tags/translation-ble/index.xml" rel="self" type="application/rss+xml"/><item><title>【翻译】Bluetooth Core Specification Version 5.2 Feature Overview</title><link>https://aaaab3n.moe/posts/2021-11-12-le-audio-5-2/</link><pubDate>Sat, 13 Nov 2021 10:02:59 +0800</pubDate><guid>https://aaaab3n.moe/posts/2021-11-12-le-audio-5-2/</guid><description>【翻译】蓝牙 5.2 核心功能概述 总览 增强的 ATT 协议 ATT 协议是蓝牙提供的一种基于蓝牙协议的协议，它是蓝牙协议的一部分，用于提供蓝牙设备之间的通信。新的 EATT 协议在 ATT 的基础上有所增强。GATT (Generic Attribute Profile) 协议是 EATT 协议的一部分，它是蓝牙设备之间的通信的核心协议。
+EATT 支持并发，可协商的 MTU。 因此在降低延迟和提高效率的同时，EATT 协议提供了更多的功能。
+EATT 同时提供了新的 L2CAP 模式 (L2CAP Enhanced Credit Based Flow Control Mode)， 这是一种流量控制协议。
+EATT 只能在加密的协议下使用
+LE 功率 现在可以在传输过程中调整传输功率了，这是可协商的。
+同时还提出了 zones 的概念，这是一种更加灵活的功率控制方式。用来报告链路上的功率消耗。
+好处是
+动态电源管理 最优化信号强度 2.4 Ghz 的共存 （因为有很多设备都工作在这一频率） LE 同步频道 1 拖 n 的音频播放、音响组的播放，拥有新的音频配置文件
+增强的 ATT 协议 背景 以下是蓝牙 5.1 的部分
+具有 GATT、GAP 和 ATT 的低功耗蓝牙堆栈 LE 分为两个部分，controller 和 host。HCI 提供了链路层到物理层之间的抽象。</description></item></channel></rss>
