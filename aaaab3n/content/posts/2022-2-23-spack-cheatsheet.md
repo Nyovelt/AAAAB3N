@@ -31,7 +31,9 @@ def setup_build_environment(self, env):
         # Please specify the location of python
         env.set('PYTHON_BIN_PATH', spec['python'].command.path)
 
+def build(self, env): 
         # get build_dir
         # only works at build stage
         os.environ["RRTMGP_ROOT"] = os.getcwd()
+        
 ```
