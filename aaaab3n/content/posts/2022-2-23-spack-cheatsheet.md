@@ -18,6 +18,7 @@ $ . spack/share/spack/setup-env.fish
 ```bash
 spack install -j (nproc) -vvvv  eccodes # spack 安装（或验证某包）并输出详细信息
 spack find --path <packages> # 特定包的路径
+spack clean -a # 完全清除，包括下载缓存
 ```
 
 ## spack edits
