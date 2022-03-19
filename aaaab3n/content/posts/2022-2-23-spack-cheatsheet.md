@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Spack CheatSheet"
-date: 2022-2-21  10:02:59 +0800
+date: 2022-02-21  10:02:59 +0800
 category: Technology
 tags: HPC
 ---
