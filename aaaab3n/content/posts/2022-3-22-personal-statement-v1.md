@@ -31,5 +31,8 @@ I believe that inspiration comes from life. Computer science is excellent becaus
 
 With the concept of computer-human interaction and using every computational device, I conducted research on human-computer interaction under the advice of Assistant Professor Zhice Yang at ShanghaiTech University. By using a Bluetooth development board for interrupt shutdown and hardware timer design, I achieved a Bluetooth synchronization delay of 10 ms level. Using this feature, I can achieve acoustic tracking on a 2D plane. I hope that this research will bear fruit later on.
 
-My past life experiences have taught me that I would prefer to pursue research in the area of computers and people. By applying to the LAX School at UIUC, the Mathematical logic courses and mathematical programming courses will give me a deeper understanding of the internal mathematical systems of computers. I believe there will be new opportunities and challenges when I come to UIUC
+My past life experiences have taught me that I would prefer to pursue research in the area of computers and people. By applying to the LAX School at UIUC, the Mathematical logic courses and mathematical programming courses will give me a deeper understanding of the internal mathematical systems of computers. I believe there will be new opportunities and challenges when I come to UIUC.
 
+## PDF Version
+
+[Online Version](https://1drv.ms/b/s!Au3reWMu7K2ChotkDNUS0SDRketlkg?e=KcUt31)
