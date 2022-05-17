@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Install OpenCV on Windows"
+title: "Install OpenCV on Windows with Choco "
 date: 2022-05-17  10:02:59 +0800
 category: Technology
 tags: Windows 
 ---
 
-# Install OpenCV on Windows 在 Windows 系统上安装 OpenCV 
+# Install OpenCV on Windows with Choco 在 Windows 系统上安装 OpenCV 
 
 This article records how to install opencv on windows with `choco` and use opencv in Visual Studio.
 
