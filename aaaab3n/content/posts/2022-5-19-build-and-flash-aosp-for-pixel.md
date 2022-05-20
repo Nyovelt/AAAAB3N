@@ -6,10 +6,11 @@ category: Technology
 tags: 
     - Android 
     - Pixel XL 
+    - AOSP
 ---
 
 ## 前言
-最近在打安卓隐私相关的工，所以需要编译一个 AOSP. 之前高中的时候觉得新奇而买的 Pixel XL 就派上了用处
+最近在打安卓隐私相关的工，所以需要编译一个 AOSP. 之前高中的时候觉得新奇而买的 Pixel XL 就派上了用处。
 
 ## 下载 AOSP 源码
 
