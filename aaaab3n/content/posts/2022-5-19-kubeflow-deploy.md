@@ -146,5 +146,39 @@ Deploy of bundle completed.
 
 ![](https://snz04pap002files.storage.live.com/y4mlD09g9-IeOc_Zs9PqDFDu9CxL_oVx9wh9g_A3Z1n429RaJjACXh1YmgsJXFNbHd0ueJQ5iaAjTeSKYYVJk_VXNx44G8zLFJH3q39NxTsjtItfSbhv8hWLQVlVrPB50F3ZiOo-2Q1tRkqdrTUfOUPGK82mkL7-OTbnua4LKGWnETyOQwLkrUTU4lNcpvNGy-r?width=1024&height=537&cropmode=none)
 
+![](https://snz04pap002files.storage.live.com/y4mLl3M2UfGEoxaAHiCRi3v237ewEIxcqapSQi2xPIbN198rgUVu7mouxDt4rsGsP1v3WuSV-L-w8WMhW-byKllQzZDB5CHQ311p0E4iJhkteazmDNUNe67QoTJ6VvtH0QDfUr8p2bC7qzzI-uN9T_BMEi6pxxJ9vAsRQz7WtAUyUh8tNFlGsbXSg2VbmWHBe4I?width=1024&height=577&cropmode=none)
+
+## Access Dashboard
+```bash
+juju config dex-auth static-username
+juju config dex-auth static-password
+```
+
+```bash
+juju config dex-auth static-username=admin
+juju config dex-auth static-password=<password>
+```
+
+Enable `metalib` for load-balancing (essential for dashboard)
+
+In this step, we will create a gateway for interval connection.
+
+```bash 
+microk8s enable metallb:10.64.140.43-10.64.140.49
+# istio-ingressgateway   LoadBalancer   10.64.140.43  
+juju config dex-auth public-url=http://10.64.140.43.nip.io
+juju config oidc-gatekeeper public-url=http://10.64.140.43.nip.io
+```
+
+Proxy
+```bash
+ssh -D 9999 hpc-node1
+```
+![](https://snz04pap002files.storage.live.com/y4mM-hs2cfk7CigDV9M1AnOuDtKxyDJ4_B2cg2NFu-oJBRcvsnSWK2NB8ENrmtJ0aDN6QeHMm2-MN-fG3fAMAq7TAWFRnSHyK3qKfFoAyjTvm4X6WxNIzoqsYBvlVPvyKbKnq5WDY54avyYZsyJxpWzUVgI4HpifEu7bDTbPhT7G2JXmX_Atp41m_9V22PvHBLe?width=1024&height=314&cropmode=none)
+
+And it works
+![](https://snz04pap002files.storage.live.com/y4m4jU40Ism-9EXp9g43yW9P8U2-zIprPLFOXH9gvrXzmehid-_tQzHRIERIP0WfaArK72UWjePhjt-LJFSWqz3SJp0w3behhd5h0JOHAz6RXbYJ5OTMvfMEIFjEJAPEDKW-7T_H12HwI8PhFecUT5ansj6H1HMxuopzzMKhXUlk47lc9pmsjK0G-JIWimX52It?width=1024&height=523&cropmode=none)
+
+
 ## Reference
 - [How to install Kubeflow v1.4](https://charmed-kubeflow.io/docs/install)
