@@ -116,10 +116,24 @@ $ make -j $(nproc)
 
 ## 编译成功之后，打包 img 文件
 ```bash
-$ cd out/target/product/marlin
-$ tar -zcvf malin-9.tar.gz *.img
+$ cd out/target/product/marlin  # 这是输出文件夹
+$ tar -zcvf malin-9.tar.gz .
 ```
 ![](https://snz04pap002files.storage.live.com/y4mtK5Oiyjq2rFZCdYEcHDvO5AE8kfgEmId0t47V7hlZn8el1eH98nZaXsBIoue8w-RzLW7FXUsA4yYjTdP1Ucg1E7VZZy-39L7s-o_y83tF_n71SczXvp7HkJUxm-D7kdhZMEKKO_b3Eb1Eovwt4BXGD4QJAcq5KXF4XEz60ckp00H2r-gZRNMEhNzqsHOvND8?width=660&height=46&cropmode=none)
 
+压缩的话不一定需要压缩这么多东西,  `tar -zcvf malin-9.tar.gz ./*.img` 再加一些必要文件可能就可以了。实测下来压缩时间非常长，如果硬要全部打包可以用 `pigz`.
+
+## 在 Windows 下刷机
+
+用 `choco install adb` 或者其它方式安装 `android debug tools`
+
+1. 重启至 `fastboot`
+2. 解压 `malin-9.tar.gz`
+3. `$Env:ANDROID_PRODUCT_OUT = "C:\Users\Nyove\Desktop"`
+4. ` fastboot flashall -w`
+
+![](https://snz04pap002files.storage.live.com/y4m3ukARD_CXxnCjpaH0Fop5Kug5fBh-5J5gg-JJbt2-rmOY9v29MCd7yVWc6HZKizjKXS_XhFmLZOL3B0SjMKrm9AorU5SVm5QHxAU7OY-X9jB6POWohR6MxACwJAgjapJIdsNybFWcIqMCkanyjF411dmFUoiR3JU9zML-JxJLtxdFDH-zyqv2IycfhBWUI0N?width=1024&height=352&cropmode=none)
+
+![](https://snz04pap002files.storage.live.com/y4m7S2RH82rdS5nBWxk_U1zAqI-lXXHCjVPxi0xM-0ChhieSEIjbFxqkrT8cXT-p0v1DNzh36lXNwVnPh7WYD631yc2-q_x1dZmrBR8FRT5S3ymug0QBcZ7D4uy18NYO0pJcklWv7G9BIHjd7ErYyS63ZNSU_TgWyXxNtlLNNWpvDF3menDFGvunZsOT8qWKBun?width=768&height=1024&cropmode=none)
 ## 参考资料
 - [记录AOSP源码编译刷机(pixel 4a)](https://codeantenna.com/a/u4LA7IZ7JU)
