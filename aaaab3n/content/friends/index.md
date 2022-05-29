@@ -14,7 +14,7 @@ If you want to be in this list, just ping me.
 
 [FlashWarrior](https://me.csdn.net/FlashWarrior)
 
-[murez]()
+[murez](https://murez.site)
 
 [⑨BIE](https://9bie.org/)
 
@@ -59,3 +59,5 @@ If you want to be in this list, just ping me.
 [wlt233](https://tqlwsl.moe/)
 
 [Homan's World](https://gallery.homans.world)
+
+[chinggg](https://chinggg.github.io/)
