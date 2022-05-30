@@ -8,6 +8,8 @@ date: 2016-08-24 17:51:42
 ## ASN
 - [AS147048](https://bgp.he.net/AS147048)
 
+**Peer with me!** Contact `canarypwn@@nekomimirouter.com`.
+
 ## MAINTAINANCE
 - [Moss Telegram Bot](https://t.me/stanford_moss_cn_bot) 
 - [NetDesk](https://pan.aaaab3n.moe)
