@@ -13,7 +13,7 @@ date: 2016-08-24 17:51:42
 ## MAINTAINANCE
 - [Moss Telegram Bot](https://t.me/stanford_moss_cn_bot) 
 - [NetDesk](https://pan.aaaab3n.moe)
-
+- [Telegram Sticker Download Bot](https://t.me/StickerDownloader_114514bot)
 ## IETF compliant DNS-over-HTTPS service as geeky as if it's Year 8102.
 
 - https://asia-east2-pfrmxgnk.cloudfunctions.net/my-dns-overhttps/8.8.8.8
