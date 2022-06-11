@@ -8,13 +8,13 @@ If you want to be in this list, just ping me.
 
 [Tsez](https://blog.tse.moe/)
 
-[Siger Young]()
+[Siger Young](https://sigeryang.net/)
 
 [Klog 科学帮](https://klog.app/)
 
 [FlashWarrior](https://me.csdn.net/FlashWarrior)
 
-[murez](https://murez.site)
+[murez](https://murez.cloud/)
 
 [⑨BIE](https://9bie.org/)
 
@@ -61,3 +61,5 @@ If you want to be in this list, just ping me.
 [Homan's World](https://gallery.homans.world)
 
 [chinggg](https://chinggg.github.io/)
+
+[Skycurtain](https://skycurtain.github.io/)
