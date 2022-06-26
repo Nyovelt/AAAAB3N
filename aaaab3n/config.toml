@@ -34,7 +34,7 @@ googleAnalytics = "G-73VZSQL8QT"
 
 [[params.social]]
   name = "matrix"
-  link = "@canarypwn:mozilla.org" # no need for "mailto:" at the start
+  link = "https://matrix.to/#/@canarypwn:mozilla.org" # no need for "mailto:" at the start
 
 [[params.social]]
   name = "twitter"
