@@ -44,6 +44,9 @@ googleAnalytics = "G-73VZSQL8QT"
   name = "telegram"
   link = "https://t.me/moe_canary" # no need for "mailto:" at the start
 
+[[params.social]]
+  name = "linkedin"
+  link = "https://www.linkedin.com/in/qinfeiran/" # no need for "mailto:" at the start
 
 [[menu.main]]
 name = "Home"
