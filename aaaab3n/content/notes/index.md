@@ -16,6 +16,7 @@ Here lie all of my lecture notes. I am used to taking structured notes on things
 - Programming Languages and Compilers: ST-CS131 [ [Notes](https://notes.aaaab3n.moe/cs-131-programming-languages-and-compilers-1) ] [ [Github](https://github.com/Nyovelt/CS131-Projects) ]
 - Computer Networks: ST-CS120 [ [Github](https://github.com/Nyovelt/Native-Modem) ][ [Notes](https://hackmd.io/@nyovelt/ST-CS120) ]
 - Operating Systems: ST-CS130 [ [Github](https://github.com/Nyovelt/pintos-projects) ][ [Notes](https://hackmd.io/@nyovelt/ST-CS130) ]
+- Computer Architecture III: ST-CS210 [ [Github](https://github.com/Nyovelt/ShanghaiTech_Homeworks/tree/main/CS210) ]
 
 ## Others
 
