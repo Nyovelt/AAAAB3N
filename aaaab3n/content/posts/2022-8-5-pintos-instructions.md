@@ -1,15 +1,42 @@
 ---
 layout: post
-title: "PintOS Instructions"
+title: "Magisk 25.2 通过基本 SafetyNet 测试方法"
 date: 2022-08-05  10:03:59 +0800
-category: Education
+category: Technology
 tags: 
-    - pintos
-    - CS140
+    - Magisk
 ---
 
-# PintOS Instructions
-## 前言
-上海科技大学使用 PintOS 作为操作系统的课程设计已经多年了。虽然 PintOS 是非常经典的教学操作系统，但多年的使用已经造成了一些问题。比如每年的完成率越来越高。一方面是因为学生的能力越来越高，另一方面是不可忽视的一些学生诚信的问题。因此本文希望最大限度的给予 PintOS 项目以提示与思考，希望能降低课业负担，同时希望课程能进行进一步的改革 —— 如果软件工程的部分大家都能拿到满分，那最后的竞争将落到考试这样的应试训练上，我认为这会让同学花费大量时间在一些几十年前的知识上，是不好的。
+# Magisk 25.2 通过基本 SafetyNet 测试方法
 
+自从 John Wu 被谷歌招安了之后，谷歌针对 Magisk 的机制做了修复。但道高一尺魔高一丈，对于基本的 Safety Net Check 还是有办法绕过的。
 
+## 安装 Magisk
+
+1. 下载 `magisk.apk`
+2. 重命名为 `magisk.zip`
+3. 在 recovery 刷入 `magisk.zip`
+4. 安装 `magisk.apk`
+
+## 隐藏 Magisk
+
+1. 主页 - 右上角 - 设置
+2. 以其它包名安装 Magisk
+
+## Zygisk
+
+1. 主页 - 右上角 - 设置
+2. 打开 "在 Zygisk 中运行 Magisk"
+3. 将要针对的东西配制到排除列表
+   1. google 家的所有东西
+   2. Ingress
+
+## 安装模块
+
+1. MagiskHide Props Config
+2. Universal SafetyNet Fix
+
+## 效果
+
+1. Ingress 可以正常游戏
+2. Google Pay 无法工作
