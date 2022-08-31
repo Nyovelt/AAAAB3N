@@ -17,8 +17,9 @@ Here lie all of my lecture notes. I am used to taking structured notes on things
 - Computer Networks: ST-CS120 [ [Github](https://github.com/Nyovelt/Native-Modem) ][ [Notes](https://hackmd.io/@nyovelt/ST-CS120) ]
 - Operating Systems: ST-CS130 [ [Github](https://github.com/Nyovelt/pintos-projects) ][ [Notes](https://hackmd.io/@nyovelt/ST-CS130) ]
 - Computer Architecture III: ST-CS210 [ [Github](https://github.com/Nyovelt/ShanghaiTech_Homeworks/tree/main/CS210) ]
-- Advanced Distributed Systems: ST-CS225 [ [Github](https://github.com/Nyovelt/ShanghaiTech_Homeworks/tree/main/CS225) ][ [Project: DASH: Deadline Aware AI Training Job Scheduler for Heterogeneous cluster](https://github.com/murez/DASH) ]
-- Introduction to Computer Security: UIUC-ECE422 [ [Notes](https://hackmd.io/@nyovelt/ECE-422) ]
+- Advanced Distributed Systems: [ST-CS225](https://jhe16.github.io/teaching/2014-spring-teaching-1) [ [Github](https://github.com/Nyovelt/ShanghaiTech_Homeworks/tree/main/CS225) ][ [Project: DASH: Deadline Aware AI Training Job Scheduler for Heterogeneous cluster](https://github.com/murez/DASH) ]
+- Introduction to Computer Security: [UIUC-ECE422](https://courses.engr.illinois.edu/cs461/fa2022/) [ [Notes](https://hackmd.io/@nyovelt/ECE-422) ]
+- High-speed and Programmable Networks: [UIUC-CS598HPC](https://courses.engr.illinois.edu/ece598hpn/fa2022/) [ [Notes](https://hackmd.io/@nyovelt/CS598-HPN/edit) ]
 
 ## Others
 
