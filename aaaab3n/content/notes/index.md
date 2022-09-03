@@ -20,6 +20,7 @@ Here lie all of my lecture notes. I am used to taking structured notes on things
 - Advanced Distributed Systems: [ST-CS225](https://jhe16.github.io/teaching/2014-spring-teaching-1) [ [Github](https://github.com/Nyovelt/ShanghaiTech_Homeworks/tree/main/CS225) ][ [Project: DASH: Deadline Aware AI Training Job Scheduler for Heterogeneous cluster](https://github.com/murez/DASH) ]
 - Introduction to Computer Security: [UIUC-ECE422](https://courses.engr.illinois.edu/cs461/fa2022/) [ [Notes](https://hackmd.io/@nyovelt/ECE-422) ]
 - High-speed and Programmable Networks: [UIUC-CS598HPC](https://courses.engr.illinois.edu/ece598hpn/fa2022/) [ [Notes](https://hackmd.io/@nyovelt/CS598-HPN/edit) ]
+- UIUC Systems Reading Group: [UIUC-CS591SN](https://systems-seminar-uiuc.github.io/fall22/) [ [Notes](https://hackmd.io/@nyovelt/CS591SN) ]
 
 ## Others
 
