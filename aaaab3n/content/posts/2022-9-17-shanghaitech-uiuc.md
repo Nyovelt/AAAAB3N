@@ -27,6 +27,8 @@ tags:
 
 签证申请可以查看这个 [pdf](https://1drv.ms/b/s!Au3reWMu7K2Cho5X-Pmfd062TCM_kA?e=tkZg3h)
 
+我当时只看了录取通知书, DS2019，护照还有签证预约页。
+
 主要是进入大使馆的时候是不能带任何电子设备和水的。在广州的话门口有商家专门做托管包裹的生意，如果不想交冤枉钱可以注意一下。
 
 不过 SEVIS FEE 和 签证费加起来就几千块了。门口托管的 50 块是不是反而显得便宜呢。
@@ -77,6 +79,20 @@ tags:
 
 如果再让我选择，我首先看 ECE Building 旁边有没有，再去看看 Smile 下面有什么好地段的公寓，One South 作为不会出错的选项。
 
+租房可以用 [zillow](https://www.zillow.com/)
+
+NOTE:
+- Neil Street 那里不太安全, County Market 附近安全, ECE Building 附近安全, Lincoln Ave 部分安全 (比如 One Illinois 和 Atrium).
+- 感觉 Smile 一般地段比较好，但是物业维修不太行
+- 我知道有人住在:
+  - Circle https://goo.gl/maps/zrQeRMie9rnzoaDx9 (离信院近)
+  - Green Street 附近的 Simle  https://goo.gl/maps/hMvnau42ayeSh68N8 (离商业街近)
+  - https://goo.gl/maps/gWkZG1bdGfrYB7ss9 (离 county market 很近，但是离 ECE / CS Building 远)
+  - 土豪选择 https://goo.gl/maps/VZEut9m36G5oyHqa8  (The Dean)
+- 在 University Ave 上有一个铁轨，它每天早上六点都有一班火车叫你起床
+- 在 Lincoln Ave 和 University Ave 的交界处有很些大豪斯，有一个故事。以前这里有人开 party，但是有一个人没收到邀请，然后就和开 party 的主人打了起来。算有一个历史犯罪记录。不过这是小问题。
+- GoodWin Ave, Eads Street 上有一些 Local Community, 晚上没有路灯，所以不要乱跑。
+
 #### 其它
 
 UIUC 有转租群，但是这个也要趁早。而且转租的话，一般都是租到 8 月底，然后再转租。所以如果是 8 月底之后才来的话，就不要考虑转租了。
@@ -89,7 +105,7 @@ UIUC 有转租群，但是这个也要趁早。而且转租的话，一般都是
 
 ### 保险
 
-学校自带的保险就满足要求了
+学校自带的保险就满足要求了。你可以体会到世界上最糟糕的医保。
 
 ### 其它
 
@@ -104,7 +120,7 @@ UIUC 有转租群，但是这个也要趁早。而且转租的话，一般都是
 - 联系租房 (同样越早越好)
 - 提前申请 Deserve EDU 信用卡 (行前 2-3 周)
 - 购买固定资产 (床上用品、餐具、家具等 视购买商家决定 MUJI 1周 Amazon 2-3 日 Walmart 当日)
-- 联系导师
+- 联系导师 (或者联系导师的研究生)
 - 购买机票 (提早) 办妥证件
 - 购买车票 (1周)
 - 申请 ZipCar (1月)
@@ -122,15 +138,18 @@ UIUC 有转租群，但是这个也要趁早。而且转租的话，一般都是
 注意 CS / ECE {4,5}98 的课。这些课是 UIUC 的精华。教授会作为实验开这些课，所以会非常先进。还有是 CS 591 的论文阅读课。
 
 ### 吃饭
-
-- 麦当当: 有很多优惠券，有时候比自己做要便宜，但是营养不均衡
-- 伊面园: [https://t.me/canarypwnslifemartrix/370](https://t.me/canarypwnslifemartrix/370)
-- Panda Express: 我觉得很好吃， Big Plate 10块钱。 你可以选卡路里最高的搭配。
-- Sakanaya: 精致日料 [https://t.me/canarypwnslifemartrix/369](https://t.me/canarypwnslifemartrix/369)
-- TBD
+- Green Street!
+  - 麦当当: 有很多优惠券，有时候比自己做要便宜，但是营养不均衡
+  - 伊面园: [https://t.me/canarypwnslifemartrix/370](https://t.me/canarypwnslifemartrix/370)
+  - Panda Express: 我觉得很好吃， Big Plate 10块钱。 你可以选卡路里最高的搭配。
+  - Sakanaya: 精致日料 [https://t.me/canarypwnslifemartrix/369](https://t.me/canarypwnslifemartrix/369)
+- 外卖: Chowbus 等
+- 在信院时间紧张可以去 **Einstein Bros. Bagels**, Food Truck
+- the cafe in Beckman Institute
 
 如果大于两人的话，做饭肯定是要比饭店便宜的。比较懒的话可以吃披萨,水饺,意面.
 
+喝酒 买酒 要带上护照
 ### 银行卡
 
 Chase 有开卡奖励
@@ -155,9 +174,9 @@ Chase 有开卡奖励
 
 - 大于 3 个人可以去 Costco 办卡
 - 小于 3 个人可以去 Walmart 办卡
-- 不想吃莴苣的话去中超或者 Weee(贵)
+- 不想吃莴苣的话去中超 (Fresh International, Far East, Asian Supermarket) 或者 Weee(贵)
 - 其它情况去 Amazon 办卡
-
+- 我导师最喜欢去 German Market 
 ### 安全
 
 - 如果有人向你要钱，是可以不给的，除非拿枪
@@ -169,3 +188,12 @@ Chase 有开卡奖励
 - 除了那些必须要接种的疫苗 (不接种只会影响一学期的项目，半学期项目几乎不影响) 还可以尝试一下免费 HPV，一下子赚资本主义几千块是不是很爽
 - 个人觉得 Covid 症状和流感类似，而且大概率会得吧
 - 我目前还没去过医院
+
+### 上课
+难度和上科大课程差不多，本科生水平有高有低，研究生水平不错。多利用 Office Hour, 这里的 OH 会有很多人参加，氛围也很好。
+
+
+## UIUC 学期结束
+在 https://eams.shanghaitech.edu.cn/eams/outSchoolCourseGrade!search.action 提交成绩认定
+
+欢迎关注我的下一篇文章，*2023 Fall 申请记录*
