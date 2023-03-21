@@ -82,13 +82,14 @@ tags:
 租房可以用 [zillow](https://www.zillow.com/)
 
 NOTE:
+
 - Neil Street 那里不太安全, County Market 附近安全, ECE Building 附近安全, Lincoln Ave 部分安全 (比如 One Illinois 和 Atrium).
 - 感觉 Smile 一般地段比较好，但是物业维修不太行
 - 我知道有人住在:
-  - Circle https://goo.gl/maps/zrQeRMie9rnzoaDx9 (离信院近)
-  - Green Street 附近的 Simle  https://goo.gl/maps/hMvnau42ayeSh68N8 (离商业街近)
-  - https://goo.gl/maps/gWkZG1bdGfrYB7ss9 (离 county market 很近，但是离 ECE / CS Building 远)
-  - 土豪选择 https://goo.gl/maps/VZEut9m36G5oyHqa8  (The Dean)
+  - Circle <https://goo.gl/maps/zrQeRMie9rnzoaDx9> (离信院近)
+  - Green Street 附近的 Simle  <https://goo.gl/maps/hMvnau42ayeSh68N8> (离商业街近)
+  - <https://goo.gl/maps/gWkZG1bdGfrYB7ss9> (离 county market 很近，但是离 ECE / CS Building 远)
+  - 土豪选择 <https://goo.gl/maps/VZEut9m36G5oyHqa8>  (The Dean)
 - 在 University Ave 上有一个铁轨，它每天早上六点都有一班火车叫你起床
 - 在 Lincoln Ave 和 University Ave 的交界处有很些大豪斯，有一个故事。以前这里有人开 party，但是有一个人没收到邀请，然后就和开 party 的主人打了起来。算有一个历史犯罪记录。不过这是小问题。
 - GoodWin Ave, Eads Street 上有一些 Local Community, 晚上没有路灯，所以不要乱跑。
@@ -138,6 +139,7 @@ UIUC 有转租群，但是这个也要趁早。而且转租的话，一般都是
 注意 CS / ECE {4,5}98 的课。这些课是 UIUC 的精华。教授会作为实验开这些课，所以会非常先进。还有是 CS 591 的论文阅读课。
 
 ### 吃饭
+
 - Green Street!
   - 麦当当: 有很多优惠券，有时候比自己做要便宜，但是营养不均衡
   - 伊面园: [https://t.me/canarypwnslifemartrix/370](https://t.me/canarypwnslifemartrix/370)
@@ -150,6 +152,7 @@ UIUC 有转租群，但是这个也要趁早。而且转租的话，一般都是
 如果大于两人的话，做饭肯定是要比饭店便宜的。比较懒的话可以吃披萨,水饺,意面.
 
 喝酒 买酒 要带上护照
+
 ### 银行卡
 
 Chase 有开卡奖励
@@ -176,7 +179,8 @@ Chase 有开卡奖励
 - 小于 3 个人可以去 Walmart 办卡
 - 不想吃莴苣的话去中超 (Fresh International, Far East, Asian Supermarket) 或者 Weee(贵)
 - 其它情况去 Amazon 办卡
-- 我导师最喜欢去 German Market 
+- 我导师最喜欢去 German Market
+
 ### 安全
 
 - 如果有人向你要钱，是可以不给的，除非拿枪
@@ -190,10 +194,11 @@ Chase 有开卡奖励
 - 我目前还没去过医院
 
 ### 上课
+
 难度和上科大课程差不多，本科生水平有高有低，研究生水平不错。多利用 Office Hour, 这里的 OH 会有很多人参加，氛围也很好。
 
-
 ## UIUC 学期结束
-在 https://eams.shanghaitech.edu.cn/eams/outSchoolCourseGrade!search.action 提交成绩认定
+
+在 <https://eams.shanghaitech.edu.cn/eams/outSchoolCourseGrade>!search.action 提交成绩认定
 
 欢迎关注我的下一篇文章，*2023 Fall 申请记录*
