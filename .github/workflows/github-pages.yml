@@ -39,7 +39,7 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: aaaab3n/public
-        uses: JamesIves/github-pages-deploy-action@3.2.1
+        uses: JamesIves/github-pages-deploy-action@v4
 
       - name: Build And Deploy Azure Static Web Apps
         id: builddeploy
