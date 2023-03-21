@@ -176,6 +176,7 @@ Chase 有开卡奖励
 ### 购物
 
 - 大于 3 个人可以去 Costco 办卡
+  - 我导师最喜欢 Costco
 - 小于 3 个人可以去 Walmart 办卡
 - 不想吃莴苣的话去中超 (Fresh International, Far East, Asian Supermarket) 或者 Weee(贵)
 - 其它情况去 Amazon 办卡
@@ -198,6 +199,12 @@ Chase 有开卡奖励
 难度和上科大课程差不多，本科生水平有高有低，研究生水平不错。多利用 Office Hour, 这里的 OH 会有很多人参加，氛围也很好。
 
 ## UIUC 学期结束
+
+**一定要记得把之前开过的会员 (Walmart, Amazon Prime,Chegg, Uber One) 取消订阅!!**
+
+**一定要记得把之前开过的会员 (Walmart, Amazon Prime,Chegg, Uber One) 取消订阅!!**
+
+**一定要记得把之前开过的会员 (Walmart, Amazon Prime,Chegg, Uber One) 取消订阅!!**
 
 在 <https://eams.shanghaitech.edu.cn/eams/outSchoolCourseGrade>!search.action 提交成绩认定
 
