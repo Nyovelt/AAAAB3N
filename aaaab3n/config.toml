@@ -33,10 +33,6 @@ googleAnalytics = "G-73VZSQL8QT"
   link = "https://keybase.io/canarypwn" # no need for "mailto:" at the start
 
 [[params.social]]
-  name = "matrix"
-  link = "https://matrix.to/#/@canarypwn:mozilla.org" # no need for "mailto:" at the start
-
-[[params.social]]
   name = "twitter"
   link = "https://twitter.com/nyovelt" # no need for "mailto:" at the start
 
