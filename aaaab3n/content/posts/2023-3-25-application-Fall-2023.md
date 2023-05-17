@@ -31,7 +31,7 @@ tags:
   * Shu Yin (ShanghaiTech)
   * 均为科研推
   * SOP: See [https://cs-sop.org/](https://cs-sop.org/)
-* It's 2023, why schools still required for GRE?
+* It's 2023, why schools still required for GRE? So no GRE.
 
 申请列表:
 * Ticket School: UW, WISC, UIUC, UCSD, JHU, UChicago, GaTech, UMich, Purdue
