@@ -41,7 +41,7 @@ tags:
 结果:
 * NCSU offer
 * UChicago Waitlist
-* Purdur Interview (and I mess it up o_o)
+* Purdue Interview (and I mess it up o_o)
 * UIUC Interview
 
 ## 正篇
