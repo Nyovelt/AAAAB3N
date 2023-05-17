@@ -118,7 +118,9 @@ tags:
 * [SOP 意见1](https://webresources.aaaab3n.moe/2023/05/8144c9ae3fb98f3e3212d615ad2aef42.png) [SOP意见2](https://webresources.aaaab3n.moe/2023/05/6aae27b319a6a253c3772ddb413b11e5.png)
 * [CS-SOP](https://cs-sop.org/)
 * [Open CS Application](https://opencs.app/)
-
+* [csprofessors](https://drafty.cs.brown.edu/csprofessors)
+* [What if I don't have a publication? A word on GPA cut-offs](https://matt.might.net/articles/how-to-apply-and-get-in-to-graduate-school-in-science-mathematics-engineering-or-computer-science/)
+* [如何写推荐信](https://cs.brown.edu/~sk/Memos/Grad-School-Recos/)
 ## Special Thanks
 
 - 一起申请的群友们
