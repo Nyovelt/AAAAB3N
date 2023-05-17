@@ -95,6 +95,11 @@ tags:
 
 祝大家 offer 多多。
 
+
+## 征集问题与解答
+
+欢迎在评论区留言
+
 ## 其它资源（感谢群友）
 - 时间线: [https://webresources.aaaab3n.moe/2023/05/410d513865900c76a64395711bae5c78.png](https://webresources.aaaab3n.moe/2023/05/410d513865900c76a64395711bae5c78.png)
 - [CS PhD强committee&强professor List(仅供参考)](https://zhuanlan.zhihu.com/p/128037373)
