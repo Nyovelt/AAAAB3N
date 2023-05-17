@@ -17,7 +17,7 @@ tags:
 
 > **Applications are not done on 12-15.**
 
-本文以时间顺序。
+本文以时间顺序。本文偏意识流，如果对申请的方法和技巧有兴趣可以留言，我会尽力解答。
 
 * 代表后来的上帝视角
 
@@ -103,13 +103,13 @@ tags:
 ## 其它资源（感谢群友）
 - 时间线: [https://webresources.aaaab3n.moe/2023/05/410d513865900c76a64395711bae5c78.png](https://webresources.aaaab3n.moe/2023/05/410d513865900c76a64395711bae5c78.png)
 - [CS PhD强committee&强professor List(仅供参考)](https://zhuanlan.zhihu.com/p/128037373)
-- [GRERequired?](https://cqhy89kw13.feishu.cn/sheets/shtcnhyQEYS7dAP3XC6FCMJIavb?table=tblnJUIQLSu8zVcW&view=vewo99Mbw4)
+- [GRERequired? ](https://cqhy89kw13.feishu.cn/sheets/shtcnhyQEYS7dAP3XC6FCMJIavb?table=tblnJUIQLSu8zVcW&view=vewo99Mbw4)
 - [PFL 学生会出的 PhD 申请指南，有教怎么写SoP和推荐信之类的](https://epic-guide.github.io/applying)
-- [Matt 的 PhD 睡前小故事，讲了如何申请，怎么要信等等，我很喜欢看](https://matt.might.net/articles/how-to-apply-and-get-in-to-graduate-school-in-science-mathematics-engineering-or-computer-science/)
+- [Matt 的 PhD 睡前小故事，讲了如何申请，怎么要信等等，我很喜欢看，而且后悔没早看到](https://matt.might.net/articles/how-to-apply-and-get-in-to-graduate-school-in-science-mathematics-engineering-or-computer-science/)
 - [How To Prep For A Grad School Interview 后悔没看](https://jakec007.github.io/2021-04-02-cs-grad-school-interview/)
 - [选择 CS PhD 的原因](https://webresources.aaaab3n.moe/2023/05/a96f23352efba398a5701fd92e174e9f.png)
 - [乔神的 SOP: 我 SOP 的参考之一，而且 xlab 里的人都很推崇这份](https://zhiqiangxie.com/2021/11/30/SoP.html)
-- [推荐信模板1](https://gsi.berkeley.edu/media/sample-recommendation-letter.pdf)
+- [推荐信模板1，如果你的导师让你自己写推荐信的话...](https://gsi.berkeley.edu/media/sample-recommendation-letter.pdf)
 - [选校策略](https://www.1point3acres.com/bbs/thread-883934-1-1.html);[TLDR](https://webresources.aaaab3n.moe/2023/05/946d0629c0d2bafa1b4936c014fa4687.png)
 - [SOP 意见1](https://webresources.aaaab3n.moe/2023/05/8144c9ae3fb98f3e3212d615ad2aef42.png) [SOP意见2](https://webresources.aaaab3n.moe/2023/05/6aae27b319a6a253c3772ddb413b11e5.png)
 - [CS-SOP](https://cs-sop.org/)
