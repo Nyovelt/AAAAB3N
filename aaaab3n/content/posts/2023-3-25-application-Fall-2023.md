@@ -128,7 +128,7 @@ tags:
   * [MisakaCenter](https://twitter.com/MisakaCenter)
   * [LightQuantum](https://lightquantum.me/)
   * [Yuxuan (Matt) Jiang](https://essoz.github.io/)
-* [Mingcong Bai]()
+* [Mingcong Bai](https://aosc.io/people/~mingcongbai/)
 * [vizna](https://www.linkedin.com/in/xiaoyu-lucy-song/)
 * [Lilia](https://liliatangxy.github.io/)
 * [Siyuan](https://schai.me/)
