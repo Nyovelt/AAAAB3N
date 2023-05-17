@@ -110,17 +110,19 @@ tags:
 * [GRERequired?](https://cqhy89kw13.feishu.cn/sheets/shtcnhyQEYS7dAP3XC6FCMJIavb?table=tblnJUIQLSu8zVcW&view=vewo99Mbw4)
 * [PFL 学生会出的 PhD 申请指南，有教怎么写SoP和推荐信之类的](https://epic-guide.github.io/applying)
 * [Matt 的 PhD 睡前小故事，讲了如何申请，怎么要信等等，我很喜欢看，而且后悔没早看到](https://matt.might.net/articles/how-to-apply-and-get-in-to-graduate-school-in-science-mathematics-engineering-or-computer-science/)
+* [What if I don't have a publication? A word on GPA cut-offs](https://matt.might.net/articles/how-to-apply-and-get-in-to-graduate-school-in-science-mathematics-engineering-or-computer-science/)
 * [How To Prep For A Grad School Interview 后悔没看](https://jakec007.github.io/2021-04-02-cs-grad-school-interview/)
 * [选择 CS PhD 的原因](https://webresources.aaaab3n.moe/2023/05/a96f23352efba398a5701fd92e174e9f.png)
 * [乔神的 SOP: 我 SOP 的参考之一，而且 xlab 里的人都很推崇这份](https://zhiqiangxie.com/2021/11/30/SoP.html)
 * [推荐信模板1，如果你的导师让你自己写推荐信的话...](https://gsi.berkeley.edu/media/sample-recommendation-letter.pdf)
+* [如何写推荐信2，如果你的导师让你自己写推荐信的话...](https://cs.brown.edu/~sk/Memos/Grad-School-Recos/)
 * [选校策略](https://www.1point3acres.com/bbs/thread-883934-1-1.html);[TLDR](https://webresources.aaaab3n.moe/2023/05/946d0629c0d2bafa1b4936c014fa4687.png)
 * [SOP 意见1](https://webresources.aaaab3n.moe/2023/05/8144c9ae3fb98f3e3212d615ad2aef42.png) [SOP意见2](https://webresources.aaaab3n.moe/2023/05/6aae27b319a6a253c3772ddb413b11e5.png)
 * [CS-SOP](https://cs-sop.org/)
 * [Open CS Application](https://opencs.app/)
 * [csprofessors](https://drafty.cs.brown.edu/csprofessors)
-* [What if I don't have a publication? A word on GPA cut-offs](https://matt.might.net/articles/how-to-apply-and-get-in-to-graduate-school-in-science-mathematics-engineering-or-computer-science/)
-* [如何写推荐信](https://cs.brown.edu/~sk/Memos/Grad-School-Recos/)
+
+
 ## Special Thanks
 
 - 一起申请的群友们
