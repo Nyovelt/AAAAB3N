@@ -13,6 +13,10 @@ tags:
 
 申请不是一件简单的事情，尤其是对大陆学生来说。我在申请过程中走了很多弯路，甚至直到现在我也觉得没有最短路。在申请季，我不断的和人交谈，做了一些尝试，或许将他们记录下来有助于后来人。
 
+> **Exploration and Exploitations is all you need.**
+
+> **Applications are not done in a day.**
+
 本文以时间顺序。
 
 * 代表后来的上帝视角
