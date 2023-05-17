@@ -15,7 +15,7 @@ tags:
 
 > **Exploration and Exploitations is all you need.**
 
-> **Applications are not done in a day.**
+> **Applications are not done in 12-15.**
 
 本文以时间顺序。
 
