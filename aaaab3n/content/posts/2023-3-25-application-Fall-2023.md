@@ -23,7 +23,8 @@ tags:
 
 ## 概述与三维
 
-- GPA: 3.12/4
+* GPA: 3.12/4
+
 * TOEFL: 100/120
 * 推荐信
   * Tianyin Xu (UIUC)
@@ -34,11 +35,14 @@ tags:
 * It's 2023, why schools still required for GRE? So no GRE.
 
 申请列表:
+
 * Ticket School: UW, WISC, UIUC, UCSD, JHU, UChicago, GaTech, UMich, Purdue
-* Target School: UMass(MS), UMD(MS), UNC(MS), NEU(MS), Rice(MS), BU(MS), NCSU, OSU
+* Target School: UMass(MS), UMD(MS), UNC(MS), NEU(MS), NCSU, OSU, Rice(MS), BU(MS)
+  * PSU, OSU and NCSU are an triangle alliance, so I applied them together.
 * Safe School: There no safe school for me :(
 
 结果:
+
 * NCSU offer
 * UChicago Waitlist
 * Purdue Interview (and I mess it up o_o)
@@ -95,39 +99,41 @@ tags:
 
 祝大家 offer 多多。
 
-
 ## 征集问题与解答
 
 欢迎在评论区留言
 
 ## 其它资源（感谢群友）
+
 - 时间线: [https://webresources.aaaab3n.moe/2023/05/410d513865900c76a64395711bae5c78.png](https://webresources.aaaab3n.moe/2023/05/410d513865900c76a64395711bae5c78.png)
-- [CS PhD强committee&强professor List(仅供参考)](https://zhuanlan.zhihu.com/p/128037373)
-- [GRERequired? ](https://cqhy89kw13.feishu.cn/sheets/shtcnhyQEYS7dAP3XC6FCMJIavb?table=tblnJUIQLSu8zVcW&view=vewo99Mbw4)
-- [PFL 学生会出的 PhD 申请指南，有教怎么写SoP和推荐信之类的](https://epic-guide.github.io/applying)
-- [Matt 的 PhD 睡前小故事，讲了如何申请，怎么要信等等，我很喜欢看，而且后悔没早看到](https://matt.might.net/articles/how-to-apply-and-get-in-to-graduate-school-in-science-mathematics-engineering-or-computer-science/)
-- [How To Prep For A Grad School Interview 后悔没看](https://jakec007.github.io/2021-04-02-cs-grad-school-interview/)
-- [选择 CS PhD 的原因](https://webresources.aaaab3n.moe/2023/05/a96f23352efba398a5701fd92e174e9f.png)
-- [乔神的 SOP: 我 SOP 的参考之一，而且 xlab 里的人都很推崇这份](https://zhiqiangxie.com/2021/11/30/SoP.html)
-- [推荐信模板1，如果你的导师让你自己写推荐信的话...](https://gsi.berkeley.edu/media/sample-recommendation-letter.pdf)
-- [选校策略](https://www.1point3acres.com/bbs/thread-883934-1-1.html);[TLDR](https://webresources.aaaab3n.moe/2023/05/946d0629c0d2bafa1b4936c014fa4687.png)
-- [SOP 意见1](https://webresources.aaaab3n.moe/2023/05/8144c9ae3fb98f3e3212d615ad2aef42.png) [SOP意见2](https://webresources.aaaab3n.moe/2023/05/6aae27b319a6a253c3772ddb413b11e5.png)
-- [CS-SOP](https://cs-sop.org/)
-- [Open CS Application](https://opencs.app/)
+* [CS PhD强committee&强professor List(仅供参考)](https://zhuanlan.zhihu.com/p/128037373)
+* [GRERequired?](https://cqhy89kw13.feishu.cn/sheets/shtcnhyQEYS7dAP3XC6FCMJIavb?table=tblnJUIQLSu8zVcW&view=vewo99Mbw4)
+* [PFL 学生会出的 PhD 申请指南，有教怎么写SoP和推荐信之类的](https://epic-guide.github.io/applying)
+* [Matt 的 PhD 睡前小故事，讲了如何申请，怎么要信等等，我很喜欢看，而且后悔没早看到](https://matt.might.net/articles/how-to-apply-and-get-in-to-graduate-school-in-science-mathematics-engineering-or-computer-science/)
+* [How To Prep For A Grad School Interview 后悔没看](https://jakec007.github.io/2021-04-02-cs-grad-school-interview/)
+* [选择 CS PhD 的原因](https://webresources.aaaab3n.moe/2023/05/a96f23352efba398a5701fd92e174e9f.png)
+* [乔神的 SOP: 我 SOP 的参考之一，而且 xlab 里的人都很推崇这份](https://zhiqiangxie.com/2021/11/30/SoP.html)
+* [推荐信模板1，如果你的导师让你自己写推荐信的话...](https://gsi.berkeley.edu/media/sample-recommendation-letter.pdf)
+* [选校策略](https://www.1point3acres.com/bbs/thread-883934-1-1.html);[TLDR](https://webresources.aaaab3n.moe/2023/05/946d0629c0d2bafa1b4936c014fa4687.png)
+* [SOP 意见1](https://webresources.aaaab3n.moe/2023/05/8144c9ae3fb98f3e3212d615ad2aef42.png) [SOP意见2](https://webresources.aaaab3n.moe/2023/05/6aae27b319a6a253c3772ddb413b11e5.png)
+* [CS-SOP](https://cs-sop.org/)
+* [Open CS Application](https://opencs.app/)
+
 ## Special Thanks
+
 - 一起申请的群友们
-    - [Siyuan Zhang](https://twitter.com/murezsy_)
-    - [laevatain](https://twitter.com/lzc0w0a)
-    - [Jing Liu](https://twitter.com/6chinggg)
-    - [MisakaCenter](https://twitter.com/MisakaCenter)
-    - [LightQuantum](https://lightquantum.me/)
-    - [Yuxuan (Matt) Jiang](https://essoz.github.io/)
-- [Mingcong Bai]()
-- [vizna](https://www.linkedin.com/in/xiaoyu-lucy-song/)
-- [Lilia](https://liliatangxy.github.io/)
-- [Siyuan](https://schai.me/)
-- [Anna](https://www.linkedin.com/in/anna-mazhar/)
-- Z
-- [Jovan Stojkovic](https://twitter.com/jovanvr1997)
-- [Tianyin](https://tianyin.github.io/)
-- And all people who have ever helped me.
+  * [Siyuan Zhang](https://twitter.com/murezsy_)
+  * [laevatain](https://twitter.com/lzc0w0a)
+  * [Jing Liu](https://twitter.com/6chinggg)
+  * [MisakaCenter](https://twitter.com/MisakaCenter)
+  * [LightQuantum](https://lightquantum.me/)
+  * [Yuxuan (Matt) Jiang](https://essoz.github.io/)
+* [Mingcong Bai]()
+* [vizna](https://www.linkedin.com/in/xiaoyu-lucy-song/)
+* [Lilia](https://liliatangxy.github.io/)
+* [Siyuan](https://schai.me/)
+* [Anna](https://www.linkedin.com/in/anna-mazhar/)
+* Z
+* [Jovan Stojkovic](https://twitter.com/jovanvr1997)
+* [Tianyin](https://tianyin.github.io/)
+* And all people who have ever helped me.
