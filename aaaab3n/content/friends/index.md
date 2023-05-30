@@ -63,3 +63,5 @@ If you want to be in this list, just ping me.
 [chinggg](https://chinggg.github.io/)
 
 [Skycurtain](https://skycurtain.github.io/)
+
+[蛋挞也是 Taco](https://lyc.sh/blog/)
