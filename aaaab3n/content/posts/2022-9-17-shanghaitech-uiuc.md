@@ -25,7 +25,7 @@ tags:
 
 ### 签证
 
-签证申请可以查看这个 [pdf](https://1drv.ms/b/s!Au3reWMu7K2Cho5X-Pmfd062TCM_kA?e=tkZg3h)
+签证申请可以查看这个 [pdf](https://webresources.aaaab3n.moe/share/%E7%AD%BE%E8%AF%81%E6%94%BB%E7%95%A5-%E7%BF%B0%E6%9E%97%E5%AD%A6%E9%95%BF.pdf?Authorization=3_20231105231756_ad6e478f674275110b761fcd_ec510f76ecea007b1d1fb1c7e9d88b12a895b969_004_20231112231756_0000_dnld)
 
 我当时只看了录取通知书, DS2019，护照还有签证预约页。
 
